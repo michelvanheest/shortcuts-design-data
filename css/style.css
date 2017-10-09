@@ -78,19 +78,19 @@ button:hover{
 
 .hero {
     display: flex;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
+    padding-top: 15%;
 }
 
 @media only screen and (max-width: 1023px) {
     .hero {
         display: block;
-        padding-top: 50px;
+        padding-top: 10px;
     }
 }
 
 .hero-left {
     width: 50vw;
-
 }
 
 @media only screen and (max-width: 1023px) {
