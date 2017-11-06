@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -32,18 +32,138 @@
     </head>
     <body>
 
-        <section class="content-wrapper new_section">
-            <section class="hero">
-                <div class="hero-left">
+        <section class="header">
+            <script>
+                $(function(){
+                    $("#header").load("header.html");
+                });
+            </script>
+            <div id="header"></div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-left">
+                <div class="hero-left-content">
                     <h1>Shortcuts.design</h1>
-                    <div class="line"></div>
-                    <p>Something awesome is about to happen here soon, stay sharp! <br> Wanna know more? You can always reach out to me. <br> Cheers! <br><br> <i>- Michel</i></p>
-                    <a href="https://twitter.com/MichelvanHeest" target="_blank"><button type="button">I want to talk to you!</button></a>
+                    <div class="line homepage-line"></div>
+                    <h2>Every shortcut for designers in one place 🚀</h2>
+                    <br>
                 </div>
-                <div class="hero-right">
-                    <img src="img/designtool.png" alt="Designtool">
+            </div>
+            <div class="hero-right">
+                <div class="hero-right-content">
+                    <div class="hero-right-nav">
+                        <div class="hero-right-nav-label" id="tools-label-design"></div>
+                        <div class="hero-right-nav-textbox">
+                            <a id="tools-design-click-trans" href="#tools-design-click"><h3>👨‍🎨 Design</h3></a>
+                        </div>
+                    </div>
+                    <div class="hero-right-nav">
+                        <div class="hero-right-nav-label" id="tools-label-development"></div>
+                        <div class="hero-right-nav-textbox">
+                            <a id="tools-development-click-trans" href="#tools-development-click"><h3>👨‍💻 Development</h3></a>
+                        </div>
+                    </div>
+                    <div class="hero-right-nav">
+                        <div class="hero-right-nav-label" id="tools-label-miscellaneous"></div>
+                        <div class="hero-right-nav-textbox">
+                            <a id="tools-miscellaneous-click-trans" href="#tools-miscellaneous-click"><h3>💻 Miscellaneous</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-wrapper">
+            <section class="tools new_section">
+                <h2 id="tools-design-click">Tools</h2>
+                <div class="line homepage-line"></div>
+                <div class="tools-design" id="tools-design">
+                    <div class="tools-contentbox">
+                        <div class="tools-label" id="tools-label-design"></div>
+                        <!--<h4>👨‍🎨</h4>-->
+                        <div class="tools-logos">
+                            <a class="tools-logos-available" href="toolspage-sketch.html"><img src="img/Sketch@2x.png" alt="Sketch app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-principle.html"><img src="img/Principle@2x.png" alt="Principle app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-invision.html"><img src="img/InVision@2x.png" alt="InVision app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-figma.html"><img src="img/Figma@2x.png" alt="Figma app logo"</a>
+                            <a class="tools-logos-available" href="toolspage-adobexd.html"><img src="img/XD@2x.png" alt="XD app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-adobephotoshop.html"><img src="img/Photoshop@2x.png" alt="Photoshop app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-adobeindesign.html"><img src="img/Indesign@2x.png" alt="Indesign app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-adobeillustrator.html"><img src="img/Illustrator@2x.png" alt="Illustrator app logo"></a>
+                            <img src="img/Framer@2x.png" alt="Framer app logo" class="tools-logos-unavailable">
+                            <img src="img/Axure@2x.png" alt="Axure app logo" class="tools-logos-unavailable">
+                            <img src="img/Marvel@2x.png" alt="Marvel app logo" class="tools-logos-unavailable">
+                            <img src="img/Zeplin@2x.png" alt="Zeplin app logo" class="tools-logos-unavailable">
+                            <img src="img/Flinto@2x.png" alt="Flinto app logo" class="tools-logos-unavailable">
+                            <img src="img/Origami@2x.png" alt="Origami app logo" class="tools-logos-unavailable">
+                            <img src="img/Balsamiq@2x.png" alt="Balsamiq app logo" class="tools-logos-unavailable">
+                            <img src="img/UXPin@2x.png" alt="UXPin app logo" class="tools-logos-unavailable">
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-development" id="tools-development-click">
+                    <div class="tools-contentbox">
+                        <div class="tools-label" id="tools-label-development"></div>
+                        <!--<h4>👨‍💻</h4>-->
+                        <div class="tools-logos">
+                            <a class="tools-logos-available" href="toolspage-sublimetext.html"><img src="img/Sublime@2x.png" alt="Sublime app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-wordpress.html"><img src="img/Wordpress@2x.png" alt="Wordpress app logo"></a>
+                            <img src="img/Webflow@2x.png" alt="Webflow app logo" class="tools-logos-unavailable">
+                            <img src="img/Atom@2x.png" alt="Atom app logo" class="tools-logos-unavailable">
+                            <img src="img/Transmit@2x.png" alt="Transmit app logo" class="tools-logos-unavailable">
+                            <img src="img/Sourcetree@2x.png" alt="Sourcetree app logo" class="tools-logos-unavailable">
+                            <img src="img/MAMP@2x.png" alt="MAMP app logo" class="tools-logos-unavailable">
+                            <img src="img/GitHubDesktop@2x.png" alt="GitHub Desktop app logo" class="tools-logos-unavailable">
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-miscellaneous" id="tools-miscellaneous-click">
+                    <div class="tools-contentbox">
+                        <div class="tools-label" id="tools-label-miscellaneous"></div>
+                        <!--<h4>💻</h4>-->
+                        <div class="tools-logos">
+                            <a class="tools-logos-available" href="toolspage-macos.html"><img src="img/macOS@2x.png" alt="macOS app logo"></a>
+                            <img src="img/Slack@2x.png" alt="Slack app logo" class="tools-logos-unavailable">
+                            <img src="img/Chrome@2x.png" alt="Chrome app logo" class="tools-logos-unavailable">
+                            <img src="img/Trello@2x.png" alt="Trello app logo" class="tools-logos-unavailable">
+                            <img src="img/iAWriter@2x.png" alt="iA Writer app logo" class="tools-logos-unavailable">
+                        </div>
+                    </div>
                 </div>
             </section>
 
+            <section class="custom new_section">
+                <h2>Custom</h2>
+                <div class="line homepage-line"></div>
+                <p>When you can’t find the specific shortcut you wan’t to use for your workflow, you can make one or more custom shortcuts per app via System Preferences on your Mac:</p>
+                <div class="custom-images">
+                    <img src="img/custom_01@2x.png" alt="custom shortcuts image 1">
+                    <img src="img/custom_02@2x.png" alt="custom shortcuts image 2">
+                    <img src="img/custom_03@2x.png" alt="custom shortcuts image 3">
+                    <img src="img/custom_04@2x.png" alt="custom shortcuts image 4">
+                </div>
+            </section>
+
+            <section class="missing-something new_section">
+                <!-- !!! HIER STAAN NOG LINKS NAAR EIGEN WEBSITE IN !!! -->
+                <h2>Missing something?</h2>
+                <div class="line homepage-line"></div>
+                <p>Missing something or have some feedback or tips for future releases? Feel free to reach out!<br>Also, follow me on Twitter to be the first to know when Shortcuts.design is updated!</p>
+                <!--<a href="https://twitter.com/MichelvanHeest" target="_blank"><button type="button">I want to talk to you!</button></a>-->
+                <a href="https://twitter.com/MichelvanHeest" target="_blank"><button type="button">Reach out to me →</button></a>
+            </section>
+
+        </section>
+
+        <footer>
+            <script>
+                $(function(){
+                    $("#footer").load("footer.html");
+                });
+            </script>
+            <div id="footer"></div>
+        </footer>
+    <script type="text/javascript" src="js/nav-trans.js"></script>
     </body>
 </html>

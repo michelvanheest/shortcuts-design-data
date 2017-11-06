@@ -1,0 +1,95 @@
+/*a {
+    color: #FF718E;
+}
+
+.toolspage-line {
+    background-color: #FF718E;
+}*/
+
+.toolspage-hero {
+    display: flex;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .toolspage-hero {
+        display: block;
+        padding-top: 50px;
+    }
+}
+
+.toolspage-hero-left {
+    width: 50vw;
+
+}
+
+@media only screen and (max-width: 1023px) {
+    .toolspage-hero-left {
+        width: 100%;
+    }
+}
+
+.toolspage-hero-right {
+    width: 50vw;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+    .toolspage-hero-right {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.toolspage-hero-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.toolspage-shortcuts-wrapper {
+    /*width: 100%;*/
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .toolspage-shortcuts-wrapper {
+        width: 100%;
+    }
+}
+
+.toolspage-shortcuts-wrapper p {
+    width: 50%;
+}
+
+/*.toolspage-shortcuts-tables {
+    width: 80%;
+    margin: auto;
+}*/
+
+table {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    table-layout: fixed;
+}
+
+tr {
+    width: 100%;
+}
+
+td:nth-child(even) {
+    text-align: right;
+    color: #7A7A7A;
+}
+
+td {
+    line-height: 29px;
+    border-bottom: 1px solid #DDDDDD;
+    vertical-align: top;
+    /*padding-left: 5%;
+    padding-right: 5%;*/
+}

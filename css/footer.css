@@ -1,0 +1,24 @@
+footer {
+    background-color: #7166FF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 0px 5px 0px;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+#related {
+    font-size: 8px;
+    margin-top: 30px;
+}
+
+footer .fa {
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #FFFFFF;
+}
