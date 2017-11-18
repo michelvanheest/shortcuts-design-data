@@ -1,0 +1,40 @@
+.updates-wrapper {
+    display: flex;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .updates-wrapper {
+        display: block;
+        padding-top: 50px;
+    }
+}
+
+.updates-wrapper-left {
+    width: 50vw;
+
+}
+
+@media only screen and (max-width: 1023px) {
+    .tupdates-wrapper-left {
+        width: 100%;
+    }
+}
+
+.updates-wrapper-right {
+    width: 50vw;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+    .updates-wrapper-right {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #DDDDDD;
+}
