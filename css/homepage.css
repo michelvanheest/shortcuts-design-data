@@ -223,7 +223,7 @@
     height: 180px;
     width: 180px;
     margin: 30px 30px 30px 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     transition-property: all;
     transition-duration: 350ms;
     transition-timing-function: ease;
