@@ -1,3 +1,7 @@
+
+
+
+
 .homepage-line {
     background-color: #7166FF;
 }
@@ -43,6 +47,11 @@
     .hero-left-content {
         width: 100%;
     }
+}
+
+.hero-left-content img {
+    height: 54px;
+    width: 54px;
 }
 
 .logo img {
@@ -136,6 +145,25 @@
 @media only screen and (max-width: 700px) {
     .hero h3 {
         font-size: 28px;
+    }
+}
+
+.hero-right-nav-textbox a {
+    display: flex;
+    align-items: center;
+}
+
+.hero-right-nav-textbox a img {
+    height: 36px;
+    width: 36px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-right-nav-textbox a img {
+        height: 28px;
+        width: 28px;
     }
 }
 
