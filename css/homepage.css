@@ -139,6 +139,18 @@
     }
 }
 
+.hero-right-nav-textbox a {
+    display: flex;
+    align-items: center;
+}
+
+.hero-right-nav-textbox a img {
+    height: 36px;
+    width: 36px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+}
+
 .hero-right-nav-label {
     height: 85px;
     width: 10px;
