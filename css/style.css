@@ -47,6 +47,13 @@ p {
     color: #000000;
 }
 
+li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: #000000;
+}
+
 .fa {
     font-size: 28px;
     color: #000000;

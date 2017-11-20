@@ -36,6 +36,11 @@
     }
 }
 
+#update-1 img {
+    width: 18px;
+    height: 18px;
+}
+
 hr {
     height: 1px;
     border: 0;
@@ -58,8 +63,4 @@ ul.dash > li:before {
     content: "-";
     width: 15px;
     margin-left: -15px;
-}
-
-li {
-    line-height: 29px;
 }

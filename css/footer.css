@@ -9,6 +9,11 @@ footer p {
     color: #FFFFFF;
 }
 
+footer p img {
+    width: 18px;
+    height: 18px;
+}
+
 #related {
     font-size: 8px;
     margin-top: 30px;
