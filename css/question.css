@@ -1,0 +1,16 @@
+.question-wrapper {
+    opacity: 0;
+}
+
+.question-a {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 1;
+}
+
+button {
+    height: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
