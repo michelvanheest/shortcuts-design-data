@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
     background-color: #FBFBFB;
+    overflow-x: hidden;
 }
 
 h1 {
