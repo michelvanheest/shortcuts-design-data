@@ -125,7 +125,7 @@ button {
     transition-delay: initial;
 }
 
-.button {
+/* .button {
     height: 50px;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
@@ -135,7 +135,6 @@ button {
     background-color: #7166FF;
     box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
     display: block;
-    /*margin: auto;*/
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0px 45px 0px 45px;
@@ -143,6 +142,19 @@ button {
     transition-duration: 350ms;
     transition-timing-function: ease;
     transition-delay: initial;
+} */
+
+.button-contribute {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#button-contribute-request {
+    background-color: #71A8FF;
+}
+
+#button-contribute-send {
+    background-color: #FFD56E;
 }
 
 button:hover{

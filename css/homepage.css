@@ -234,6 +234,14 @@
     background-color: #F171FF;
 }
 
+#label-request {
+    background-color: #71A8FF;
+}
+
+#label-send {
+    background-color: #FFD56E;
+}
+
 .tools h4 {
     margin-left: 15px;
 }
@@ -287,6 +295,62 @@
 .tools-logos-unavailable {
     cursor: not-allowed;
     opacity: 0.2;
+}
+
+.contribute {
+    padding: 30px;
+}
+
+.contribute-blocks {
+    display: flex;
+}
+
+.contribute-blocks1 {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contribute-blocks {
+        display: block;
+    }
+
+    .contribute-blocks1 {
+        margin-right: 0px;
+    }
+}
+
+.contribute a {
+    color: #FCBF49;
+}
+
+.contribute h3 {
+    /* line-height: 0; */
+    margin: 0;
+    padding: 0;
+}
+
+.contribute-content {
+    /* display: flex; */
+}
+
+.contribute-content p {
+    max-width: 666px;
+}
+
+/* .contribute-content img {
+    height: 75px;
+    position: absolute;
+    right: 70px;
+} */
+
+/* #label-send-img {
+    padding-right: 15px;
+} */
+
+@media only screen and (max-width: 1023px) {
+    .contribute-content img {
+        display: none;
+    }
 }
 
 .custom p {
