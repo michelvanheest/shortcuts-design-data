@@ -21,3 +21,11 @@ $('#tools-miscellaneous-click-trans').on('click', function(e){
        scrollTop: target.offset().top
     }, 1000);
 });
+
+$('#tools-contribute-click-trans').on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'tools-contribute-click-trans' ? $('#tools-contribute-click') : $('#tools-contribute-click-trans');
+    $('html, body').stop().animate({
+       scrollTop: target.offset().top
+    }, 1000);
+});
