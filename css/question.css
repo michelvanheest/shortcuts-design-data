@@ -17,3 +17,9 @@
     margin-bottom: 0;
     border-top: 1px solid #fbfbfb12;
 }
+
+.button-wide img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: -3px;
+}
