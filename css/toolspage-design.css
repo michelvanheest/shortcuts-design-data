@@ -5,3 +5,8 @@ a {
 .toolspage-line {
     background-color: #FF718E;
 }
+
+ul.tabs li.current {
+	background: #FD728F;
+	color: white;
+}

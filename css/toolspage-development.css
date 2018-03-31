@@ -6,3 +6,7 @@ a {
     background-color: #71FF9A;
 }
 
+ul.tabs li.current {
+	background: #71FF9A;
+	color: #333;
+}

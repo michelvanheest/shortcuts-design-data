@@ -57,10 +57,10 @@ ul.tabs li:hover {
 	cursor: pointer;
 }
 
-ul.tabs li.current {
+/* ul.tabs li.current {
 	background: #FD728F;
 	color: white;
-}
+} */
 
 .tab-content {
 	display: none;
