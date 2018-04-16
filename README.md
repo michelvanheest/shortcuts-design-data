@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="Docs/logo@2x.png" width="136" alt="icon"><br>
+  <img src="Docs/logo@2x.png" width="100" alt="icon"><br>
   Shortcuts.design<br>
   <p align="center">
     <a href="https://twitter.com/michelvanheest”><img src="https://img.shields.io/badge/contact-Michel_van_Heest-blue.svg?style=flat" alt="Contact">
