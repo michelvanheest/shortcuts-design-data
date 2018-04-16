@@ -9,8 +9,9 @@
 .button-wide {
     width: 100%;
     height: 100%;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     border-radius: 0;
     margin-top: 0;
@@ -19,7 +20,7 @@
 }
 
 .button-wide img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     margin-bottom: -3px;
 }
