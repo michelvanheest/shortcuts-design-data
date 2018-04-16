@@ -35,6 +35,17 @@ Please use GitHub issues to report any bugs and file feature requests. If you ca
 ### Adding or changing shortcuts
 Do you want to add or change shortcuts? Please go ahead and do it yourself and send in a pull request.
 
+Please keep the code/data clean and consistent by using the following symbols when adding shortcuts on Mac tools-pages:
+
+| Key | Symbol |
+|---|---|
+| Control | ⌃ |
+| Option / Alt | ⌥ |
+| Command | ⌘ |
+| Shift | ⇧ |
+| Enter | ↩ |
+| Arrow keys | ↑ ↓ ← → |
+
 ### Pull requests
 Pull requests should include information about what has been changed. All pull requests will be reviewed by Michel.
 
@@ -44,6 +55,6 @@ Pull requests should include information about what has been changed. All pull r
 Send us the names of the tools you want to see featured in a next release by filling out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScDUjlisbnqEK5iEwMRoNacf_CvuN0JCLLIlhAxSOKgt7Db2A/viewform) or use GitHub issues.
 
 ## Links
-- [Shortcuts.design](http://shortcuts.design/)
-- [Twitter](https://twitter.com/michelvanheest)
-- [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScDUjlisbnqEK5iEwMRoNacf_CvuN0JCLLIlhAxSOKgt7Db2A/viewform)
+- [Shortcuts.design website](http://shortcuts.design/)
+- [Twitter - Michel van Heest](https://twitter.com/michelvanheest)
+- [Google Form for requesting applications](https://docs.google.com/forms/d/e/1FAIpQLScDUjlisbnqEK5iEwMRoNacf_CvuN0JCLLIlhAxSOKgt7Db2A/viewform)
