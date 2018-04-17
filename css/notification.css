@@ -1,0 +1,83 @@
+@media only screen and (min-width: 576px){
+    /*OPEN CLOSE BUTTON*/
+    .notification-button {
+        position: fixed;
+        right: 25px;
+        bottom: 40px;
+        z-index: 999;
+        font-size: 30px;
+        transition-property: all;
+        transition-duration: 350ms;
+        transition-timing-function: ease;
+        transition-delay: initial;
+    }
+
+    .notification-button:hover {
+        transform:scale(1.08,1.08);
+        -webkit-transform:scale(1.08,1.08);
+        -moz-transform:scale(1.08,1.08);
+        cursor: pointer;
+    }
+
+    .btn-open:after {
+        content: url("../img/Notification-logo.png");
+        zoom: 50%;
+    }
+
+    .btn-close:after {
+        content: url("../img/Close-button.png");
+        zoom: 50%;
+    }
+
+    /*OVERLAY*/
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        z-index: 99;
+    }
+
+    /*TEXT WRAPPER*/
+    .notification-wrapper {
+        width: 100%;
+        position: fixed;
+        bottom: 40px;
+        z-index: 10;
+    }
+
+    .speechbubble {
+        max-width: 280px;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: 65px;
+        border-radius: 10px 10px 0px 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
+    }
+
+    #last-speechbubble {
+        margin-bottom: 110px;
+    }
+
+    .speechbubble p {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: right;
+    }
+
+    .speechbubble a {
+        color: #7166FF;
+    }
+}
+
+/*DELETE NOTIFICATION ON MOBILE*/
+@media only screen and (max-width: 576px){
+    .speechbubble p {
+        display: none;
+    }
+}
