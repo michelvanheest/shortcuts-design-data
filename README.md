@@ -35,6 +35,8 @@ Please use GitHub issues to report any bugs and file feature requests. If you ca
 ### Adding or changing shortcuts
 Do you want to add or change shortcuts? Please go ahead and do it yourself and send in a pull request.
 
+Note: all data is in plain HTML.
+
 Please keep the code/data clean and consistent by using the following symbols when adding shortcuts on Mac tools-pages:
 
 | Key | Symbol |
