@@ -30,7 +30,7 @@ Shortcuts.design is a small website that lists every shortcut a designer ever wa
 In case you don't know how to contribute using GitHub, please check out [this short post](https://gist.github.com/MarcDiethelm/7303312) by [Marc Diethelm](https://gist.github.com/MarcDiethelm).
 
 ### Bugs, feature requests and shortcuts-mistakes
-Please use GitHub issues to report any bugs and file feature requests. If you can fix it yourself, please fix it and send in a pull request.
+Please use [GitHub issues](https://github.com/michelvanheest/shortcuts-design-data/issues/new) to report any bugs and file feature requests. If you can fix it yourself, please fix it and send in a pull request.
 
 ### Adding or changing shortcuts
 Do you want to add or change shortcuts? Please go ahead and do it yourself and send in a pull request.
