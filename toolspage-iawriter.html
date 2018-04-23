@@ -84,7 +84,15 @@
                     <h2>Shortcuts</h2>
                     <div class="line toolspage-line"></div>
                     <div class="toolspage-shortcuts-tables">
-                        <h3>General</h3>
+                        <section class="data">
+                                <script>
+                                    $( document ).ready(function(){
+                                        $("#data-iawriter").load("data/Miscellaneous/toolspage-iawriter.html");
+                                    });
+                                </script>
+                                <div id="data-iawriter"></div>
+                            </section>
+                        <!-- <h3>General</h3>
                         <div class="toolspage-shortcuts-table">
                             <table>
                                 <tr><td>New</td><td> ⌘ N</td></tr>
@@ -123,7 +131,7 @@
                                 <tr><td>Add Footnote</td><td> ⌃ ⌘ K</td></tr>
                                 <tr><td>Clear Styles</td><td> ⌥ ⌘ Del</td></tr>
                             </table>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
