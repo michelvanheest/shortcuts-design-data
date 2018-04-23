@@ -95,7 +95,15 @@
                         <div class="line toolspage-line"></div>
                         <div id="tab-1" class="tab-content current">
                             <div class="toolspage-shortcuts-tables">
-                                <h3>General</h3>
+                                <section class="data">
+                                        <script>
+                                            $( document ).ready(function(){
+                                                $("#data-zeplin-mac").load("data/Design/toolspage-zeplin-mac.html");
+                                            });
+                                        </script>
+                                        <div id="data-zeplin-mac"></div>
+                                </section>
+                                <!-- <h3>General</h3>
                                 <div class="toolspage-shortcuts-table">
                                     <table>
                                         <tr><td>Hide</td><td>⌘ H</td></tr>
@@ -172,12 +180,20 @@
                                         <tr><td>Add Note</td><td>⌘ Click</td></tr>
                                         <tr><td>Show/Hide Versions</td><td>⌥ ⌘ V</td></tr>
                                     </table>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div id="tab-2" class="tab-content">
                             <div class="toolspage-shortcuts-tables">
-                                <h3>Navigation</h3>
+                                <section class="data">
+                                    <script>
+                                        $( document ).ready(function(){
+                                            $("#data-zeplin-windows").load("data/Design/toolspage-zeplin-windows.html");
+                                        });
+                                    </script>
+                                    <div id="data-zeplin-windows"></div>
+                                </section>
+                                <!-- <h3>Navigation</h3>
                                 <div class="toolspage-shortcuts-table">
                                     <table>
                                         <tr><td>Jump to Screen</td><td>Alt J</td></tr>
@@ -218,7 +234,7 @@
                                         <tr><td>Manage Tags</td><td>Alt T</td></tr>
                                         <tr><td>Add Note</td><td>Ctrl Click</td></tr>
                                     </table>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
