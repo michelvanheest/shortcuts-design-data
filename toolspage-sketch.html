@@ -84,7 +84,15 @@
                     <h2>Shortcuts</h2>
                     <div class="line toolspage-line"></div>
                     <div class="toolspage-shortcuts-tables">
-                        <h3>General</h3>
+                    <section class="data">
+                            <script>
+                                $( document ).ready(function(){
+                                    $("#data-sketch").load("data/Design/toolspage-sketch.html");
+                                });
+                            </script>
+                            <div id="data-sketch"></div>
+                        </section>
+                        <!-- <h3>General</h3>
                         <div class="toolspage-shortcuts-table">
                             <table>
                                 <tr><td>Copy</td><td>⌘ C</td></tr>
@@ -272,7 +280,7 @@
                                 <tr><td>Enter presentation mode</td><td>⌘ .</td></tr>
                                 <tr><td>Show/hide Toolbar</td><td>⌥ ⌘ T</td></tr>
                             </table>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
