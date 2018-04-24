@@ -2,41 +2,32 @@
     /*OPEN CLOSE BUTTON*/
     .notification-button {
         position: fixed;
-        /* right: 25px; */
-        /* bottom: 40px; */
+        right: -25px;
+        bottom: 0px;
         z-index: 999;
         font-size: 30px;
         transition-property: all;
         transition-duration: 350ms;
         transition-timing-function: ease;
         transition-delay: initial;
-
-        right: -15px;
-        bottom: 0px;
         transform: scale(0.5, 0.5);
         -webkit-transform:scale(0.5, 0.5);
         -moz-transform:scale(0.5, 0.5);
     }
 
     .notification-button:hover {
-        /* transform:scale(1.08,1.08);
-        -webkit-transform:scale(1.08,1.08);
-        -moz-transform:scale(1.08,1.08); */
-        cursor: pointer;
-
         transform:scale(0.6,0.6);
         -webkit-transform:scale(0.6,0.6);
         -moz-transform:scale(0.6,0.6);
+        cursor: pointer;
     }
 
     .btn-open:after {
         content: url("../img/Notification-logo.png");
-        /* zoom: 50%; */
     }
 
     .btn-close:after {
         content: url("../img/Close-button.png");
-        /* zoom: 50%; */
     }
 
     /*OVERLAY*/
@@ -64,7 +55,7 @@
         margin-top: 10px;
         margin-bottom: 0px;
         margin-left: auto;
-        margin-right: 65px;
+        margin-right: 55px;
         border-radius: 10px 10px 0px 10px;
         background-color: #FFFFFF;
         box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
