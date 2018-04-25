@@ -86,31 +86,37 @@
             <section class="toolspage-shortucts new_section">
                 <div class="toolspage-shortcuts-wrapper">
                     <div class="container">
-                            <ul class="tabs">
-                                <li class="tab-link current" data-tab="tab-1">Mac</li>
-                                <li class="tab-link" data-tab="tab-2">Windows</li>
-                            </ul>
-                            <h2>Shortcuts</h2>
-                            <div class="line toolspage-line"></div>
-                            <div id="tab-1" class="tab-content current">
-                                <div class="toolspage-shortcuts-tables">
-                                    <section class="data">
+                        <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab-1">Mac</li>
+                            <li class="tab-link" data-tab="tab-2">Windows</li>
+                        </ul>
+                        <h2>Shortcuts</h2>
+                        <div class="line toolspage-line"></div>
+                        <div id="tab-1" class="tab-content current">
+                            <div class="toolspage-shortcuts-tables">
+                                <section class="data">
+                                    <script>
+                                        $( document ).ready(function(){
+                                            $("#data-adobephotoshop").load("data/Design/toolspage-adobephotoshop.html");
+                                        });
+                                    </script>
+                                    <div id="data-adobephotoshop"></div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <div class="toolspage-shortcuts-tables">
+                                <section class="data">
                                         <script>
                                             $( document ).ready(function(){
-                                                $("#data-adobephotoshop").load("data/Design/toolspage-adobephotoshop.html");
+                                                $("#data-adobephotoshop-windows").load("data/Design/toolspage-adobephotoshop-windows.html");
                                             });
                                         </script>
-                                        <div id="data-adobephotoshop"></div>
-                                    </section>
-                                </div>
+                                        <div id="data-adobephotoshop-windows"></div>
+                                </section>
                             </div>
-                            <div id="tab-2" class="tab-content">
-                                <div class="toolspage-shortcuts-tables">
-                                    <section class="data">
-                                        <h4 class="h4-light">Working on these <i>right now</i>! Come back within a week or add them yourself via <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank"> GitHub</a> in the meantime.</h4 class="h4-light">
-                                    </section>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
