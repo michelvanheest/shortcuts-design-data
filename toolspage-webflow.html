@@ -41,6 +41,8 @@
     </head>
     <body>
 
+        <section class="page-line page-line-miscellaneous"></section>
+
         <section class="header">
             <script>
                 $(function(){
@@ -48,24 +50,6 @@
                 });
             </script>
             <div id="header"></div>
-        </section>
-
-        <section class="question">
-            <script>
-                $( document ).ready(function(){
-                    $("#question").load("question.html");
-                });
-            </script>
-            <div id="question"></div>
-        </section>
-
-        <section class="notification">
-            <script>
-                $( document ).ready(function(){
-                    $("#notification").load("notification.html");
-                });
-            </script>
-            <div id="notification"></div>
         </section>
 
         <section class="content-wrapper">
@@ -76,7 +60,7 @@
                     <div class="line toolspage-line"></div>
                     <h2>Webflow shortcuts</h2>
                     <h4>All shortcuts for Webflow</h4>
-                    <p>Design and develop at the same time! Webflow gives designers and developers the power to design, build, and launch responsive websites visually, while writing clean, semantic code for you. View or buy Webflow via <a href="https://webflow.com/" target="_blank">Webflow.com</a>.</p>
+                    <p>Design and develop at the same time! Webflow gives designers and developers the power to design, build, and launch responsive websites visually, while writing clean, semantic code for you. View or buy Webflow via <a href="https://webflow.com/" class="textlink" target="_blank">Webflow.com</a>.</p>
                 </div>
                 <div class="toolspage-hero-right">
                     <img src="img/Toolspage_Development_Hero.png" alt="Designtool">
@@ -123,19 +107,37 @@
             <section class="toolspage-related-apps tools new_section">
                 <h2>Related apps</h2>
                 <div class="line toolspage-line"></div>
-                <div class="tools-design" id="tools-design-click">
+                <div class="tools-development" id="tools-development-click">
                     <div class="tools-contentbox">
-                        <div class="tools-label" id="tools-label-design"></div>
+                        <div class="tools-label" id="tools-label-development"></div>
                         <div class="tools-logos">
-                            <a class="tools-logos-available" href="toolspage-sketch.html"><img src="img/Sketch@2x.png" alt="Sketch app logo"></a>
                             <a class="tools-logos-available" href="toolspage-sublimetext.html"><img src="img/Sublime@2x.png" alt="Sublime app logo"></a>
                             <a class="tools-logos-available" href="toolspage-atom.html"><img src="img/Atom@2x.png" alt="Atom app logo"></a>
                             <a class="tools-logos-available" href="toolspage-transmit.html"><img src="img/Transmit@2x.png" alt="Transmit app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-sketch.html"><img src="img/Sketch@2x.png" alt="Sketch app logo"></a>
                         </div>
                     </div>
                 </div>
-                <a href="index.html#tools-design"><button type="button">All apps</button></a>
+                <a href="index.html#tools-development-click"><button type="button">All apps</button></a>
             </section>
+        </section>
+
+        <section class="question">
+            <script>
+                $( document ).ready(function(){
+                    $("#question").load("question.html");
+                });
+            </script>
+            <div id="question"></div>
+        </section>
+
+        <section class="notification">
+            <script>
+                $( document ).ready(function(){
+                    $("#notification").load("notification.html");
+                });
+            </script>
+            <div id="notification"></div>
         </section>
 
         <footer>

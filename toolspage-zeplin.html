@@ -42,6 +42,8 @@
     </head>
     <body>
 
+        <section class="page-line page-line-miscellaneous"></section>
+
         <section class="header">
             <script>
                 $(function(){
@@ -49,24 +51,6 @@
                 });
             </script>
             <div id="header"></div>
-        </section>
-
-        <section class="question">
-            <script>
-                $( document ).ready(function(){
-                    $("#question").load("question.html");
-                });
-            </script>
-            <div id="question"></div>
-        </section>
-
-        <section class="notification">
-            <script>
-                $( document ).ready(function(){
-                    $("#notification").load("notification.html");
-                });
-            </script>
-            <div id="notification"></div>
         </section>
 
         <section class="content-wrapper">
@@ -77,7 +61,7 @@
                     <div class="line toolspage-line"></div>
                     <h2>Zeplin shortcuts</h2>
                     <h4>All shortcuts for Zeplin</h4>
-                    <p>Design hand-off with Zeplin has never been easier. Generate styleguides and resources, automatically. Just import your design and send it to your developer. View or download Zeplin via <a href="https://zeplin.io/" target="_blank">Zeplin.io</a>.</p>
+                    <p>Design hand-off with Zeplin has never been easier. Generate styleguides and resources, automatically. Just import your design and send it to your developer. View or download Zeplin via <a href="https://zeplin.io/" class="textlink" target="_blank">Zeplin.io</a>.</p>
                 </div>
                 <div class="toolspage-hero-right">
                     <img src="img/Toolspage_Design_Hero.png" alt="Designtool">
@@ -90,7 +74,7 @@
                     	<ul class="tabs">
                     		<li class="tab-link current" data-tab="tab-1">Mac</li>
                     		<li class="tab-link" data-tab="tab-2">Windows</li>
-                    	</ul>
+                        </ul>
                         <h2>Shortcuts</h2>
                         <div class="line toolspage-line"></div>
                         <div id="tab-1" class="tab-content current">
@@ -137,6 +121,24 @@
                 </div>
                 <a href="index.html#tools-design"><button type="button">All apps</button></a>
             </section>
+        </section>
+
+        <section class="question">
+            <script>
+                $( document ).ready(function(){
+                    $("#question").load("question.html");
+                });
+            </script>
+            <div id="question"></div>
+        </section>
+
+        <section class="notification">
+            <script>
+                $( document ).ready(function(){
+                    $("#notification").load("notification.html");
+                });
+            </script>
+            <div id="notification"></div>
         </section>
 
         <footer>

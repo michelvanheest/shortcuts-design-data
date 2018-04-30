@@ -37,6 +37,8 @@
     </head>
     <body>
 
+        <section class="page-line page-line-miscellaneous"></section>
+
         <section class="header">
             <script>
                 $(function(){
@@ -44,24 +46,6 @@
                 });
             </script>
             <div id="header"></div>
-        </section>
-
-        <section class="question">
-            <script>
-                $( document ).ready(function(){
-                    $("#question").load("question.html");
-                });
-            </script>
-            <div id="question"></div>
-        </section>
-
-        <section class="notification">
-            <script>
-                $( document ).ready(function(){
-                    $("#notification").load("notification.html");
-                });
-            </script>
-            <div id="notification"></div>
         </section>
 
         <section class="content-wrapper">
@@ -72,7 +56,7 @@
                     <div class="line toolspage-line"></div>
                     <h2>Atom shortcuts</h2>
                     <h4>All shortcuts for Atom</h4>
-                    <p>Atom is the hackable text editor for the 21st Century for all your coding. View or download Atom via <a href="https://atom.io/" target="_blank">Atom.io</a>.</p>
+                    <p>Atom is the hackable text editor for the 21st Century for all your coding. View or download Atom via <a href="https://atom.io/" class="textlink" target="_blank">Atom.io</a>.</p>
                 </div>
                 <div class="toolspage-hero-right">
                     <img src="img/Toolspage_Development_Hero.png" alt="Designtool">
@@ -112,6 +96,24 @@
                 </div>
                 <a href="index.html#tools-development-click"><button type="button">All apps</button></a>
             </section>
+        </section>
+
+        <section class="question">
+            <script>
+                $( document ).ready(function(){
+                    $("#question").load("question.html");
+                });
+            </script>
+            <div id="question"></div>
+        </section>
+
+        <section class="notification">
+            <script>
+                $( document ).ready(function(){
+                    $("#notification").load("notification.html");
+                });
+            </script>
+            <div id="notification"></div>
         </section>
 
         <footer>
