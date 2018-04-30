@@ -45,6 +45,8 @@
     </head>
     <body>
 
+        <section class="page-line page-line-default"></section>        
+
         <section class="header">
             <script>
                 $(function(){
@@ -54,24 +56,6 @@
             <div id="header"></div>
         </section>
 
-        <section class="question">
-            <script>
-                $( document ).ready(function(){
-                    $("#question").load("question.html");
-                });
-            </script>
-            <div id="question"></div>
-        </section>
-
-        <section class="notification">
-            <script>
-                $( document ).ready(function(){
-                    $("#notification").load("notification.html");
-                });
-            </script>
-            <div id="notification"></div>
-        </section>
-
         <section class="content-wrapper updates">
             <div class="updates-header">
                 <h1>Shortcuts.design updates</h1>
@@ -79,7 +63,31 @@
             </div>
 
             <section class="update-list">
-            <div id="update-3">
+                <div id="update-4">
+                    <div class="updates-wrapper new_section">
+                        <div class="updates-wrapper-left">
+                            <h2>Version 1.2.1</h2>
+                            <p>April 30, 2018</p>
+                        </div>
+                        <div class="updates-wrapper-right">
+                            <h4>Added</h4>
+                            <ul class="dash">
+                                <li>Added new shortcut on the <a href="/toolspage-webflow.html" class="textlink">Weblow page</a>.</li>
+                            </ul>
+                            <h4>Improved</h4>
+                            <ul class="dash">
+                                <li>Improved usability of some parts of the site with some small visual tweaks (e.g. made Mac/Windows-switch better visible).</li>
+                            </ul>
+                            <h4>Fixed</h4>
+                            <ul class="dash">
+                                <li>Lorem ipsum</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div id="update-3">
                     <div class="updates-wrapper new_section">
                         <div class="updates-wrapper-left">
                             <h2>Version 1.2</h2>
@@ -88,11 +96,11 @@
                         <div class="updates-wrapper-right">
                             <h4>Added</h4>
                             <ul class="dash">
-                                <li>Shortcuts.design is open source, added the feature to add your own shortcuts via the <a href="https://github.com/michelvanheest/shortcuts-design-data">GitHub repo</a>.</li>
+                                <li>Shortcuts.design is open source, added the feature to add your own shortcuts via the <a href="https://github.com/michelvanheest/shortcuts-design-data" class="textlink" target="_blank">GitHub repo</a>.</li>
                                 <li>Made it possible to requests tools outside of GitHub/</li>
                                 <li>Added the possibility for the site to be used not only by Mac users but by Windows users as well (for some tools, please add the missing shortucts yourself if you want).</li>
                                 <li>Added a lot of new shortcuts (such as Framer, Zeplin, Atom, Windows and Chrome and many more).</li>
-                                <li>Added a way to support Shortcuts.design and donate a coffee to the developer via <a href="https://www.paypal.me/michelvanheest">PayPal</a>.</li>
+                                <li>Added a way to support Shortcuts.design and donate a coffee to the developer via <a href="https://www.paypal.me/michelvanheest" class="textlink" target="_blank">PayPal</a>.</li>
                             </ul>
                             <h4>Improved</h4>
                             <ul class="dash">
@@ -151,6 +159,24 @@
                     </div>
                 </div>
             </section>
+        </section>
+
+        <section class="question">
+            <script>
+                $( document ).ready(function(){
+                    $("#question").load("question.html");
+                });
+            </script>
+            <div id="question"></div>
+        </section>
+
+        <section class="notification">
+            <script>
+                $( document ).ready(function(){
+                    $("#notification").load("notification.html");
+                });
+            </script>
+            <div id="notification"></div>
         </section>
 
         <footer>
