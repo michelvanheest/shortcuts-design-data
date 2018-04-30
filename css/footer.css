@@ -28,11 +28,3 @@ footer .fa {
 footer a {
     color: #FFFFFF;
 }
-
-/*footer a:hover {
-    opacity: 0.5;
-}*/
-
-#footer_link:hover {
-    opacity: 0.5;
-}
