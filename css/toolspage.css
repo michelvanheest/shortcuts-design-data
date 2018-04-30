@@ -91,7 +91,7 @@ td:nth-child(even) {
 }
 
 td {
-    line-height: 29px;
+    line-height: 33px;
     border-bottom: 1px solid #DDDDDD;
     vertical-align: top;
 }
