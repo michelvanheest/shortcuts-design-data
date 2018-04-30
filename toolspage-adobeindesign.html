@@ -91,7 +91,12 @@
                             <div id="tab-2" class="tab-content">
                                 <div class="toolspage-shortcuts-tables">
                                     <section class="data">
-                                        <h4 class="h4-light">Working on these <i>right now</i>! Come back within a week or add them yourself via <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank"> GitHub</a> in the meantime.</h4 class="h4-light">
+                                        <script>
+                                            $( document ).ready(function(){
+                                                $("#data-adobeindesign-windows").load("data/Design/toolspage-adobeindesign-windows.html");
+                                            });
+                                        </script>
+                                        <div id="data-adobeindesign-windows"></div>
                                     </section>
                                 </div>
                             </div>
