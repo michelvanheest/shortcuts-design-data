@@ -1,6 +1,3 @@
-[submodule "data-test"]
-	path = data-test
-	url = https://michelvanheest@github.com/michelvanheest/shortcuts-design-data
 [submodule "test-repo"]
 	path = test-repo
 	url = https://michelvanheest@github.com/michelvanheest/test-repo
