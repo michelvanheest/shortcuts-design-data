@@ -6,6 +6,10 @@
     padding-top: 100px;
 }
 
+.statement {
+    padding-bottom: 100px;
+}
+
 @media only screen and (min-width: 768px) {
     .statement-content {
         max-width: 800px !important;
