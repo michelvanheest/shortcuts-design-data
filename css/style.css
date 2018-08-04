@@ -170,6 +170,7 @@ button:hover{
     -webkit-transform:scale(1.03,1.03);
     -moz-transform:scale(1.03,1.03);
     cursor: pointer;
+    box-shadow: 0 10px 25px 0 rgba(127,127,127,0.50);
 }
 
 .button:hover{
