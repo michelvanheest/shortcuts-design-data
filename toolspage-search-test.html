@@ -37,14 +37,14 @@
                 <div class="toolspage-shortcuts-wrapper">
                     <div class="container">
                     	<ul class="tabs">
-                    		<li class="tab-link current" data-tab="tab-1">Mac</li>
-                    		<li class="tab-link" data-tab="tab-2">Windows</li>
+                    		<li class="tab-link current" data-tab="tab-1">HARDCODED</li>
+                    		<li class="tab-link" data-tab="tab-2">SUBMODULE</li>
                         </ul>
                         <h2>Shortcuts</h2>
                         <div class="line toolspage-line"></div>
                         <div id="tab-1" class="tab-content current">
                             <div class="toolspage-shortcuts-tables">
-                                <!--FRAMER TEST-DATA, THIS IS HARDCODED-->
+                                <!--Slack TEST-DATA, THIS IS HARDCODED-->
                                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for shortcuts.." title="Type in a shortcut">
 
                                 <style>
@@ -53,28 +53,70 @@
                                     }
                                 </style>
 
-                                <h3>General</h3>
+                                <h3>Navigation</h3>
                                 <div class="toolspage-shortcuts-table">
-                                    <table id="myUL">
-                                        <!-- <tr><td><a href="#">New File</a></td><td><a href="#">⌘ N</a></td></tr>
-                                        <tr><td><a href="#">Open File</a></td><td>⌘ O</td></tr>
-                                        <tr><td><a href="#">Close File</a></td><td>⌘ W</td></tr>
-                                        <tr><td><a href="#">Save</a></td><td>⌘ S</td></tr>
-                                        <tr><td><a href="#">Save As...</a></td><td>⇧ ⌘ S</td></tr>
-                                        <tr><td><a href="#">Save to Cloud</a></td><td>⌃ ⌘ S</td></tr> -->
-                                        <tr><td>New File</td><td>⌘ N</td></tr>
-                                        <tr><td>Open File</td><td>⌘ O</td></tr>
-                                        <tr><td>Close File</td><td>⌘ W</td></tr>
-                                        <tr><td>Save</td><td>⌘ S</td></tr>
-                                        <tr><td>Save As...</td><td>⇧ ⌘ S</td></tr>
-                                        <tr><td>Save to Cloud</td><td>⌃ ⌘ S</td></tr>
+                                    <!-- <table> -->
+                                    <table id="myUL"> <!--REMOVE THIS !!!-->
+                                        <tr><td id="tdbig">Navigation2</td></tr> <style>#tdbig{color:red}</style>
+                                        <tr><td>Move focus to the next element</td><td>Tab</td></tr>
+                                        <tr><td>Move focus to the previous element</td><td>⇧ Tab </td></tr>
+                                        <tr><td>Move focus through messages in a channel or DM</td><td>↑ or ↓ </td></tr>
+                                        <tr><td>Move focus to the next section*</td><td>⌃ `</td></tr>
+                                        <tr><td>Move focus to the previous section*</td><td>⇧ ⌃ `</td></tr>
+                                        <tr><td>Take action or "click" on buttons</td><td>Spacebar</td></tr>
+                                        <tr><td>Take action or "click" on links</td><td>Enter</td></tr>
+                                        <tr><td>Close windows, menus, or the message input box</td><td>Esc</td></tr>
+                                        <tr><td>Zoom in or out</td><td>⌘ +</td></tr>
+                                        <tr><td>(increase or decrease text size)</td><td>⌘ -</td></tr>
+                                        <tr><td>Scroll up</td><td>Fn↑ </td></tr>
+                                        <tr><td>(This can be toggled in your Preferences.)</td><td>Page Up</td></tr>
+                                        <tr><td>Scroll down</td><td>Fn↓ </td></tr>
+                                        <tr><td>(This can be toggled in your Preferences.)</td><td>Page Down</td></tr>
+                                        <tr><td>Quick Switcher</td><td>⌘ K</td></tr>
+                                        <tr><td>(T is desktop app only.)</td><td>⌘ T</td></tr>
+                                        <tr><td>Open direct messages menu</td><td>⌘ ⇧ K</td></tr>
+                                        <tr><td>Open All Threads view</td><td>⌘ ⇧ T</td></tr>
+                                        <tr><td>Previous channel or DM</td><td>Alt↑ </td></tr>
+                                        <tr><td>Next channel or DM</td><td>Alt↓ </td></tr>
+                                        <tr><td>Previous unread channel or DM</td><td>Alt ⇧ ↑ </td></tr>
+                                        <tr><td>Next unread channel or DM</td><td>Alt⇧ ↓ </td></tr>
+                                        <tr><td>Previous channel or DM visited</td><td>⌘ [</td></tr>
+                                        <tr><td>Next channel or DM visited</td><td>⌘ ]</td></tr>
+                                        <tr><td>Preferences</td><td>⌘ ,</td></tr>
+                                        <tr><td>Open or close right pane</td><td>⌘ .</td></tr>
+                                        <tr><td>Channel info pane</td><td>⌘ ⇧ I</td></tr>
+                                        <tr><td>Activity</td><td>⌘ ⇧ M</td></tr>
+                                        <tr><td>Directory</td><td>⌘ ⇧ E</td></tr>
+                                        <tr><td>Starred Items</td><td>⌘ ⇧ S</td></tr>
+                                        <tr><td>Search the current channel or conversation</td><td>⌘ F</td></tr>
+                                        <tr><td>Toggle full screen view</td><td>^ ⌘ F</td></tr>
+                                        <tr><td id="tdbig">All Unreads navigation2</td></tr> <style>#tdbig{color:red}</style>
+                                        <tr><td>Open All Unreads view</td><td>⌘ ⇧ A</td></tr>
+                                        <tr><td>Mark messages as unread</td><td>Alt and click a message</td></tr>
+                                        <tr><td>Move between channels</td><td>→ or ← </td></tr>
+                                        <tr><td>Toggle current channel read or unread</td><td>R</td></tr>
                                     </table>
                                 </div>
+                                <!-- <h3>All Unreads navigation</h3>
+                                <div class="toolspage-shortcuts-table">
+                                    <table id="myUL2">
+
+                                    </table>
+                                </div> -->
                             </div>
                         </div>
                         <div id="tab-2" class="tab-content">
                             <div class="toolspage-shortcuts-tables">
                                 <!--SLACK TEST-DATA, THIS IS LOADED FROM THE SLACK SUBMODULE-->
+                                <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for shortcuts.." title="Type in a shortcut"> -->
+
+                                <style>
+                                    input#myInput {
+                                        margin-top: 54px;
+                                    }
+                                </style>
+
+                            
                                 <section class="data">
                                     <script>
                                         $( document ).ready(function(){
@@ -89,7 +131,9 @@
                 </div>
             </section>
         </section>
-
+        
+        
+        <!--MOVE THIS SCRIPT OUT OF THE HTML FILE-->
         <script>
             function myFunction() {
                 var input, filter, ul, li, a, i;
