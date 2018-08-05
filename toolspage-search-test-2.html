@@ -33,6 +33,15 @@
 
         <section class="content-wrapper">
 
+            <!--UNIVERSAL SEARCH-->
+            <input id="myInput" type="text" placeholder="Search..">
+
+            <style>
+                input#myInput {
+                    margin-top: 54px;
+                }
+            </style>
+
             <section class="toolspage-shortucts new_section">
                 <div class="toolspage-shortcuts-wrapper">
                     <div class="container">
@@ -45,13 +54,13 @@
                         <div id="tab-1" class="tab-content current">
                             <div class="toolspage-shortcuts-tables">
                                 <!--Slack TEST-DATA, THIS IS HARDCODED-->
-                                <input id="myInput-0" type="text" placeholder="Search..">
+                                <!-- <input id="myInput-0" type="text" placeholder="Search..">
 
                                 <style>
                                     input#myInput-0 {
                                         margin-top: 54px;
                                     }
-                                </style>
+                                </style> -->
 
                                 <div class="toolspage-shortcuts-table">
                                     <!-- <table>
@@ -86,8 +95,18 @@
                                         </tbody>
                                     </table> -->
                                     <table>
-                                        <tr><th>Navigation2</th></tr>
-                                        <tbody id="myTable-0">
+                                        <tr><th colspan="2">Navigation0</th></tr>
+                                        <tbody id="myTable">
+                                            <tr><td>testdata</td><td>Tab</td></tr>
+                                            <tr><td>testdata</td><td>⇧ Tab </td></tr>
+                                            <tr><td>testdata</td><td>↑ or ↓ </td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    
+                                    <table>
+                                        <tr><th colspan="2">Navigation2</th></tr>
+                                        <tbody id="myTable">
                                             <tr><td>Move focus to the next element</td><td>Tab</td></tr>
                                             <tr><td>Move focus to the previous element</td><td>⇧ Tab </td></tr>
                                             <tr><td>Move focus through messages in a channel or DM</td><td>↑ or ↓ </td></tr>
@@ -121,8 +140,8 @@
                                             <tr><td>Search the current channel or conversation</td><td>⌘ F</td></tr>
                                             <tr><td>Toggle full screen view</td><td>^ ⌘ F</td></tr>
                                         </tbody>
-                                        <tr><th>All unreads navigation2</th></tr>
-                                        <tbody id="myTable-0">
+                                        <tr><th colspan="2">All unreads navigation2</th></tr>
+                                        <tbody id="myTable">
                                             <tr><td>Open All Unreads view</td><td>⌘ ⇧ A</td></tr>
                                             <tr><td>Mark messages as unread</td><td>Alt and click a message</td></tr>
                                             <tr><td>Move between channels</td><td>→ or ← </td></tr>
@@ -135,13 +154,13 @@
                         <div id="tab-2" class="tab-content">
                             <div class="toolspage-shortcuts-tables">
                                 <!--SLACK TEST-DATA, THIS IS LOADED FROM THE SLACK SUBMODULE-->
-                                <input id="myInput" type="text" placeholder="Search..">
+                                <!-- <input id="myInput" type="text" placeholder="Search..">
 
                                 <style>
                                     input#myInput {
                                         margin-top: 54px;
                                     }
-                                </style>
+                                </style> -->
 
                             
                                 <section class="data">
@@ -161,7 +180,7 @@
         
         
         <!--MOVE THIS SCRIPT OUT OF THE HTML FILE-->
-        <script>
+        <!-- <script>
         $(document).ready(function(){
             $("#myInput-0").on("keyup", function() {
             var value = $(this).val().toLowerCase();
@@ -170,7 +189,7 @@
             });
             });
         });
-        </script>
+        </script> -->
 
         <script>
         $(document).ready(function(){

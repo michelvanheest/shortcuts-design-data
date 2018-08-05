@@ -20,7 +20,7 @@ h2 {
     margin: 20px 0px 20px 0px;
 }
 
-h3 {
+h3, th {
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 700;

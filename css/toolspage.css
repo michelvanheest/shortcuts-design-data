@@ -72,6 +72,14 @@ table {
     table-layout: fixed;
 }
 
+th {
+    padding: 36px 0px;
+}
+
+th:hover {
+    background-color: #fbfbfb;
+}
+
 tr {
     width: 100%;
     transition-property: all;
