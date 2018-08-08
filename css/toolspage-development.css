@@ -1,16 +1,11 @@
 a {
-    color: #71FF9A;
+    color: #70F7C7;
 }
 
-.toolspage-line {
-    background-color: #71FF9A;
+.toolspage-line, ul.tabs li.current, .page-line-miscellaneous {
+    background-color: #70F7C7;
 }
 
 ul.tabs li.current {
-	background: #71FF9A;
 	color: #333;
-}
-
-.page-line-miscellaneous {
-    background-color: #71FF9A;
 }

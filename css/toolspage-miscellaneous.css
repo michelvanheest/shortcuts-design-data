@@ -2,15 +2,10 @@ a {
     color: #F171FF;
 }
 
-.toolspage-line {
+.toolspage-line, ul.tabs li.current, .page-line-miscellaneous {
     background-color: #F171FF;
 }
 
 ul.tabs li.current {
-	background: #F171FF;
 	color: white;
-}
-
-.page-line-miscellaneous {
-    background-color: #F171FF;
 }

@@ -196,6 +196,12 @@
     margin: 30px 0px 30px 0px;
 }
 
+.tools-productivity {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+}
+
 .tools-miscellaneous {
     display: flex;
     justify-content: center;
@@ -236,8 +242,13 @@
 }
 
 #tools-label-development {
-    background-color: #71FF9A;
+    background-color: #70F7C7;
 }
+
+#tools-label-productivity {
+    background-color: #70CAF7;
+}
+
 #tools-label-miscellaneous {
     background-color: #F171FF;
 }
@@ -247,7 +258,7 @@
 }
 
 #label-request {
-    background-color: #71A8FF;
+    background-color: #6BEDE7;
 }
 
 #label-send {

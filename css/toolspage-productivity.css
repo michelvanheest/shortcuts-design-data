@@ -1,11 +1,11 @@
 a {
-    color: #FF718E;
+    color: #70CAF7;
 }
 
 .toolspage-line, ul.tabs li.current, .page-line-miscellaneous {
-    background-color: #FF718E;
+    background-color: #70CAF7;
 }
 
 ul.tabs li.current {
-	color: white;
+	color: #333;
 }
