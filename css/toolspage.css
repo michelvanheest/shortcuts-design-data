@@ -6,6 +6,58 @@
     background-color: #FF718E;
 }*/
 
+h1 {
+    font-size: 24px !important;
+    color: #979797 !important;
+    margin-bottom: -10px !important;
+}
+
+.fa.fa-github {
+    font-size: 18px;
+    transition-property: none;
+}
+
+.fa.fa-github:hover {
+    transform: none;
+}
+
+/* .content-wrapper:after {
+    content: url("../img/backgroundDesign.svg");
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    z-index: -1;
+} */
+
+@media only screen and (max-width: 992px) {
+    .blob {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .blob {
+        width: 50vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .blob {
+        width: 50vw;
+        position: absolute;
+        top: -100px;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+
+
 .toolspage-hero {
     display: flex;
     padding-top: 100px;
@@ -18,18 +70,23 @@
     }
 }
 
-.toolspage-hero-left {
-    width: 50vw;
+.toolspage-hero-left p {
+    /* width: 40vw; */
+    max-width: 575px;
 
 }
 
 @media only screen and (max-width: 1023px) {
-    .toolspage-hero-left {
+    .toolspage-hero-left p {
         width: 100%;
+    }
+
+    input {
+        width: 90%;
     }
 }
 
-.toolspage-hero-right {
+/* .toolspage-hero-right {
     width: 50vw;
     height: 100%;
     display: block;
@@ -46,7 +103,51 @@
 .toolspage-hero-right img {
     width: 100%;
     height: 100%;
+} */
+
+input {
+    width: 100%;
+    font-size: 25px;
+    font-family:  'Nunito', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    background: #FFFFFF;
+    box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
+    -webkit-box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
+    -moz-box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
+    -webkit-appearance: none; /*Fixes box-shadow on iOS*/
+    border: none;
+    border: 0;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    margin: 50px 0px;
 }
+
+::-webkit-input-placeholder { /* Chrome */
+    color: rgba(51,51,51,0.25);;
+    transition: opacity 250ms ease-in-out;
+  }
+
+:-ms-input-placeholder { /* IE 10+ */
+color: rgba(51,51,51,0.25);;
+transition: opacity 250ms ease-in-out;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+color: rgba(51,51,51,0.25);;
+opacity: 1;
+transition: opacity 250ms ease-in-out;
+}
+
+:-moz-placeholder { /* Firefox 4 - 18 */
+color: rgba(51,51,51,0.25);;
+opacity: 1;
+transition: opacity 250ms ease-in-out;
+}
+
+
 
 .toolspage-shortcuts-wrapper {
     /*width: 100%;*/
