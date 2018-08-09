@@ -6,21 +6,6 @@
     background-color: #FF718E;
 }*/
 
-h1 {
-    font-size: 24px !important;
-    color: #979797 !important;
-    margin-bottom: -10px !important;
-}
-
-.fa.fa-github {
-    font-size: 18px;
-    transition-property: none;
-}
-
-.fa.fa-github:hover {
-    transform: none;
-}
-
 /* .content-wrapper:after {
     content: url("../img/backgroundDesign.svg");
     position: absolute;
@@ -56,7 +41,20 @@ h1 {
     }
 }
 
+h1 {
+    font-size: 24px !important;
+    color: #979797 !important;
+    margin-bottom: -10px !important;
+}
 
+.fa.fa-github {
+    font-size: 18px;
+    transition-property: none;
+}
+
+.fa.fa-github:hover {
+    transform: none;
+}
 
 .toolspage-hero {
     display: flex;
@@ -80,10 +78,6 @@ h1 {
     .toolspage-hero-left p {
         width: 100%;
     }
-
-    input {
-        width: 90%;
-    }
 }
 
 /* .toolspage-hero-right {
@@ -106,8 +100,8 @@ h1 {
 } */
 
 input {
-    width: 100%;
-    font-size: 25px;
+    width: 90%;
+    font-size: 18px;
     font-family:  'Nunito', sans-serif;
     font-weight: 700;
     color: #333333;
@@ -123,6 +117,25 @@ input {
     padding-bottom: 15px;
     padding-left: 25px;
     margin: 50px 0px;
+}
+
+@media only screen and (min-width: 374px) {
+    input {
+        /* width: 96%; */
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    input {
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    input {
+        width: 100%;
+    }
 }
 
 ::-webkit-input-placeholder { /* Chrome */
@@ -147,13 +160,11 @@ opacity: 1;
 transition: opacity 250ms ease-in-out;
 }
 
-
-
 .toolspage-shortcuts-wrapper {
     /*width: 100%;*/
     width: 80%;
     margin: auto;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 @media only screen and (max-width: 1023px) {
@@ -175,6 +186,10 @@ table {
 
 th {
     padding: 36px 0px;
+}
+
+#myTable {
+    margin-top: -36px;
 }
 
 th:hover {
