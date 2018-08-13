@@ -116,7 +116,7 @@ input {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 25px;
-    margin: 50px 0px;
+    margin: 50px 0px 45px 0px;
 }
 
 @media only screen and (min-width: 374px) {
@@ -162,6 +162,11 @@ transition: opacity 250ms ease-in-out;
 
 input:focus {
     outline: none;
+}
+
+.edit a {
+    display: block;
+    line-height: 29px;
 }
 
 .toolspage-shortcuts-wrapper {
