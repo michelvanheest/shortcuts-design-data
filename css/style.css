@@ -3,6 +3,8 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: #FBFBFB;
     overflow-x: hidden;
+    /* -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; */
 }
 
 h1 {
