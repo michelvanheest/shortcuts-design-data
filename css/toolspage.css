@@ -160,6 +160,10 @@ opacity: 1;
 transition: opacity 250ms ease-in-out;
 }
 
+input:focus {
+    outline: none;
+}
+
 .toolspage-shortcuts-wrapper {
     /*width: 100%;*/
     width: 80%;

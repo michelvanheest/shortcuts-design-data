@@ -37,7 +37,6 @@
         <meta name="description" content="Shortcuts.design is the ultimate shortcut reference for designers. Charge your workflow in Sketch with all the Sketch shortcuts in one place 👨‍🎨">
     </head>
     <body>
-
         <section class="header">
             <script>
                 $(function(){
@@ -60,9 +59,22 @@
                 </div>
             </section>
 
+            <style>
+                .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 85%;
+                    margin-top: 10px !important;
+                }
+        
+                .sticky + .edit {
+                    padding-top: 160px;
+                }
+            </style>
+            
             <!--UNIVERSAL SEARCH-->
-            <section class="toolspage-search">
-                <input id="myInput" type="text" placeholder="Search for shortcuts...">
+            <section class="toolspage-search" id="stickyInput">
+                    <input id="myInput" type="text" placeholder="Search for shortcuts...">
             </section>
 
             <section class="edit">
@@ -119,6 +131,21 @@
             </script>
             <div id="notification"></div>
         </section>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var stickyInput = document.getElementById("stickyInput");
+            var sticky = stickyInput.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                stickyInput.classList.add("sticky")
+                } else {
+                stickyInput.classList.remove("sticky");
+                }
+            }
+        </script>
 
         <footer>
             <script>
