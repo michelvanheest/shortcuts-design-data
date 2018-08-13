@@ -17,10 +17,10 @@
 
 .hero-left {
     width: 50vw;
-    background-image: url(../img/Confetti@2x.png);
+    background-image: url(../img/ConfettiV8@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -25px;
+    background-position: -180px -5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
