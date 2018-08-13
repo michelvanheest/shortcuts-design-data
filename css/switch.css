@@ -44,6 +44,7 @@ ul.tabs li:hover {
 @media only screen and (min-width: 768px) {
 	ul.tabs {
 		margin: 0px 0px -80px 0px;
+		transform: translateY(3px);
 	}
 }
 
