@@ -31,7 +31,7 @@
     margin-bottom: -3px;
 }
 
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 415px) {
     .button-wide {
         max-width: 400px !important;
         padding: 10px 0px 10px 0px;
