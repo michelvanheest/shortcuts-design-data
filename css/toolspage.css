@@ -59,12 +59,20 @@ h1 {
 .toolspage-hero {
     display: flex;
     padding-top: 100px;
+    max-width: 50%;
 }
 
 @media only screen and (max-width: 1023px) {
     .toolspage-hero {
         display: block;
         padding-top: 50px;
+        max-width: 65%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .toolspage-hero {
+        max-width: 100%;
     }
 }
 
