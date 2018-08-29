@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/homepage.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon@2x.png"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/search.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99827935-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -37,8 +38,6 @@
     </head>
     <body>
 
-        <section class="page-line page-line-miscellaneous"></section>
-
         <section class="header">
             <script>
                 $(function(){
@@ -48,25 +47,30 @@
             <div id="header"></div>
         </section>
 
+        <object type="image/svg+xml" data="img/backgroundDesign.svg" class="blob"></object>
+
         <section class="content-wrapper">
 
             <section class="toolspage-hero">
                 <div class="toolspage-hero-left">
                     <h1>Shortcuts.design</h1>
-                    <div class="line toolspage-line"></div>
                     <h2>Sketch shortcuts</h2>
-                    <h4>All shortcuts for Sketch</h4>
+                    <div class="line toolspage-line"></div>
                     <p>Sketch by Bohemian Code is the app for all modern digital-, web-, UI/UX-, vector- and icon-designer. It’s flexibility and speed gives the designer the power to make better designs more quickly. View or buy Sketch via <a href="https://sketchapp.com/" class="textlink" target="_blank">Sketchapp.com</a> or view all Sketch shortcuts below.</p>
                 </div>
-                <div class="toolspage-hero-right">
-                    <img src="img/Toolspage_Design_Hero.png" alt="Designtool">
-                </div>
+            </section>
+
+            <!--UNIVERSAL SEARCH-->
+            <section class="toolspage-search">
+                <input id="myInput" type="text" placeholder="Search for shortcuts...">
+            </section>
+
+            <section class="edit">
+                <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-sketch.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add shortcuts on Github</strong></a>
             </section>
 
             <section class="toolspage-shortucts new_section">
                 <div class="toolspage-shortcuts-wrapper">
-                    <h2>Shortcuts</h2>
-                    <div class="line toolspage-line"></div>
                     <div class="toolspage-shortcuts-tables">
                     <section class="data">
                             <script>

@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/toolspage-development.css">
+        <link rel="stylesheet" href="css/toolspage-design.css">
         <link rel="stylesheet" href="css/toolspage.css">
         <link rel="stylesheet" href="css/homepage.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon@2x.png"/>
@@ -33,11 +33,10 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-        <title>Transmit shortcuts | All shortucts for Transmit</title>
-        <meta name="description" content="Shortcuts.design is the ultimate shortcut reference for designers. Charge your workflow in Transmit with all the shortcuts in one place 👨‍💻">
+        <title>Sketch shortcuts | All shortucts for Sketch</title>
+        <meta name="description" content="Shortcuts.design is the ultimate shortcut reference for designers. Charge your workflow in Sketch with all the Sketch shortcuts in one place 👨‍🎨">
     </head>
     <body>
-
         <section class="header">
             <script>
                 $(function(){
@@ -47,38 +46,51 @@
             <div id="header"></div>
         </section>
 
-        <object type="image/svg+xml" data="img/backgroundDevelopment.svg" class="blob"></object>
-
+        <object type="image/svg+xml" data="img/backgroundDesign.svg" class="blob"></object>
+        
         <section class="content-wrapper">
 
             <section class="toolspage-hero">
                 <div class="toolspage-hero-left">
                     <h1>Shortcuts.design</h1>
-                    <h2>Transmit shortcuts</h2>
+                    <h2>Sketch shortcuts</h2>
                     <div class="line toolspage-line"></div>
-                    <p>Transmit is the fastest macOS FTP client. Upload, download, and manage files on tons of servers with an easy, familiar, and powerful UI. View or buy Transmit via <a href="https://panic.com/transmit/" class="textlink" target="_blank">Panic.com</a>.</p>
+                    <p>Sketch by Bohemian Code is the app for all modern digital-, web-, UI/UX-, vector- and icon-designer. It’s flexibility and speed gives the designer the power to make better designs more quickly. View or buy Sketch via <a href="https://sketchapp.com/" class="textlink" target="_blank">Sketchapp.com</a> or view all Sketch shortcuts below.</p>
                 </div>
             </section>
 
+            <style>
+                .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 85%;
+                    margin-top: 10px !important;
+                }
+        
+                .sticky + .edit {
+                    padding-top: 160px;
+                }
+            </style>
+            
             <!--UNIVERSAL SEARCH-->
-            <section class="toolspage-search">
-                <input id="myInput" type="text" placeholder="Search for shortcuts...">
+            <section class="toolspage-search" id="stickyInput">
+                    <input id="myInput" type="text" placeholder="Search for shortcuts...">
             </section>
 
             <section class="edit">
-                <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Development/toolspage-transmit.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add shortcuts on Github</strong></a>
+                <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-sketch.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit on Github</strong></a>
             </section>
 
             <section class="toolspage-shortucts new_section">
                 <div class="toolspage-shortcuts-wrapper">
                     <div class="toolspage-shortcuts-tables">
-                        <section class="data">
+                    <section class="data">
                             <script>
                                 $( document ).ready(function(){
-                                    $("#data-transmit").load("data-live/Development/toolspage-transmit.html");
+                                    $("#data-sketch").load("data-live/Design/toolspage-sketch.html");
                                 });
                             </script>
-                            <div id="data-transmit"></div>
+                            <div id="data-sketch"></div>
                         </section>
                     </div>
                 </div>
@@ -87,18 +99,18 @@
             <section class="toolspage-related-apps tools new_section">
                 <h2>Related apps</h2>
                 <div class="line toolspage-line"></div>
-                <div class="tools-development" id="tools-development-click">
+                <div class="tools-design" id="tools-design-click">
                     <div class="tools-contentbox">
-                        <div class="tools-label" id="tools-label-development"></div>
+                        <div class="tools-label" id="tools-label-design"></div>
                         <div class="tools-logos">
-                            <a class="tools-logos-available" href="toolspage-sublimetext.html"><img src="img/Sublime@2x.png" alt="Sublime app logo"></a>
-                            <a class="tools-logos-available" href="toolspage-atom.html"><img src="img/Atom@2x.png" alt="Atom app logo"></a>
-                            <img src="img/Sourcetree@2x.png" alt="Sourcetree app logo" class="tools-logos-unavailable">
-                            <img src="img/GitHubDesktop@2x.png" alt="GitHub Desktop app logo" class="tools-logos-unavailable">
+                            <a class="tools-logos-available" href="toolspage-principle.html"><img src="img/Principle@2x.png" alt="Principle app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-invision.html"><img src="img/InVision@2x.png" alt="InVision app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-framer.html"><img src="img/Framer@2x.png" alt="Framer app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-zeplin.html"><img src="img/Zeplin@2x.png" alt="Zeplin app logo"></a>
                         </div>
                     </div>
                 </div>
-                <a href="index.html#tools-development-click"><button type="button">All apps</button></a>
+                <a href="index.html#tools-design"><button type="button">All apps</button></a>
             </section>
         </section>
 
@@ -119,6 +131,21 @@
             </script>
             <div id="notification"></div>
         </section>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var stickyInput = document.getElementById("stickyInput");
+            var sticky = stickyInput.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                stickyInput.classList.add("sticky")
+                } else {
+                stickyInput.classList.remove("sticky");
+                }
+            }
+        </script>
 
         <footer>
             <script>

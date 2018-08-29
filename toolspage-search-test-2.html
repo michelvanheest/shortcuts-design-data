@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/toolspage-design.css">
+        <link rel="stylesheet" href="css/toolspage.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/switch.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+        <script src="js/switch.js"></script>
+        <link rel="shortcut icon" type="image/png" href="img/favicon@2x.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <section class="page-line page-line-miscellaneous"></section>
+
+        <!-- <section class="header">
+            <script>
+                $(function(){
+                    $("#header").load("header.html");
+                });
+            </script>
+            <div id="header"></div>
+        </section> -->
+
+        <section class="content-wrapper">
+
+            <!--UNIVERSAL SEARCH-->
+            <input id="myInput" type="text" placeholder="Search for shortcuts...">
+
+            <style>
+                input#myInput {
+                    margin-top: 54px;
+                }
+            </style>
+
+            <section class="toolspage-shortucts new_section">
+                <div class="toolspage-shortcuts-wrapper">
+                    <div class="container">
+                    	<ul class="tabs">
+                    		<li class="tab-link current" data-tab="tab-1">HARDCODED</li>
+                    		<li class="tab-link" data-tab="tab-2">SUBMODULE</li>
+                        </ul>
+                        <h2>Shortcuts</h2>
+                        <div class="line toolspage-line"></div>
+                        <div id="tab-1" class="tab-content current">
+                            <div class="toolspage-shortcuts-tables">
+                                <!--Slack TEST-DATA, THIS IS HARDCODED-->
+                                <!-- <input id="myInput-0" type="text" placeholder="Search..">
+
+                                <style>
+                                    input#myInput-0 {
+                                        margin-top: 54px;
+                                    }
+                                </style> -->
+
+                                
+                                    <!-- <tbody>
+                                        <thead>
+                                            <tr>
+                                            <th>Firstname</th>
+                                            <th>Lastname</th>
+                                            <th>Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="myTable">
+                                            <tr>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>john@example.com</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Mary</td>
+                                            <td>Moe</td>
+                                            <td>mary@mail.com</td>
+                                            </tr>
+                                            <tr>
+                                            <td>July</td>
+                                            <td>Dooley</td>
+                                            <td>july@greatstuff.com</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Anja</td>
+                                            <td>Ravendale</td>
+                                            <td>a_r@test.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </tbody> -->
+                                    <tbody>
+                                        <tr><th colspan="2">Navigation0</th></tr>
+                                        <tbody id="myTable">
+                                            <tr><td>testdata</td><td>Tab</td></tr>
+                                            <tr><td>testdata</td><td>⇧ Tab </td></tr>
+                                            <tr><td>testdata</td><td>↑ or ↓ </td></tr>
+                                        </tbody>
+                                    </tbody>
+
+                                    
+                                    <tbody>
+                                        <tr><th colspan="2">Navigation2</th></tr>
+                                        <tbody id="myTable">
+                                            <tr><td>Move focus to the next element</td><td>Tab</td></tr>
+                                            <tr><td>Move focus to the previous element</td><td>⇧ Tab </td></tr>
+                                            <tr><td>Move focus through messages in a channel or DM</td><td>↑ or ↓ </td></tr>
+                                            <tr><td>Move focus to the next section*</td><td>⌃ `</td></tr>
+                                            <tr><td>Move focus to the previous section*</td><td>⇧ ⌃ `</td></tr>
+                                            <tr><td>Take action or "click" on buttons</td><td>Spacebar</td></tr>
+                                            <tr><td>Take action or "click" on links</td><td>Enter</td></tr>
+                                            <tr><td>Close windows, menus, or the message input box</td><td>Esc</td></tr>
+                                            <tr><td>Zoom in or out</td><td>⌘ +</td></tr>
+                                            <tr><td>(increase or decrease text size)</td><td>⌘ -</td></tr>
+                                            <tr><td>Scroll up</td><td>Fn↑ </td></tr>
+                                            <tr><td>(This can be toggled in your Preferences.)</td><td>Page Up</td></tr>
+                                            <tr><td>Scroll down</td><td>Fn↓ </td></tr>
+                                            <tr><td>(This can be toggled in your Preferences.)</td><td>Page Down</td></tr>
+                                            <tr><td>Quick Switcher</td><td>⌘ K</td></tr>
+                                            <tr><td>(T is desktop app only.)</td><td>⌘ T</td></tr>
+                                            <tr><td>Open direct messages menu</td><td>⌘ ⇧ K</td></tr>
+                                            <tr><td>Open All Threads view</td><td>⌘ ⇧ T</td></tr>
+                                            <tr><td>Previous channel or DM</td><td>Alt↑ </td></tr>
+                                            <tr><td>Next channel or DM</td><td>Alt↓ </td></tr>
+                                            <tr><td>Previous unread channel or DM</td><td>Alt ⇧ ↑ </td></tr>
+                                            <tr><td>Next unread channel or DM</td><td>Alt⇧ ↓ </td></tr>
+                                            <tr><td>Previous channel or DM visited</td><td>⌘ [</td></tr>
+                                            <tr><td>Next channel or DM visited</td><td>⌘ ]</td></tr>
+                                            <tr><td>Preferences</td><td>⌘ ,</td></tr>
+                                            <tr><td>Open or close right pane</td><td>⌘ .</td></tr>
+                                            <tr><td>Channel info pane</td><td>⌘ ⇧ I</td></tr>
+                                            <tr><td>Activity</td><td>⌘ ⇧ M</td></tr>
+                                            <tr><td>Directory</td><td>⌘ ⇧ E</td></tr>
+                                            <tr><td>Starred Items</td><td>⌘ ⇧ S</td></tr>
+                                            <tr><td>Search the current channel or conversation</td><td>⌘ F</td></tr>
+                                            <tr><td>Toggle full screen view</td><td>^ ⌘ F</td></tr>
+                                        </tbody>
+                                        <tr><th colspan="2">All unreads navigation2</th></tr>
+                                        <tbody id="myTable">
+                                            <tr><td>Open All Unreads view</td><td>⌘ ⇧ A</td></tr>
+                                            <tr><td>Mark messages as unread</td><td>Alt and click a message</td></tr>
+                                            <tr><td>Move between channels</td><td>→ or ← </td></tr>
+                                            <tr><td>Toggle current channel read or unread</td><td>R</td></tr>
+                                        </tbody>
+                                    </tbody>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <div class="toolspage-shortcuts-tables">
+                                <!--SLACK TEST-DATA, THIS IS LOADED FROM THE SLACK SUBMODULE-->
+                                <!-- <input id="myInput" type="text" placeholder="Search..">
+
+                                <style>
+                                    input#myInput {
+                                        margin-top: 54px;
+                                    }
+                                </style> -->
+
+                            
+                                <section class="data">
+                                    <script>
+                                        $( document ).ready(function(){
+                                            $("#data-slack-mac").load("data-live/Miscellaneous/toolspage-search-test.html");
+                                        });
+                                    </script>
+                                    <div id="data-slack-mac"></div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        
+        <!--MOVE THIS SCRIPT OUT OF THE HTML FILE-->
+        <!-- <script>
+        $(document).ready(function(){
+            $("#myInput-0").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable-0 tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+            });
+        });
+        </script> -->
+
+        <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+            });
+        });
+        </script>
+    </body>
+</html>
