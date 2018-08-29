@@ -30,6 +30,7 @@
 @media only screen and (max-width: 1000px) {
     .hero-left {
         width: 85%;
+        background-image: none;
         justify-content: flex-start;
         margin: auto;
     }
