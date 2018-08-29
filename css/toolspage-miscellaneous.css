@@ -2,6 +2,10 @@ a {
     color: #F171FF;
 }
 
+.fa.fa-github {
+    color: #F171FF !important;
+}
+
 .toolspage-line, ul.tabs li.current, .page-line-miscellaneous {
     background-color: #F171FF;
 }
