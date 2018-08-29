@@ -105,7 +105,7 @@ h1 {
 
 input {
     width: calc(100% - 25px);
-    font-size: 18px;
+    font-size: 25px;
     font-family:  'Nunito', sans-serif;
     font-weight: 700;
     color: #333333;
@@ -147,6 +147,12 @@ transition: opacity 250ms ease-in-out;
 
 input:focus {
     outline: none;
+}
+
+@media only screen and (max-width: 576px) {
+    input {
+        font-size: 18px;
+    }
 }
 
 .edit-and-switch {
