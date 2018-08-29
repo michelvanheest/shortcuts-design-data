@@ -190,16 +190,16 @@
         font-size: 20px;
     }
 
-    .hero-right-nav-textbox {
+     .hero-right-nav-textbox {
         height: 60px;
     }
 
-    .hero-right-nav-textbox a img {
+     .hero-right-nav-textbox a img {
         height: 28px;
         width: 28px;
     }
 
-    .hero-right-nav-label {
+     .hero-right-nav-label {
         height: 60px;
     }
 }
