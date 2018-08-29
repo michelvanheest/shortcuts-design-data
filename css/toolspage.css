@@ -99,8 +99,12 @@ h1 {
     height: 100%;
 } */
 
+.toolspage-search {
+    width: 100%;
+}
+
 input {
-    width: 90%;
+    width: calc(100% - 25px);
     font-size: 18px;
     font-family:  'Nunito', sans-serif;
     font-weight: 700;
@@ -117,25 +121,6 @@ input {
     padding-bottom: 15px;
     padding-left: 25px;
     margin: 50px 0px 45px 0px;
-}
-
-@media only screen and (min-width: 374px) {
-    input {
-        /* width: 96%; */
-        font-size: 25px;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    input {
-        width: 98%;
-    }
-}
-
-@media only screen and (min-width: 1023px) {
-    input {
-        width: 100%;
-    }
 }
 
 ::-webkit-input-placeholder { /* Chrome */
@@ -164,9 +149,23 @@ input:focus {
     outline: none;
 }
 
-.edit a {
+.edit-and-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-and-switch a {
     display: block;
     line-height: 29px;
+}
+
+@media only screen and (max-width: 805px) {
+    .edit-and-switch {
+        display: block;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 .toolspage-shortcuts-wrapper {
