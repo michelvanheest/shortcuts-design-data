@@ -188,7 +188,8 @@ input:focus {
 }
 
 .toolspage-shortcuts-wrapper p {
-    width: 50%;
+    width: 75%;
+    margin-bottom: 50px;
 }
 
 table {
