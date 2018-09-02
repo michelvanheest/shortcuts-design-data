@@ -3,8 +3,6 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: #FBFBFB;
     overflow-x: hidden;
-    /* -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased; */
 }
 
 h1 {
@@ -104,14 +102,12 @@ a:hover {
     border-radius: 5px;
 }
 
-/*.line-homepage {
+/* .line-homepage {
     background-color: #7166FF;
-}*/
-
+} */
 
 .content-wrapper {
     width: 85%;
-    /*max-width: 1920px;*/
     max-width: 1200px;
     margin: auto;
 }
@@ -126,7 +122,6 @@ button {
     background-color: #7166FF;
     box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
     display: block;
-    /*margin: auto;*/
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0px 45px 0px 45px;
@@ -135,25 +130,6 @@ button {
     transition-timing-function: ease;
     transition-delay: initial;
 }
-
-/* .button {
-    height: 50px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    border: none;
-    border-radius: 100px;
-    color: #FFFFFF;
-    background-color: #7166FF;
-    box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0px 45px 0px 45px;
-    transition-property: all;
-    transition-duration: 350ms;
-    transition-timing-function: ease;
-    transition-delay: initial;
-} */
 
 .button-contribute {
     margin-top: 30px;
@@ -183,28 +159,6 @@ button:hover{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
-    button {
-        margin: 50px 0px 50px 0px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .button {
-        margin: 50px 0px 50px 0px;
-    }
-}
-
-.missing-something {
-    width: 50%;
-}
-
-@media only screen and (max-width: 1024px) {
-    .missing-something {
-        width: 100%;
-    }
-}
-
 .page-line {
     width: 100%;
     height: 4px;
@@ -212,4 +166,10 @@ button:hover{
 
 .page-line-default {
     background-color: #7166FF;
+}
+
+@media only screen and (max-width: 1024px) {
+    button, .button {
+        margin: 50px 0px 50px 0px;
+    }
 }
