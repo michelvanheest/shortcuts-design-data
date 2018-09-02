@@ -30,7 +30,6 @@ ul.tabs li:hover {
 	-webkit-transform:scale(1.03,1.03);
 	-moz-transform:scale(1.03,1.03);
 	cursor: pointer;
-
 	box-shadow: 0 10px 25px 0 rgba(127,127,127,0.50);
 }
 
@@ -41,15 +40,8 @@ ul.tabs li:hover {
 .tab-content.current {
 	display: inherit;
 }
-/* 
-@media only screen and (min-width: 768px) {
-	ul.tabs {
-		margin: 0px 0px -80px 0px;
-		transform: translateY(3px);
-	}
-} */
 
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 992px) {
     ul.tabs {
 		text-align: left;
 	}
@@ -66,15 +58,6 @@ ul.tabs li:hover {
 }
 
 @media only screen and (max-width: 374px) {
-    /* ul.tabs {
-        text-align: right;
-		margin-bottom: 40px;
-	} */
-	
-	/* ul.tabs li {
-        margin: 10px 0px 10px 0px;
-	} */
-	
 	ul.tabs li {
 		margin: 50px 5px 0px 0px;		
 	}

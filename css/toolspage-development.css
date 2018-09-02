@@ -6,10 +6,7 @@ a {
     color: #70F7C7 !important;
 }
 
-.toolspage-line, ul.tabs li.current, .page-line-miscellaneous {
+.toolspage-line, ul.tabs li.current {
     background-color: #70F7C7;
-}
-
-ul.tabs li.current {
-	color: #333;
+    color: #333;
 }

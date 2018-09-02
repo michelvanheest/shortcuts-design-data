@@ -1,59 +1,7 @@
-/*a {
-    color: #FF718E;
-}
-
-.toolspage-line {
-    background-color: #FF718E;
-}*/
-
-/* .content-wrapper:after {
-    content: url("../img/backgroundDesign.svg");
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: block;
-    z-index: -1;
-} */
-
-@media only screen and (max-width: 992px) {
-    .blob {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1800px) {
-    .blob {
-        width: 50vw;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-    }
-}
-
-@media only screen and (min-width: 1800px) {
-    .blob {
-        width: 50vw;
-        position: absolute;
-        top: -100px;
-        right: 0;
-        z-index: -1;
-    }
-}
-
-h1 {
+h1 /*Override from style.css*/ {
     font-size: 24px !important;
     color: #979797 !important;
     margin-bottom: -10px !important;
-}
-
-.fa.fa-github {
-    font-size: 18px;
-    transition-property: none;
-}
-
-.fa.fa-github:hover {
-    transform: none;
 }
 
 .toolspage-hero {
@@ -62,50 +10,13 @@ h1 {
     max-width: 50%;
 }
 
-@media only screen and (max-width: 1023px) {
-    .toolspage-hero {
-        display: block;
-        padding-top: 50px;
-        max-width: 65%;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .toolspage-hero {
-        max-width: 100%;
-    }
-}
-
-.toolspage-hero-left p {
-    /* width: 40vw; */
-    max-width: 575px;
-
-}
-
-@media only screen and (max-width: 1023px) {
-    .toolspage-hero-left p {
-        width: 100%;
-    }
-}
-
-/* .toolspage-hero-right {
+.blob {
     width: 50vw;
-    height: 100%;
-    display: block;
-    margin: auto;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: -1;
 }
-
-@media only screen and (max-width: 1023px) {
-    .toolspage-hero-right {
-        width: 100%;
-        margin: 0;
-    }
-}
-
-.toolspage-hero-right img {
-    width: 100%;
-    height: 100%;
-} */
 
 .toolspage-search {
     width: 100%;
@@ -157,10 +68,13 @@ input:focus {
     outline: none;
 }
 
-@media only screen and (max-width: 576px) {
-    input {
-        font-size: 18px;
-    }
+.fa.fa-github {
+    font-size: 18px;
+    transition-property: none;
+}
+
+.fa.fa-github:hover {
+    transform: none;
 }
 
 .edit-and-switch {
@@ -174,25 +88,9 @@ input:focus {
     line-height: 29px;
 }
 
-@media only screen and (max-width: 805px) {
-    .edit-and-switch {
-        display: block;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-}
-
 .toolspage-shortcuts-wrapper {
-    /*width: 100%;*/
     width: 80%;
     margin: auto;
-    /* padding-top: 30px; */
-}
-
-@media only screen and (max-width: 1023px) {
-    .toolspage-shortcuts-wrapper {
-        width: 100%;
-    }
 }
 
 .toolspage-shortcuts-wrapper p {
@@ -241,4 +139,48 @@ td {
     line-height: 33px;
     border-bottom: 1px solid #DDDDDD;
     vertical-align: top;
+}
+
+@media only screen and (max-width: 1800px) {
+    .blob {
+        width: 50vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .toolspage-hero {
+        display: block;
+        padding-top: 50px;
+        max-width: 65%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .blob {
+        display: none;
+    }
+
+    .toolspage-hero {
+        max-width: 100%;
+    }
+
+    .edit-and-switch {
+        display: block;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .toolspage-shortcuts-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    input {
+        font-size: 18px;
+    }
 }
