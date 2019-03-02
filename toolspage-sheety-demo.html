@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/toolspage-design.css">
+        <link rel="stylesheet" href="css/toolspage-demo.css">
         <link rel="stylesheet" href="css/toolspage.css">
         <link rel="stylesheet" href="css/homepage.css">
         <link rel="stylesheet" href="css/switch.css">
@@ -23,7 +23,7 @@
         <script type="text/javascript">
             $(document).ready(function() {
               $.getJSON(
-                "https://api.sheety.co/de3dfe8c-8af7-4b98-9e20-237c4bdf1742",
+                "https://api.sheety.co/13f8e060-147d-49cb-ae89-4d294db77ad9",
                 function(data) {
                   var template = Handlebars.compile($("#item-template").html());
                   $("#items").html(template(data));
@@ -48,12 +48,21 @@
                     {{/each}}
                 </tbody>
             </table> -->
-            <table id="myTable">
+
+            <!--working version of the sheety api-->
+            <!-- <table id="myTable">
                 {{#each this}}
                 <tr><th colspan="2">{{groupname}}</th></tr>
                 <tbody>
                     <tr><td>{{action}}</td><td>{{shortcut}}</td></tr>
                 </tbody>
+                {{/each}}
+            </table> -->
+
+            <table id="myTable">
+                {{#each this}}
+                <tr><th colspan="2">{{groupname}}</th></tr>
+                <tr><td>{{action}}</td><td>{{shortcut}}</td></tr>
                 {{/each}}
             </table>
           </script>
@@ -102,7 +111,7 @@
             <section class="toolspage-hero">
                 <div class="toolspage-hero-left">
                     <h1>Shortcuts.design</h1>
-                    <h2>Google sheets demo</h2>
+                    <h2>API Sheet demo</h2>
                     <div class="line toolspage-line"></div>
                 </div>
             </section>
@@ -119,19 +128,8 @@
             </section>
             
 
-            
+            <!--Load in sheety API data-->
             <div id="items"></div>
-
-            <style>
-            #myTable tbody tr th:empty {
-                display: none;
-            }
-
-            tr:hover {
-                background-color: yellow !important;
-}
-            
-            </style>
             
 
 
