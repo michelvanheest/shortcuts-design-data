@@ -1,0 +1,12 @@
+a {
+    color: purple;
+}
+
+.fa.fa-github {
+    color: purple !important;
+}
+
+.toolspage-line, ul.tabs li.current {
+    background-color: purple;
+    color: white;
+}
