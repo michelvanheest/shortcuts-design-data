@@ -10,3 +10,21 @@ a {
     background-color: purple;
     color: white;
 }
+
+
+
+* {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* #myTable tbody tr th:empty {
+    display: none;
+} */
+
+th:empty {
+    display: none;
+}
+
+tr:hover {
+    background-color: yellow !important;
+} 
