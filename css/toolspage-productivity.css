@@ -6,7 +6,7 @@ a {
     color: #70CAF7 !important;
 }
 
-.toolspage-line, ul.tabs li.current {
+ul.tabs li.current {
     background-color: #70CAF7;
     color: #333;
 }

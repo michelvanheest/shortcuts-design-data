@@ -6,7 +6,7 @@ a {
     color: purple !important;
 }
 
-.toolspage-line, ul.tabs li.current {
+ul.tabs li.current {
     background-color: purple;
     color: white;
 }

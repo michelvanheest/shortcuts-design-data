@@ -7,16 +7,16 @@ body {
 
 h1 {
     font-family: 'Nunito', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
-    color: #333333;
+    color: #979797;
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 54px;
     font-weight: 700;
-    color: #333333;
+    color: #000000;
     margin: 20px 0px 20px 0px;
 }
 
@@ -50,6 +50,7 @@ p {
     font-size: 18px;
     line-height: 29px;
     color: #333333;
+    margin-top: 24px;
 }
 
 li {
@@ -95,16 +96,6 @@ a:hover {
 .textlink:hover {
     opacity: 0.75;
 }
-
-.line {
-    width: 70px;
-    height: 10px;
-    border-radius: 5px;
-}
-
-/* .line-homepage {
-    background-color: #7166FF;
-} */
 
 .content-wrapper {
     width: 85%;
