@@ -111,7 +111,7 @@
 
 .hero-right-nav-label {
     height: 85px;
-    width: 10px;
+    width: 8px;
     min-width: 5px;
     border-radius: 5px 0px 0px 5px;
 }
@@ -152,7 +152,7 @@
 
 .tools-label {
     height: 100%;
-    width: 10px;
+    width: 8px;
     border-radius: 5px 0px 0px 5px;
     position: absolute;
 }
