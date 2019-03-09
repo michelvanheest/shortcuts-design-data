@@ -2,23 +2,17 @@
     opacity: 0;
     width: 100%;
     position: fixed;
-    bottom: 25px;
+    bottom: 0px;
     z-index: 1;
 }
 
 .button-wide {
-    /* max-width: 350px !important; */
-    max-width: 90% !important;
+    max-width: 100% !important;
     height: 100%;
     font-size: 14px;
-    padding: 15px 0px 15px 0px;
-    /*padding for iPhone X via WebKit https://webkit.org/blog/7929/designing-websites-for-iphone-x/*/
-    /* padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right); */
+    padding: 10px 0px 10px 0px;
     width: 100%;
-    border-radius: 100;
+    border-radius: 0;
     margin: 0 auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -30,18 +24,12 @@
     margin-bottom: -3px;
 }
 
-@media only screen and (min-width: 415px) {
-    .button-wide {
-        max-width: 400px !important;
-        padding: 10px 0px 10px 0px;
-    }
-}
-
+/*padding for iPhone X via WebKit https://webkit.org/blog/7929/designing-websites-for-iphone-x/*/
 @supports(padding: max(0px)) {
     .button-wide {
         padding-top: max(15px, env(safe-area-inset-top));
-        padding-bottom: max(15px, env(safe-area-inset-bottom));
-        padding-left: max(15px, env(safe-area-inset-left));
-        padding-right: max(15px, env(safe-area-inset-right));
+        padding-bottom: max(25px, env(safe-area-inset-bottom));
+        padding-left: max(25px, env(safe-area-inset-left));
+        padding-right: max(25px, env(safe-area-inset-right));
     }
 }
