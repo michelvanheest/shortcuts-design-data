@@ -23,6 +23,7 @@
             $(document).ready(function() {
               $.getJSON(
                 "https://api.sheety.co/fcc85f11-abe9-4ac1-aa51-322cc4059d52",
+                // "sheety-api-test.json",
                 function(data) {
                   var template = Handlebars.compile($("#item-template").html());
                   $("#items").html(template(data));
