@@ -27,9 +27,9 @@ input {
     font-weight: 700;
     color: #333333;
     background: #FFFFFF;
-    box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
-    -webkit-box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
-    -moz-box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
+    box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
+    -webkit-box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
+    -moz-box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
     -webkit-appearance: none; /*Fixes box-shadow on iOS*/
     border: none;
     border: 0;

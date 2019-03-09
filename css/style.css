@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background-color: #FBFBFB;
+    background-color: #FFFFFF;
     overflow-x: hidden;
 }
 
@@ -111,7 +111,7 @@ button {
     border-radius: 100px;
     color: #FFFFFF;
     background-color: #7166FF;
-    box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50);
+    /* box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50); */
     display: block;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -140,7 +140,7 @@ button:hover{
     -webkit-transform:scale(1.03,1.03);
     -moz-transform:scale(1.03,1.03);
     cursor: pointer;
-    box-shadow: 0 10px 25px 0 rgba(127,127,127,0.50);
+    box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
 }
 
 .button:hover{
