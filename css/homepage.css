@@ -386,6 +386,10 @@
         font-size: 20px;
     }
 
+    .hero-right-nav {
+        margin: 30px 0px 30px 0px;
+    }
+
      .hero-right-nav-textbox {
         height: 60px;
     }
