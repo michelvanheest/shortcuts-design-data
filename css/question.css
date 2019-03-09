@@ -28,8 +28,8 @@
 @supports(padding: max(0px)) {
     .button-wide {
         padding-top: max(15px, env(safe-area-inset-top));
-        padding-bottom: max(25px, env(safe-area-inset-bottom));
-        padding-left: max(25px, env(safe-area-inset-left));
-        padding-right: max(25px, env(safe-area-inset-right));
+        padding-bottom: max(15px, env(safe-area-inset-bottom));
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
     }
 }
