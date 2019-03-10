@@ -1,19 +1,20 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
     background-color: #FFFFFF;
     overflow-x: hidden;
 }
 
 h1 {
-    font-family: 'Nunito', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #979797;
 }
 
 h2 {
-    font-family: 'Nunito', sans-serif;
     font-size: 54px;
     font-weight: 700;
     color: #000000;
@@ -21,14 +22,12 @@ h2 {
 }
 
 h3, th {
-    font-family: 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #333333;
 }
 
 h4 {
-    font-family: 'Nunito', sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: #333333;
@@ -39,14 +38,12 @@ h4 {
 }
 
 h5 {
-    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #333333;
 }
 
 p {
-    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     line-height: 29px;
     color: #333333;
@@ -54,7 +51,6 @@ p {
 }
 
 li {
-    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     line-height: 29px;
     color: #333333;
@@ -103,6 +99,7 @@ a:hover {
     margin: auto;
 }
 
+/*@future me --> also change 'tabs' in switch.css*/
 button {
     height: 50px;
     font-family: 'Nunito', sans-serif;
@@ -120,6 +117,13 @@ button {
     transition-duration: 350ms;
     transition-timing-function: ease;
     transition-delay: initial;
+}
+
+button.ghostbutton {
+    /* color: #333333; */
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.24);
+    /* border: 1px solid #F4F3FF; */
 }
 
 .button-contribute {

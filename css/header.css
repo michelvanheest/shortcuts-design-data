@@ -6,7 +6,10 @@
 
 .headerbar {
     display: flex;
-    padding: 20px 0px 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px 0px 10px 20px; */
+    padding: 20px 0px 10px 0px; /*delete padding left because of test w/ .content-wrapper*/
 }
 
 .headerbar img {
@@ -32,6 +35,11 @@
     display: block;
     margin-left: auto;
     margin-right: 0px;
+}
+
+button.ghostbutton {
+    margin: 0;
+    right: 0;
 }
 
 /* .headerline {

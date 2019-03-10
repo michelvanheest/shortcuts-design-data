@@ -16,7 +16,6 @@ ul.tabs li {
 	cursor: pointer;
 	border: 1px solid #F4F3FF;
 	border-radius: 100px;
-    /* box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50); */
 	margin-left: 30px;
     padding: 10px 45px 10px 45px;
     transition-property: all;

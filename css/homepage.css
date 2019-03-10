@@ -313,7 +313,7 @@
     .hero {
         height: auto;
         display: block;
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .hero-left {
@@ -340,6 +340,7 @@
 
     .hero-right-nav-textbox {
         width: 100%;
+        box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
     }
 
     .contribute-content img {

@@ -23,7 +23,6 @@ h1 /*Override from style.css*/ {
 input {
     width: calc(100% - 25px);
     font-size: 25px;
-    font-family:  'Nunito', sans-serif;
     font-weight: 700;
     color: #333333;
     background: #FFFFFF;
@@ -143,7 +142,7 @@ td {
 @media only screen and (max-width: 1024px) {
     .toolspage-hero {
         display: block;
-        padding-top: 50px;
+        /* padding-top: 50px; */
         max-width: 65%;
     }
 }
