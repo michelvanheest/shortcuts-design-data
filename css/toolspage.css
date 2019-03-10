@@ -111,10 +111,6 @@ th {
     margin-top: -36px;
 }
 
-th:hover {
-    background-color: #fbfbfb;
-}
-
 tr {
     width: 100%;
     transition-property: all;
@@ -122,11 +118,6 @@ tr {
     transition-timing-function: ease;
     transition-delay: initial;
 }
-
-tr:hover {
-    background-color: #F7F7F7;
-}
-
 
 td:nth-child(even) {
     text-align: right;
