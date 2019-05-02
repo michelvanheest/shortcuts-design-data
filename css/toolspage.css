@@ -40,25 +40,25 @@ input {
 }
 
 ::-webkit-input-placeholder { /* Chrome */
-    color: rgba(51,51,51,0.25);;
+    color: #BFBFBF;
     transition: opacity 250ms ease-in-out;
   }
 
 :-ms-input-placeholder { /* IE 10+ */
-color: rgba(51,51,51,0.25);;
-transition: opacity 250ms ease-in-out;
+    color: #BFBFBF;
+    transition: opacity 250ms ease-in-out;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-color: rgba(51,51,51,0.25);;
-opacity: 1;
-transition: opacity 250ms ease-in-out;
+    color: #BFBFBF;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
 }
 
 :-moz-placeholder { /* Firefox 4 - 18 */
-color: rgba(51,51,51,0.25);;
-opacity: 1;
-transition: opacity 250ms ease-in-out;
+    color: #BFBFBF;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
 }
 
 input:focus {
