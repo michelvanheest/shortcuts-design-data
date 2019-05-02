@@ -13,6 +13,31 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon@2x.png"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/search.js"></script>
+        <!--Sheety API scripts-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $.getJSON(
+                "https://api.sheety.co/fcc85f11-abe9-4ac1-aa51-322cc4059d52", 
+                // "sheety-api-test.json",
+                function(data) {
+                var template = Handlebars.compile($("#item-template").html());
+                $("#items").html(template(data));
+                }
+            );
+            });
+        </script>
+        <script id="item-template" type="text/x-handlebars-template">
+            <table id="myTable">
+                {{#each this}}
+                <tr><th colspan="2">{{groupname}}</th></tr>
+                <tr><td>{{action}}</td><td>{{shortcut}}</td></tr>
+                {{/each}}
+            </table>
+        </script>
+        <!--End Sheety API scripts-->
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99827935-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -21,7 +46,7 @@
 
             gtag('config', 'UA-99827935-2', { 'anonymize_ip': true });
         </script>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        
         <!-- Hotjar Tracking Code for http://shortcuts.design -->
         <script>
             (function(h,o,t,j,a,r){
@@ -66,19 +91,14 @@
             </section>
 
             <section class="edit">
-                <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-sketch.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add shortcuts on Github</strong></a>
+                <!-- <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-sketch.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add shortcuts on Github</strong></a> -->
             </section>
 
             <section class="toolspage-shortucts new_section">
                 <div class="toolspage-shortcuts-wrapper">
                     <div class="toolspage-shortcuts-tables">
                     <section class="data">
-                            <script>
-                                $( document ).ready(function(){
-                                    $("#data-sketch").load("data-live/Design/toolspage-sketch.html");
-                                });
-                            </script>
-                            <div id="data-sketch"></div>
+                            <div id="items"></div>
                         </section>
                     </div>
                 </div>
