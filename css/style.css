@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+strong {
+    font-weight: 500 !important;
 }
 
 body {
@@ -10,27 +18,27 @@ body {
 
 h1 {
     font-size: 24px;
-    font-weight: 700;
-    color: #979797;
+    font-weight: 500;
+    color: #888796;
 }
 
 h2 {
     font-size: 54px;
     font-weight: 700;
-    color: #000000;
+    color: #37373D;
     margin: 20px 0px 20px 0px;
 }
 
 h3, th {
     font-size: 36px;
-    font-weight: 700;
-    color: #333333;
+    font-weight: 500;
+    color: #37373D;
 }
 
 h4 {
     font-size: 28px;
     font-weight: 700;
-    color: #333333;
+    color: #5C5B66;
 }
 
 .h4-light{
@@ -40,25 +48,25 @@ h4 {
 h5 {
     font-size: 18px;
     font-weight: 700;
-    color: #333333;
+    color: #5C5B66;
 }
 
 p {
     font-size: 18px;
     line-height: 29px;
-    color: #333333;
+    color: #5C5B66;
     margin-top: 24px;
 }
 
 li {
     font-size: 18px;
     line-height: 29px;
-    color: #333333;
+    color: #5C5B66;
 }
 
 .fa {
     font-size: 28px;
-    color: #333333;
+    color: #5C5B66;
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: ease;
@@ -102,12 +110,12 @@ a:hover {
 /*@future me --> also change 'tabs' in switch.css*/
 button {
     height: 50px;
-    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     border: none;
     border-radius: 100px;
     color: #FFFFFF;
     background-color: #7166FF;
+    font-weight: 500;
     /* box-shadow: 0 5px 15px 0 rgba(127,127,127,0.50); */
     display: block;
     margin-top: 50px;
@@ -120,7 +128,7 @@ button {
 }
 
 button.ghostbutton {
-    /* color: #333333; */
+    /* color: #5C5B66; */
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.24);
     /* border: 1px solid #F4F3FF; */

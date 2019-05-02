@@ -23,8 +23,8 @@ h1 /*Override from style.css*/ {
 input {
     width: calc(100% - 25px);
     font-size: 25px;
-    font-weight: 700;
-    color: #333333;
+    font-weight: 500;
+    color: #4A4952;
     background: #FFFFFF;
     box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
     -webkit-box-shadow: 0px 24px 80px rgba(50, 100, 250, 0.004), 0px 12px 30px rgba(23, 20, 51, 0.04), 0px 0px 8px rgba(23, 20, 51, 0.04);
@@ -40,23 +40,23 @@ input {
 }
 
 ::-webkit-input-placeholder { /* Chrome */
-    color: #BFBFBF;
+    color: #B8B8BF;
     transition: opacity 250ms ease-in-out;
   }
 
 :-ms-input-placeholder { /* IE 10+ */
-    color: #BFBFBF;
+    color: #B8B8BF;
     transition: opacity 250ms ease-in-out;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-    color: #BFBFBF;
+    color: #B8B8BF;
     opacity: 1;
     transition: opacity 250ms ease-in-out;
 }
 
 :-moz-placeholder { /* Firefox 4 - 18 */
-    color: #BFBFBF;
+    color: #B8B8BF;
     opacity: 1;
     transition: opacity 250ms ease-in-out;
 }
@@ -122,9 +122,13 @@ tr {
     transition-delay: initial;
 }
 
+td:nth-child(odd) {
+    color: #4A4952;
+}
+
 td:nth-child(even) {
     text-align: right;
-    color: #7A7A7A;
+    color: #5C5B66;
 }
 
 td {
