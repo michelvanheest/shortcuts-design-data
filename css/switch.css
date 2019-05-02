@@ -12,6 +12,7 @@ ul.tabs {
 
 ul.tabs li {
 	font-size: 18px;
+	font-weight: 500;
 	display: inline-block;
 	cursor: pointer;
 	border: 1px solid #F4F3FF;
