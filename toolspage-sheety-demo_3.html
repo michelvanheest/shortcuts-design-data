@@ -1,7 +1,7 @@
 <!--
     Sheety API demo with dynmic data in Google Sheets, scraped from Adobe.com, testing out Mac/Windows setup
 
-    Adobe Photoshop: https://api.sheety.co/14a296d2-b7de-49e0-95f3-9d71fbbb6ef0
+    Adobe Photoshop: https://api.sheety.co/f6f9b821-f17c-4c70-a25a-60f6f0d71085
 
 -->
 
@@ -30,7 +30,7 @@
             $(document).ready(function() {
               // Load JSON from API Mac
               $.getJSON(
-                "https://api.sheety.co/14a296d2-b7de-49e0-95f3-9d71fbbb6ef0",
+                "https://api.sheety.co/f6f9b821-f17c-4c70-a25a-60f6f0d71085",
                 function(data) {
                   var template = Handlebars.compile($("#item-template-mac").html());
                   $("#items_mac").html(template(data));
@@ -38,7 +38,7 @@
               );
               // Load JSON from API Windows
               $.getJSON(
-                "https://api.sheety.co/14a296d2-b7de-49e0-95f3-9d71fbbb6ef0",
+                "https://api.sheety.co/f6f9b821-f17c-4c70-a25a-60f6f0d71085",
                 function(data) {
                   var template = Handlebars.compile($("#item-template-windows").html());
                   $("#items_windows").html(template(data));
