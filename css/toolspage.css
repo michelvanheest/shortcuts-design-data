@@ -4,7 +4,7 @@ h1 /*Override from style.css*/ {
 
 .toolspage-hero {
     display: flex;
-    padding-top: 100px;
+    padding-top: 150px;
     max-width: 50%;
 }
 
@@ -133,7 +133,7 @@ td:nth-child(even) {
 
 td {
     line-height: 33px;
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #F1F1F2;
     vertical-align: top;
 }
 
