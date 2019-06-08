@@ -1,0 +1,2246 @@
+[
+  {
+    "groupname": "General",
+    "shortcut": "Select all",
+    "action_windows": "Ctrl+A",
+    "action_mac": "Command+A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Deselect all",
+    "action_windows": "F2 or Ctrl+Shift+A",
+    "action_mac": "F2 or Command+Shift+A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Rename selected layer, composition, folder, effect, group, or mask",
+    "action_windows": "Enter on main keyboard",
+    "action_mac": "Return"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open selected layer, composition, or footage item",
+    "action_windows": "Enter on numeric keypad",
+    "action_mac": "Enter on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers, masks, effects, or render items down (back) or up \n(forward) in stacking order",
+    "action_windows": "Ctrl+Alt+Down Arrow or Ctrl+Alt+Up Arrow",
+    "action_mac": "Command+Option+Down Arrow or Command+Option+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers, masks, effects, or render items to bottom (back) or \ntop (front) of stacking order",
+    "action_windows": "Ctrl+Alt+Shift+Down Arrow or Ctrl+Alt+Shift+Up Arrow",
+    "action_mac": "Command+Option+Shift+Down Arrow or Command+Option+Shift+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend selection to next item in Project panel, Render Queue panel, or \nEffect Controls panel",
+    "action_windows": "Shift+Down Arrow",
+    "action_mac": "Shift+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend selection to previous item in Project panel, Render Queue panel, or \nEffect Controls panel",
+    "action_windows": "Shift+Up Arrow",
+    "action_mac": "Shift+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Duplicate selected layers, masks, effects, text selectors, animators, \npuppet meshes, shapes, render items, output modules, or compositions",
+    "action_windows": "Ctrl+D",
+    "action_mac": "Command+D"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Quit",
+    "action_windows": "Ctrl+Q",
+    "action_mac": "Command+Q"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Undo",
+    "action_windows": "Ctrl+Z",
+    "action_mac": "Command+Z"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Redo",
+    "action_windows": "Ctrl+Shift+Z",
+    "action_mac": "Command+Shift+Z"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Purge All Memory",
+    "action_windows": "Ctrl+Alt+/ (on numeric keypad)",
+    "action_mac": "Command+Option+/ (on numeric keypad)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Interrupt running a script",
+    "action_windows": "Esc",
+    "action_mac": "Esc"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Display filename corresponding to the frame at the current time in the Info \npanel",
+    "action_windows": "Ctrl+Alt+E",
+    "action_mac": "Command+Option+E"
+  },
+  {
+    "groupname": "Projects",
+    "shortcut": "New project",
+    "action_windows": "Ctrl+Alt+N",
+    "action_mac": "Command+Option+N"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open project",
+    "action_windows": "Ctrl+O",
+    "action_mac": "Command+O"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open most recent project",
+    "action_windows": "Ctrl+Alt+Shift+P",
+    "action_mac": "Command+Option+Shift+P"
+  },
+  {
+    "groupname": null,
+    "shortcut": "New folder in Project panel",
+    "action_windows": "Ctrl+Alt+Shift+N",
+    "action_mac": "Command+Option+Shift+N"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Project Settings dialog box",
+    "action_windows": "Ctrl+Alt+Shift+K",
+    "action_mac": "Command+Option+Shift+K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Find in Project panel",
+    "action_windows": "Ctrl+F",
+    "action_mac": "Command+F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Cycle through color bit depths for project",
+    "action_windows": "Alt-click bit-depth button at bottom of Project panel",
+    "action_mac": "Option-click bit-depth button at bottom of Project panel"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Project Settings dialog box",
+    "action_windows": "Click bit-depth button at bottom of Project panel",
+    "action_mac": "Click bit-depth button at bottom of Project panel"
+  },
+  {
+    "groupname": "Preferences",
+    "shortcut": "Open Preferences dialog box",
+    "action_windows": "Ctrl+Alt+; (semicolon)",
+    "action_mac": "Command+Option+; (semicolon)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Restore default preferences settings",
+    "action_windows": "Hold down Ctrl+Alt+Shift while starting After Effects",
+    "action_mac": "Hold down Command+Option+Shift while starting After Effects"
+  },
+  {
+    "groupname": "Panels, viewers, workspaces, and windows",
+    "shortcut": "Open or close Project panel",
+    "action_windows": "Ctrl+0",
+    "action_mac": "Command+0"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Render Queue panel",
+    "action_windows": "Ctrl+Alt+0",
+    "action_mac": "Command+Option+0"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Tools panel",
+    "action_windows": "Ctrl+1",
+    "action_mac": "Command+1"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Info panel",
+    "action_windows": "Ctrl+2",
+    "action_mac": "Command+2"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Preview panel",
+    "action_windows": "Ctrl+3",
+    "action_mac": "Command+3"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Audio panel",
+    "action_windows": "Ctrl+4",
+    "action_mac": "Command+4"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Effects & Presets panel",
+    "action_windows": "Ctrl+5",
+    "action_mac": "Command+5"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Character panel",
+    "action_windows": "Ctrl+6",
+    "action_mac": "Command+6"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Paragraph panel",
+    "action_windows": "Ctrl+7",
+    "action_mac": "Command+7"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Paint panel",
+    "action_windows": "Ctrl+8",
+    "action_mac": "Command+8"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Brushes panel",
+    "action_windows": "Ctrl+9",
+    "action_mac": "Command+9"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open or close Effect Controls panel for selected layer",
+    "action_windows": "F3 or Ctrl+Shift+T",
+    "action_mac": "F3 or Command+Shift+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Flowchart panel for project flowchart",
+    "action_windows": "Ctrl+F11",
+    "action_mac": "Command+F11"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Switch to workspace",
+    "action_windows": "Shift+F10, Shift+F11, or Shift+F12",
+    "action_mac": "Shift+F10, Shift+F11, or Shift+F12"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Close active viewer or panel (closes content first)",
+    "action_windows": "Ctrl+W",
+    "action_mac": "Command+W"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Close active panel or all viewers of type of active viewer (closes content \nfirst). For example, if a Timeline panel is active, this command closes all \nTimeline panels.",
+    "action_windows": "Ctrl+Shift+W",
+    "action_mac": "Command+Shift+W"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Split the frame containing the active viewer and create a viewer with \nopposite locked/unlocked state",
+    "action_windows": "Ctrl+Alt+Shift+N",
+    "action_mac": "Command+Option+Shift+N"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Maximize or restore panel under pointer",
+    "action_windows": "` (accent grave)",
+    "action_mac": "` (accent grave)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Resize application window or floating window to fit screen. (Press again to \nresize window so that contents fill the screen.)",
+    "action_windows": "Ctrl+\\ (backslash)",
+    "action_mac": "Command+\\ (backslash)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move application window or floating window to main monitor; resize window \nto fit screen. (Press again to resize window so that contents fill the \nscreen.)",
+    "action_windows": "Ctrl+Alt+\\ (backslash)",
+    "action_mac": "Command+Option+\\ (backslash)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle activation between Composition panel and Timeline panel for current \ncomposition",
+    "action_windows": "\\ (backslash)",
+    "action_mac": "\\ (backslash)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Cycle to previous or next item in active viewer (for example, cycle through \nopen compositions)",
+    "action_windows": "Shift+, (comma) or Shift+. (period)",
+    "action_mac": "Shift+, (comma) or Shift+. (period)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Cycle to previous or next panel in active frame (for example, cycle through \nopen Timeline panels)",
+    "action_windows": "Alt+Shift+, (comma) or Alt+Shift+. (period)",
+    "action_mac": "Option+Shift+, (comma) or Option+Shift+. (period)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate a view in a multi-view layout in the Composition panel without \naffecting layer selection",
+    "action_windows": "Click with middle mouse button",
+    "action_mac": "Click with middle mouse button"
+  },
+  {
+    "groupname": "Activate tools",
+    "shortcut": "Cycle through tools",
+    "action_windows": "Alt-click tool button in Tools panel",
+    "action_mac": "Option-click tool button in Tools panel"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Selection tool",
+    "action_windows": "V",
+    "action_mac": "V"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Hand tool",
+    "action_windows": "H",
+    "action_mac": "H"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Temporarily activate Hand tool",
+    "action_windows": "Hold down spacebar or the middle mouse button",
+    "action_mac": "Hold down spacebar or the middle mouse button"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Zoom In tool",
+    "action_windows": "Z",
+    "action_mac": "Z"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Zoom Out tool",
+    "action_windows": "Alt (when Zoom In tool is active)",
+    "action_mac": "Option (when Zoom In tool is active)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Rotation tool",
+    "action_windows": "W",
+    "action_mac": "W"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Roto Brush tool",
+    "action_windows": "Alt+W",
+    "action_mac": "Option+W"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Refine Edge tool",
+    "action_windows": "Alt+W",
+    "action_mac": "Option+W"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate and cycle through Camera tools (Unified Camera, Orbit Camera, \nTrack XY Camera, and Track Z Camera)",
+    "action_windows": "C",
+    "action_mac": "C"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate Pan Behind tool",
+    "action_windows": "Y",
+    "action_mac": "Y"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate and cycle through mask and shape tools (Rectangle, Rounded \nRectangle, Ellipse, Polygon, Star)",
+    "action_windows": "Q",
+    "action_mac": "Q"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate and cycle through Type tools (Horizontal and Vertical)",
+    "action_windows": "Ctrl+T",
+    "action_mac": "Command+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate and cycle between the Pen and Mask Feather tools. (Note: You can \nturn off this setting in the Preferences dialog box.)",
+    "action_windows": "G",
+    "action_mac": "G"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Temporarily activate Selection tool when a pen tool is selected",
+    "action_windows": "Ctrl",
+    "action_mac": "Command"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Temporarily activate Pen tool when the Selection tool is selected and \npointer is over a path (Add Vertex tool when pointer is over a segment; \nConvert Vertex tool when pointer is over a vertex)",
+    "action_windows": "Ctrl+Alt",
+    "action_mac": "Command+Option"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate and cycle through Brush, Clone Stamp, and Eraser tools",
+    "action_windows": "Ctrl+B",
+    "action_mac": "Command+B"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate and cycle through Puppet tools",
+    "action_windows": "Ctrl+P",
+    "action_mac": "Command+P"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Temporarily convert Selection tool to Shape Duplication tool",
+    "action_windows": "Alt (in shape layer)",
+    "action_mac": "Option (in shape layer)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Temporarily convert Selection tool to Direct Selection tool",
+    "action_windows": "Ctrl (in shape layer)",
+    "action_mac": "Command (in shape layer)"
+  },
+  {
+    "groupname": "Compositions and the work area",
+    "shortcut": "New composition",
+    "action_windows": "Ctrl+N",
+    "action_mac": "Command+N"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Composition Settings dialog box for selected composition",
+    "action_windows": "Ctrl+K",
+    "action_mac": "Command+K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set beginning or end of work area to current time",
+    "action_windows": "B or N",
+    "action_mac": "B or N"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set work area to duration of selected layers or, if no layers are selected, \nset work area to composition duration",
+    "action_windows": "Ctrl+Alt+B",
+    "action_mac": "Command+Option+B"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Composition Mini-Flowchart for active composition",
+    "action_windows": "Tab",
+    "action_mac": "Tab"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate the most recently active composition that is in the same \ncomposition hierarchy (network of nested compositions) as the currently \nactive composition",
+    "action_windows": "Shift+Esc",
+    "action_mac": "Shift+Esc"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Trim Composition to work area",
+    "action_windows": "Ctrl+Shift+X",
+    "action_mac": "Command+Shift+X"
+  },
+  {
+    "groupname": null,
+    "shortcut": "New Composition from selection",
+    "action_windows": "Alt+\\",
+    "action_mac": "Option+\\"
+  },
+  {
+    "groupname": "Time navigation",
+    "shortcut": "Go to specific time",
+    "action_windows": "Alt+Shift+J",
+    "action_mac": "Option+Shift+J"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to beginning or end of work area",
+    "action_windows": "Shift+Home or Shift+End",
+    "action_mac": "Shift+Home or Shift+End"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to previous or next visible item in time ruler (keyframe, layer marker, \nwork area beginning or end)\n\n(Note: Also goes to beginning, end, or base frame of Roto Brush span if \nviewing Roto Brush in Layer panel.)",
+    "action_windows": "J or K",
+    "action_mac": "J or K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to beginning of composition, layer, or footage item",
+    "action_windows": "Home or Ctrl+Alt+Left Arrow",
+    "action_mac": "Home or Command+Option+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to end of composition, layer, or footage item",
+    "action_windows": "End or Ctrl+Alt+Right Arrow",
+    "action_mac": "End or Command+Option+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go forward 1 frame",
+    "action_windows": "Page Down or Ctrl+Right Arrow",
+    "action_mac": "Page Down or Command+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go forward 10 frames",
+    "action_windows": "Shift+Page Down or Ctrl+Shift+Right Arrow",
+    "action_mac": "Shift+Page Down or Command+Shift+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go backward 1 frame",
+    "action_windows": "Page Up or Ctrl+Left Arrow",
+    "action_mac": "Page Up or Command+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go backward 10 frames",
+    "action_windows": "Shift+Page Up or Ctrl+Shift+Left Arrow",
+    "action_mac": "Shift+Page Up or Command+Shift+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to layer In point",
+    "action_windows": "I",
+    "action_mac": "I"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to layer Out point",
+    "action_windows": "O",
+    "action_mac": "O"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to previous In point or Out point",
+    "action_windows": "Ctrl+Alt+Shift+Left Arrow",
+    "action_mac": "Command+Option+Shift+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to next In point or Out point",
+    "action_windows": "Ctrl+Alt+Shift+Right Arrow",
+    "action_mac": "Command+Option+Shift+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Scroll to current time in Timeline panel",
+    "action_windows": "D",
+    "action_mac": "D"
+  },
+  {
+    "groupname": "Previews",
+    "shortcut": "Start or stop preview",
+    "action_windows": "Spacebar, 0 on numeric keypad, Shift+0 on numeric keypad",
+    "action_mac": "Spacebar, 0 on numeric keypad, Shift+0 on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reset preview settings to replicate RAM Preview and Standard Preview \nbehaviors",
+    "action_windows": "Alt-click Reset in Preview panel",
+    "action_mac": "Option-click Reset in Preview panel"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Preview only audio, from current time",
+    "action_windows": ". (decimal point) on numeric keypad*",
+    "action_mac": ". (decimal point) on numeric keypad* or Control+. (period) on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Preview only audio, in work area",
+    "action_windows": "Alt+. (decimal point) on numeric keypad*",
+    "action_mac": "Option+. (decimal point) on numeric keypad* or Control+Option+. (period) on \nmain keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Manually preview (scrub) video",
+    "action_windows": "Drag or Alt-drag current-time indicator, depending on Live Update setting",
+    "action_mac": "Drag or Option-drag current-time indicator, depending on Live Update setting"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Manually preview (scrub) audio",
+    "action_windows": "Ctrl-drag current-time indicator",
+    "action_mac": "Command-drag current-time indicator"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Preview number of frames specified by Alternate Preview preference \n(defaults to 5)",
+    "action_windows": "Alt+0 on numeric keypad*",
+    "action_mac": "Option+0 on numeric keypad* or Control+Option+0 (zero) on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle Mercury Transmit video preview",
+    "action_windows": "/ (on numeric keypad)",
+    "action_mac": "/ (on numeric keypad), Control+/ on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Take snapshot",
+    "action_windows": "Shift+F5, Shift+F6, Shift+F7, or Shift+F8",
+    "action_mac": "Shift+F5, Shift+F6, Shift+F7, or Shift+F8"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Display snapshot in active viewer",
+    "action_windows": "F5, F6, F7, or F8",
+    "action_mac": "F5, F6, F7, or F8"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Purge snapshot",
+    "action_windows": "Ctrl+Shift+F5, Ctrl+Shift+F6, Ctrl+Shift+F7, or Ctrl+Shift+F8",
+    "action_mac": "Command+Shift+F5, Command+Shift+F6, Command+Shift+F7, or Command+Shift+F8"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Fast Previews > Off",
+    "action_windows": "Ctrl+Alt+1",
+    "action_mac": "Command+Option+1"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Fast Previews > Adaptive Resolution",
+    "action_windows": "Ctrl+Alt+2",
+    "action_mac": "Command+Option+2"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Fast Previews > Draft",
+    "action_windows": "Ctrl+Alt+3",
+    "action_mac": "Command+Option+3"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Fast Previews > Fast Draft",
+    "action_windows": "Ctrl+Alt+4",
+    "action_mac": "Command+Option+4"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Fast Previews > Wireframe",
+    "action_windows": "Ctrl+Alt+5",
+    "action_mac": "Command+Option+5"
+  },
+  {
+    "groupname": "Views",
+    "shortcut": "Turn display color management on or off for active view",
+    "action_windows": "Shift+/ (on numeric keypad)",
+    "action_mac": "Shift+/ (on numeric keypad)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show red, green, blue, or alpha channel as grayscale",
+    "action_windows": "Alt+1, Alt+2, Alt+3, Alt+4",
+    "action_mac": "Option+1, Option+2, Option+3, Option+4"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show colorized red, green, or blue channel",
+    "action_windows": "Alt+Shift+1, Alt+Shift+2, Alt+Shift+3",
+    "action_mac": "Option+Shift+1, Option+Shift+2, Option+Shift+3"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle showing straight RGB color",
+    "action_windows": "Alt+Shift+4",
+    "action_mac": "Option+Shift+4"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show alpha boundary (outline between transparent and opaque regions) in \nLayer panel",
+    "action_windows": "Alt+5",
+    "action_mac": "Option+5"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show alpha overlay (colored overlay on transparent regions) in Layer panel",
+    "action_windows": "Alt+6",
+    "action_mac": "Option+6"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show Refine Edge X-ray",
+    "action_windows": "Alt+X",
+    "action_mac": "Option+X"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Center composition in the panel",
+    "action_windows": "Double-click Hand tool",
+    "action_mac": "Double-click Hand tool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom-in in Composition, Layer, or Footage panel",
+    "action_windows": ". (period) on main keyboard",
+    "action_mac": ". (period) on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom-out in Composition, Layer, or Footage panel",
+    "action_windows": ", (comma)",
+    "action_mac": ", (comma)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom to 100% in Composition, Layer, or Footage panel",
+    "action_windows": "/ (on main keyboard)",
+    "action_mac": "/ (on main keyboard)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom to fit in Composition, Layer, or Footage panel",
+    "action_windows": "Shift+/ (on main keyboard)",
+    "action_mac": "Shift+/ (on main keyboard)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom up to 100% to fit in Composition, Layer, or Footage panel",
+    "action_windows": "Alt+/ (on main keyboard)",
+    "action_mac": "Option+/ (on main keyboard)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set resolution to Full, Half, or Custom in Composition panel",
+    "action_windows": "Ctrl+J, Ctrl+Shift+J, Ctrl+Alt+J",
+    "action_mac": "Command+J, Command+Shift+J, Command+Option+J"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open View Options dialog box for active Composition panel",
+    "action_windows": "Ctrl+Alt+U",
+    "action_mac": "Command+Option+U"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom in time",
+    "action_windows": "= (equal sign) on main keyboard",
+    "action_mac": "= (equal sign) on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom out time",
+    "action_windows": "- (hyphen) on main keyboard",
+    "action_mac": "- (hyphen) on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom in Timeline panel to single-frame units (Press again to zoom out to \nshow entire composition duration.)",
+    "action_windows": "; (semicolon)",
+    "action_mac": "; (semicolon)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Zoom out in Timeline panel to show the entire composition duration (Press \nagain to zoom back in to the duration specified by the Time Navigator.)",
+    "action_windows": "Shift+; (semicolon)",
+    "action_mac": "Shift+; (semicolon)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Prevent images from being rendered for previews in viewer panels",
+    "action_windows": "Caps Lock",
+    "action_mac": "Caps Lock"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide safe zones",
+    "action_windows": " (apostrophe)",
+    "action_mac": " (apostrophe)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide grid",
+    "action_windows": "Ctrl+' (apostrophe)",
+    "action_mac": "Command+' (apostrophe)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide proportional grid",
+    "action_windows": "Alt+' (apostrophe)",
+    "action_mac": "Option+' (apostrophe)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide rulers",
+    "action_windows": "Ctrl+R",
+    "action_mac": "Command+R"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide guides",
+    "action_windows": "Ctrl+; (semicolon)",
+    "action_mac": "Command+; (semicolon)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn snapping to grid on or off",
+    "action_windows": "Ctrl+Shift+' (apostrophe)",
+    "action_mac": "Command+Shift+' (apostrophe)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn snapping to guides on or off",
+    "action_windows": "Ctrl+Shift+; (semicolon)",
+    "action_mac": "Command+Shift+; (semicolon)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Lock or unlock guides",
+    "action_windows": "Ctrl+Alt+Shift+; (semicolon)",
+    "action_mac": "Command+Option+Shift+; (semicolon)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide layer controls (masks, motion paths, light and camera \nwireframes, effect control points, and layer handles)",
+    "action_windows": "Ctrl+Shift+H",
+    "action_mac": "Command+Shift+H"
+  },
+  {
+    "groupname": "Footage",
+    "shortcut": "Import one file or image sequence",
+    "action_windows": "Ctrl+I",
+    "action_mac": "Command+I"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Import multiple files or image sequences",
+    "action_windows": "Ctrl+Alt+I",
+    "action_mac": "Command+Option+I"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open movie in an After Effects Footage panel",
+    "action_windows": "Double-click the footage item in the Project panel",
+    "action_mac": "Double-click the footage item in the Project panel"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add selected items to most recently activated composition",
+    "action_windows": "Ctrl+/ (on main keyboard)",
+    "action_mac": "Command+/ (on main keyboard)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Replace selected source footage for selected layers with footage item \nselected in Project panel",
+    "action_windows": "Ctrl+Alt+/ (on main keyboard)",
+    "action_mac": "Command+Option+/ (on main keyboard)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Replace source for a selected layer",
+    "action_windows": "Alt-drag footage item from Project panel onto selected layer",
+    "action_mac": "Option-drag footage item from Project panel onto selected layer"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Delete a footage item without a warning",
+    "action_windows": "Ctrl+Backspace",
+    "action_mac": "Command+Delete"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Interpret Footage dialog box for selected footage item",
+    "action_windows": "Ctrl+Alt+G",
+    "action_mac": "Command+Option+G"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Remember footage interpretation",
+    "action_windows": "Ctrl+Alt+C",
+    "action_mac": "Command+Option+C"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Edit selected footage item in application with which it’s associated (Edit \nOriginal)",
+    "action_windows": "Ctrl+E",
+    "action_mac": "Command+E"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Replace selected footage item",
+    "action_windows": "Ctrl+H",
+    "action_mac": "Command+H"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reload selected footage items",
+    "action_windows": "Ctrl+Alt+L",
+    "action_mac": "Command+Option+L"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set proxy for selected footage item",
+    "action_windows": "Ctrl+Alt+P",
+    "action_mac": "Command+Option+P"
+  },
+  {
+    "groupname": "Effects and animation presets",
+    "shortcut": "Delete all effects from selected layers",
+    "action_windows": "Ctrl+Shift+E",
+    "action_mac": "Command+Shift+E"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Apply most recently applied effect to selected layers",
+    "action_windows": "Ctrl+Alt+Shift+E",
+    "action_mac": "Command+Option+Shift+E"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Apply most recently applied animation preset to selected layers",
+    "action_windows": "Ctrl+Alt+Shift+F",
+    "action_mac": "Command+Option+Shift+F"
+  },
+  {
+    "groupname": "Layers",
+    "shortcut": "New solid layer",
+    "action_windows": "Ctrl+Y",
+    "action_mac": "Command+Y"
+  },
+  {
+    "groupname": null,
+    "shortcut": "New null layer",
+    "action_windows": "Ctrl+Alt+Shift+Y",
+    "action_mac": "Command+Option+Shift+Y"
+  },
+  {
+    "groupname": null,
+    "shortcut": "New adjustment layer",
+    "action_windows": "Ctrl+Alt+Y",
+    "action_mac": "Command+Option+Y"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select layer (1-999) by its number (enter digits rapidly for two-digit and \nthree-digit numbers)",
+    "action_windows": "0-9 on numeric keypad*",
+    "action_mac": "0-9 on numeric keypad*"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle selection of layer (1-999) by its number (enter digits rapidly for \ntwo-digit and three-digit numbers)",
+    "action_windows": "Shift+0-9 on numeric keypad*",
+    "action_mac": "Shift+0-9 on numeric keypad*"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select next layer in stacking order",
+    "action_windows": "Ctrl+Down Arrow",
+    "action_mac": "Command+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select previous layer in stacking order",
+    "action_windows": "Ctrl+Up Arrow",
+    "action_mac": "Command+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend selection to next layer in stacking order",
+    "action_windows": "Ctrl+Shift+Down Arrow",
+    "action_mac": "Command+Shift+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend selection to previous layer in stacking order",
+    "action_windows": "Ctrl+Shift+Up Arrow",
+    "action_mac": "Command+Shift+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Deselect all layers",
+    "action_windows": "Ctrl+Shift+A",
+    "action_mac": "Command+Shift+A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Scroll topmost selected layer to top of Timeline panel",
+    "action_windows": "X",
+    "action_mac": "X"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide Parent column",
+    "action_windows": "Shift+F4",
+    "action_mac": "Shift+F4"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show or hide Layer Switches and Modes columns",
+    "action_windows": "F4",
+    "action_mac": "F4"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Setting the sampling method for selected layers (Best/Bilinear)",
+    "action_windows": "Alt+B",
+    "action_mac": "Option+B"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Setting the sampling method for selected layers (Best/Bicubic)",
+    "action_windows": "Alt+Shift+B",
+    "action_mac": "Option+Shift+B"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn off all other solo switches",
+    "action_windows": "Alt-click solo switch",
+    "action_mac": "Option-click solo switch"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn Video (eyeball) switch on or off for selected layers",
+    "action_windows": "Ctrl+Alt+Shift+V",
+    "action_mac": "Command+Option+Shift+V"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn off Video switch for all video layers other than selected layers",
+    "action_windows": "Ctrl+Shift+V",
+    "action_mac": "Command+Shift+V"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open settings dialog box for selected solid, light, camera, null, or \nadjustment layer",
+    "action_windows": "Ctrl+Shift+Y",
+    "action_mac": "Command+Shift+Y"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Paste layers at current time",
+    "action_windows": "Ctrl+Alt+V",
+    "action_mac": "Command+Option+V"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Split selected layers. (If no layers are selected, split all layers.)",
+    "action_windows": "Ctrl+Shift+D",
+    "action_mac": "Command+Shift+D"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Precompose selected layers",
+    "action_windows": "Ctrl+Shift+C",
+    "action_mac": "Command+Shift+C"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Effect Controls panel for selected layers",
+    "action_windows": "Ctrl+Shift+T",
+    "action_mac": "Command+Shift+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open layer in Layer panel (opens source composition for precomposition \nlayer in Composition panel)",
+    "action_windows": "Double-click a layer",
+    "action_mac": "Double-click a layer"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open source of a layer in Footage panel (opens precomposition layer in \nLayer panel)",
+    "action_windows": "Alt-double-click a layer",
+    "action_mac": "Option-double-click a layer"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reverse selected layers in time",
+    "action_windows": "Ctrl+Alt+R",
+    "action_mac": "Command+Option+R"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Enable time remapping for selected layers",
+    "action_windows": "Ctrl+Alt+T",
+    "action_mac": "Command+Option+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers so that their In point or Out point is at the current \ntime",
+    "action_windows": "[ (left bracket) or ] (right bracket)",
+    "action_mac": "[ (left bracket) or ] (right bracket)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Trim In point or Out point of selected layers to current time",
+    "action_windows": "Alt+[ (left bracket) or Alt+] (right bracket)",
+    "action_mac": "Option+[ (left bracket) or Option+] (right bracket)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add or remove expression for a property",
+    "action_windows": "Alt-click stopwatch",
+    "action_mac": "Option-click stopwatch"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add an effect (or multiple selected effects) to selected layers",
+    "action_windows": "Double-click effect selection in Effects & Presets panel",
+    "action_mac": "Double-click effect selection in Effects & Presets panel"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set In point or Out point by time-stretching",
+    "action_windows": "Ctrl+Shift+, (comma) or Ctrl+Alt+, (comma)",
+    "action_mac": "Command+Shift+, (comma) or Command+Option+, (comma)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers so that their In point is at beginning of composition",
+    "action_windows": "Alt+Home",
+    "action_mac": "Option+Home"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers so that their Out point is at end of composition",
+    "action_windows": "Alt+End",
+    "action_mac": "Option+End"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Lock selected layers",
+    "action_windows": "Ctrl+L",
+    "action_mac": "Command+L"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Unlock all layers",
+    "action_windows": "Ctrl+Shift+L",
+    "action_mac": "Command+Shift+L"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set Quality to Best, Draft, or Wireframe for selected layers",
+    "action_windows": "Ctrl+U, Ctrl+Shift+U, or Ctrl+Alt+Shift+U",
+    "action_mac": "Command+U, Command+Shift+U, Command+Option+Shift+U"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Cycle forward or backward through blending modes for selected layers",
+    "action_windows": "Shift+- (hyphen) or Shift+= (equal sign) on the main keyboard",
+    "action_mac": "Shift+- (hyphen) or Shift+= (equal sign) on the main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Find in Timeline panel",
+    "action_windows": "Ctrl+F",
+    "action_mac": "Command+F"
+  },
+  {
+    "groupname": "Showing properties and groups in the Timeline panel",
+    "shortcut": "Find in Timeline panel",
+    "action_windows": "Ctrl+F",
+    "action_mac": "Command+F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle expansion of selected layers to show all properties",
+    "action_windows": "Ctrl+` (accent grave)",
+    "action_mac": "Command+` (accent grave)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle expansion of property group and all child property groups to show \nall properties",
+    "action_windows": "Ctrl-click triangle to the left of the property group name",
+    "action_mac": "Command-click triangle to the left of the property group name"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Anchor Point property (for lights and cameras, Point Of Interest)",
+    "action_windows": "A",
+    "action_mac": "A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Audio Levels property",
+    "action_windows": "L",
+    "action_mac": "L"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Mask Feather property",
+    "action_windows": "F",
+    "action_mac": "F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Mask Path property",
+    "action_windows": "M",
+    "action_mac": "M"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Mask Opacity property",
+    "action_windows": "TT",
+    "action_mac": "TT"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Opacity property (for lights, Intensity)",
+    "action_windows": "T",
+    "action_mac": "T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Position property",
+    "action_windows": "P",
+    "action_mac": "P"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Rotation and Orientation properties",
+    "action_windows": "R",
+    "action_mac": "R"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Scale property",
+    "action_windows": "S",
+    "action_mac": "S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Time Remap property",
+    "action_windows": "RR",
+    "action_mac": "RR"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only instances of missing effects",
+    "action_windows": "FF",
+    "action_mac": "FF"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Effects property group",
+    "action_windows": "E",
+    "action_mac": "E"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only mask property groups",
+    "action_windows": "MM",
+    "action_mac": "MM"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only Material Options property group",
+    "action_windows": "AA",
+    "action_mac": "AA"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only expressions",
+    "action_windows": "EE",
+    "action_mac": "EE"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show properties with keyframes",
+    "action_windows": "U",
+    "action_mac": "U"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only modified properties",
+    "action_windows": "UU",
+    "action_mac": "UU"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only paint strokes, Roto Brush strokes, and Puppet pins",
+    "action_windows": "PP",
+    "action_mac": "PP"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only audio waveform",
+    "action_windows": "LL",
+    "action_mac": "LL"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show only selected properties and groups",
+    "action_windows": "SS",
+    "action_mac": "SS"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Hide property or group",
+    "action_windows": "Alt+Shift-click property or group name",
+    "action_mac": "Option+Shift-click property or group name"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add or remove property or group from set that is shown",
+    "action_windows": "Shift+property or group shortcut",
+    "action_mac": "Shift+property or group shortcut"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add or remove keyframe at current time",
+    "action_windows": "Alt+Shift+property shortcut",
+    "action_mac": "Option+property shortcut"
+  },
+  {
+    "groupname": "Showing properties in the Effect Controls panel",
+    "shortcut": "Toggle expansion of selected effects to show all properties",
+    "action_windows": "Ctrl+` (accent grave)",
+    "action_mac": "Command+` (accent grave)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle expansion of property group and all child property groups to show \nall properties",
+    "action_windows": "Ctrl-click triangle to the left of the property group name",
+    "action_mac": "Command-click triangle to the left of the property group name"
+  },
+  {
+    "groupname": "Modifying layer properties",
+    "shortcut": "Modify property value by default increments",
+    "action_windows": "Drag property value",
+    "action_mac": "Drag property value"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Modify property value by 10x default increments",
+    "action_windows": "Shift-drag property value",
+    "action_mac": "Shift-drag property value"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Modify property value by 1/10 default increments",
+    "action_windows": "Ctrl-drag property value",
+    "action_mac": "Command-drag property value"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Auto-Orientation dialog box for selected layers",
+    "action_windows": "Ctrl+Alt+O",
+    "action_mac": "Command+Alt+O"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Opacity dialog box for selected layers",
+    "action_windows": "Ctrl+Shift+O",
+    "action_mac": "Command+Shift+O"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Rotation dialog box for selected layers",
+    "action_windows": "Ctrl+Shift+R",
+    "action_mac": "Command+Shift+R"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Position dialog box for selected layers",
+    "action_windows": "Ctrl+Shift+P",
+    "action_mac": "Command+Shift+P"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Center-selected layers in view (modifies Position property to place anchor \npoints of selected layers in center of current view)",
+    "action_windows": "Ctrl+Home",
+    "action_mac": "Command+Home"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Center anchor point in the visible content",
+    "action_windows": "Ctrl+Alt+Home",
+    "action_mac": "Command+Option+Home"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers 1 pixel at current magnification (Position)",
+    "action_windows": "Arrow key",
+    "action_mac": "Arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers 10 pixels at current magnification (Position)",
+    "action_windows": "Shift+arrow key",
+    "action_mac": "Shift+arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers 1 frame earlier or later",
+    "action_windows": "Alt+Page Up or Alt+Page Down",
+    "action_mac": "Option+Page Up or Option+Page Down"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected layers 10 frames earlier or later",
+    "action_windows": "Alt+Shift+Page Up or Alt+Shift+Page Down",
+    "action_mac": "Option+Shift+Page Up or Option+Shift+Page Down"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase or decrease Rotation (Z Rotation) of selected layers by 1°",
+    "action_windows": "+ (plus) or - (minus) on numeric keypad",
+    "action_mac": "+ (plus) or - (minus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase or decrease Rotation (Z Rotation) of selected layers by 10°",
+    "action_windows": "Shift++ (plus) or Shift+- (minus) on numeric keypad",
+    "action_mac": "Shift++ (plus) or Shift+- (minus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase or decrease Opacity (or Intensity for light layers) of selected \nlayers by 1%",
+    "action_windows": "Ctrl+Alt++ (plus) or Ctrl+Alt+- (minus) on numeric keypad",
+    "action_mac": "Control+Option++ (plus) or Control+Option+- (minus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase or decrease Opacity (or Intensity for light layers) of selected \nlayers by 10%",
+    "action_windows": "Ctrl+Alt+Shift++ (plus) or Ctrl+Alt+Shift+- (minus) on numeric keypad",
+    "action_mac": "Control+Option+Shift++ (plus) or Control+Option+Shift+- (minus) on numeric \nkeypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase Scale of selected layers by 1%",
+    "action_windows": "Ctrl++ (plus) or Alt++ (plus) on numeric keypad",
+    "action_mac": "Command++ (plus) or Option++ (plus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease Scale of selected layers by 1%",
+    "action_windows": "Ctrl+- (minus) or Alt+- (minus) on numeric keypad",
+    "action_mac": "Command+- (minus) or Option+- (minus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase Scale of selected layers by 10%",
+    "action_windows": "Ctrl+Shift++ (plus) or Alt+Shift++ (plus) on numeric keypad",
+    "action_mac": "Command+Shift++ (plus) or Option+Shift++ (plus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease Scale of selected layers by 10%",
+    "action_windows": "Ctrl+Shift+- (minus) or Alt+Shift+- (minus) on numeric keypad",
+    "action_mac": "Command+Shift+- (minus) or Option+Shift+- (minus) on numeric keypad"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Modify Rotation or Orientation in 45° increments",
+    "action_windows": "Shift-drag with Rotation tool",
+    "action_mac": "Shift-drag with Rotation tool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Modify Scale, constrained to footage frame aspect ratio",
+    "action_windows": "Shift-drag layer handle with Selection tool",
+    "action_mac": "Shift-drag layer handle with Selection tool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reset Rotation to 0°",
+    "action_windows": "Double-click Rotation tool",
+    "action_mac": "Double-click Rotation tool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reset Scale to 100%",
+    "action_windows": "Double-click Selection tool",
+    "action_mac": "Double-click Selection tool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Scale and reposition selected layers to fit composition",
+    "action_windows": "Ctrl+Alt+F",
+    "action_mac": "Command+Option+F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Scale and reposition selected layers to fit composition width, preserving \nimage aspect ratio for each layer",
+    "action_windows": "Ctrl+Alt+Shift+H",
+    "action_mac": "Command+Option+Shift+H"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Scale and reposition selected layers to fit composition height, preserving \nimage aspect ratio for each layer",
+    "action_windows": "Ctrl+Alt+Shift+G",
+    "action_mac": "Command+Option+Shift+G"
+  },
+  {
+    "groupname": "3D layers",
+    "shortcut": "Switch to 3D view 1 (defaults to Front)",
+    "action_windows": "F10",
+    "action_mac": "F10"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Switch to 3D view 2 (defaults to Custom View 1)",
+    "action_windows": "F11",
+    "action_mac": "F11"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Switch to 3D view 3 (defaults to Active Camera)",
+    "action_windows": "F12",
+    "action_mac": "F12"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Return to previous view",
+    "action_windows": "Esc",
+    "action_mac": "Esc"
+  },
+  {
+    "groupname": null,
+    "shortcut": "New light",
+    "action_windows": "Ctrl+Alt+Shift+L",
+    "action_mac": "Command+Option+Shift+L"
+  },
+  {
+    "groupname": null,
+    "shortcut": "New camera",
+    "action_windows": "Ctrl+Alt+Shift+C",
+    "action_mac": "Command+Option+Shift+C"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move the camera and its point of interest to look at selected 3D layers",
+    "action_windows": "Ctrl+Alt+Shift+\\",
+    "action_mac": "Command+Option+Shift+\\"
+  },
+  {
+    "groupname": null,
+    "shortcut": "With a camera tool selected, move the camera and its point of interest to \nlook at selected 3D layers",
+    "action_windows": "F",
+    "action_mac": "F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "With a camera tool selected, move the camera and its point of interest to \nlook at all 3D layers",
+    "action_windows": "Ctrl+Shift+F",
+    "action_mac": "Command+Shift+F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn Casts Shadows property on or off for selected 3D layers",
+    "action_windows": "Alt+Shift+C",
+    "action_mac": "Option+Shift+C"
+  },
+  {
+    "groupname": "Keyframes and the Graph Editor",
+    "shortcut": "Toggle between Graph Editor and layer bar modes",
+    "action_windows": "Shift+F3",
+    "action_mac": "Shift+F3"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select all keyframes for a property",
+    "action_windows": "Click property name",
+    "action_mac": "Click property name"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select all visible keyframes and properties",
+    "action_windows": "Ctrl+Alt+A",
+    "action_mac": "Command+Option+A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Deselect all keyframes, properties, and property groups",
+    "action_windows": "Shift+F2 or Ctrl+Alt+Shift+A",
+    "action_mac": "Shift+F2 or Command+Option+Shift+A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move keyframe 1 frame later or earlier",
+    "action_windows": "Alt+Right Arrow or Alt+Left Arrow",
+    "action_mac": "Option+Right Arrow or Option+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move keyframe 10 frames later or earlier",
+    "action_windows": "Alt+Shift+Right Arrow or Alt+Shift+Left Arrow",
+    "action_mac": "Option+Shift+Right Arrow or Option+Shift+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set interpolation for selected keyframes (layer bar mode)",
+    "action_windows": "Ctrl+Alt+K",
+    "action_mac": "Command+Option+K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set keyframe interpolation method to hold or Auto Bezier",
+    "action_windows": "Ctrl+Alt+H",
+    "action_mac": "Command+Option+H"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set keyframe interpolation method to linear or Auto Bezier",
+    "action_windows": "Ctrl-click in layer bar mode",
+    "action_mac": "Command-click in layer bar mode"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set keyframe interpolation method to linear or hold",
+    "action_windows": "Ctrl+Alt-click in layer bar mode",
+    "action_mac": "Command+Option-click in layer bar mode"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Easy ease selected keyframes",
+    "action_windows": "F9",
+    "action_mac": "F9"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Easy ease selected keyframes in",
+    "action_windows": "Shift+F9",
+    "action_mac": "Shift+F9"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Easy ease selected keyframes out",
+    "action_windows": "Ctrl+Shift+F9",
+    "action_mac": "Command+Shift+F9"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set velocity for selected keyframes",
+    "action_windows": "Ctrl+Shift+K",
+    "action_mac": "Command+Shift+K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add or remove keyframe at current time. For property shortcuts, see Showing \nproperties and groups in the Timeline panel (keyboard shortcuts).",
+    "action_windows": "Alt+Shift+property shortcut",
+    "action_mac": "Option+property shortcut"
+  },
+  {
+    "groupname": "Text",
+    "shortcut": "New text layer",
+    "action_windows": "Ctrl+Alt+Shift+T",
+    "action_mac": "Command+Option+Shift+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Align selected horizontal text left, center, or right",
+    "action_windows": "Ctrl+Shift+L, Ctrl+Shift+C, or Ctrl+Shift+R",
+    "action_mac": "Command+Shift+L, Command+Shift+C, or Command+Shift+R"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Align selected vertical text top, center, or bottom",
+    "action_windows": "Ctrl+Shift+L, Ctrl+Shift+C, or Ctrl+Shift+R",
+    "action_mac": "Command+Shift+L, Command+Shift+C, or Command+Shift+R"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend or reduce selection by one character to right or left in horizontal \ntext",
+    "action_windows": "Shift+Right Arrow or Shift+Left Arrow",
+    "action_mac": "Shift+Right Arrow or Shift+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend or reduce selection by one word to right or left in horizontal text",
+    "action_windows": "Ctrl+Shift+Right Arrow or Ctrl+Shift+Left Arrow",
+    "action_mac": "Command+Shift+Right Arrow or Command+Shift+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend or reduce selection by one line up or down in horizontal text",
+    "action_windows": "Shift+Up Arrow or Shift+Down Arrow",
+    "action_mac": "Shift+Up Arrow or Shift+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend or reduce selection by one line to right or left in vertical text",
+    "action_windows": "Shift+Right Arrow or Shift+Left Arrow",
+    "action_mac": "Shift+Right Arrow or Shift+Left Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend or reduce selection one word up or down in vertical text",
+    "action_windows": "Ctrl+Shift+Up Arrow or Ctrl+Shift+Down Arrow",
+    "action_mac": "Command+Shift+Up Arrow or Command+Shift+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Extend or reduce selection by one character up or down in vertical text",
+    "action_windows": "Shift+Up Arrow or Shift+Down Arrow",
+    "action_mac": "Shift+Up Arrow or Shift+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select text from insertion point to beginning or end of line",
+    "action_windows": "Shift+Home or Shift+End",
+    "action_mac": "Shift+Home or Shift+End"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move insertion point to beginning or end of line",
+    "action_windows": "Home or End",
+    "action_mac": "Home or End"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select all text on a layer",
+    "action_windows": "Double-click text layer",
+    "action_mac": "Double-click text layer"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select text from insertion point to beginning or end of text frame",
+    "action_windows": "Ctrl+Shift+Home or Ctrl+Shift+End",
+    "action_mac": "Command+Shift+Home or Command+Shift+End"
+  },
+  {
+    "groupname": null,
+    "shortcut": "To mouse-click point, select text from insertion point",
+    "action_windows": "Shift-click",
+    "action_mac": "Shift-click"
+  },
+  {
+    "groupname": null,
+    "shortcut": "In horizontal text, move insertion point one character left or right; one \nline up or down; one word left or right; or one paragraph up or down",
+    "action_windows": "Left Arrow or Right Arrow; Up Arrow or Down Arrow; Ctrl+Left Arrow or \nCtrl+Right Arrow; or Ctrl+Up Arrow or Ctrl+Down Arrow",
+    "action_mac": "Left Arrow or Right Arrow; Up Arrow or Down Arrow; Command+Left Arrow or \nCommand+Right Arrow; or Command+Up Arrow or Command+Down Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "In vertical text, move insertion point one character up or down; one left \nor right; one word up or down; or one paragraph left or right",
+    "action_windows": "Up Arrow or Down Arrow; Left Arrow or Right Arrow; Ctrl+Up Arrow or \nCtrl+Down Arrow; or Ctrl+Left Arrow or Ctrl+Right Arrow",
+    "action_mac": "Up Arrow or Down Arrow; Left Arrow or Right Arrow; Command+Up Arrow or \nCommand+Down Arrow; or Command+Left Arrow or Command+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select word, line, paragraph, or entire text frame",
+    "action_windows": "Double-click, triple-click, quadruple-click, or quintuple-click with Type \ntool",
+    "action_mac": "Double-click, triple-click, quadruple-click, or quintuple-click with Type \ntool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn All Caps on or off for selected text",
+    "action_windows": "Ctrl+Shift+K",
+    "action_mac": "Command+Shift+K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn Small Caps on or off for selected text",
+    "action_windows": "Ctrl+Alt+Shift+K",
+    "action_mac": "Command+Option+Shift+K"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn Superscript on or off for selected text",
+    "action_windows": "Ctrl+Shift+= (equal sign)",
+    "action_mac": "Command+Shift+= (equal sign)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Turn Subscript on or off for selected text",
+    "action_windows": "Ctrl+Alt+Shift+= (equal sign)",
+    "action_mac": "Command+Option+Shift+= (equal sign)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set horizontal scale to 100% for selected text",
+    "action_windows": "Ctrl+Shift+X",
+    "action_mac": "Command+Shift+X"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set vertical scale to 100% for selected text",
+    "action_windows": "Ctrl+Alt+Shift+X",
+    "action_mac": "Command+Option+Shift+X"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Auto leading for selected text",
+    "action_windows": "Ctrl+Alt+Shift+A",
+    "action_mac": "Command+Option+Shift+A"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reset tracking to 0 for selected text",
+    "action_windows": "Ctrl+Shift+Q",
+    "action_mac": "Command+Shift+Control+Q"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Justify paragraph; left align last line",
+    "action_windows": "Ctrl+Shift+J",
+    "action_mac": "Command+Shift+J"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Justify paragraph; right align last line",
+    "action_windows": "Ctrl+Alt+Shift+J",
+    "action_mac": "Command+Option+Shift+J"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Justify paragraph; force last line",
+    "action_windows": "Ctrl+Shift+F",
+    "action_mac": "Command+Shift+F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease or increase font size of selected text by 2 units",
+    "action_windows": "Ctrl+Shift+, (comma) or Ctrl+Shift+. (period)",
+    "action_mac": "Command+Shift+, (comma) or Command+Shift+. (period)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease or increase font size of selected text by 10 units",
+    "action_windows": "Ctrl+Alt+Shift+, (comma) or Ctrl+Alt+Shift+. (period)",
+    "action_mac": "Command+Option+Shift+, (comma) or Command+Option+Shift+. (period)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase or decrease leading by 2 units",
+    "action_windows": "Alt+Down Arrow or Alt+Up Arrow",
+    "action_mac": "Option+Down Arrow or Option+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase or decrease leading by 10 units",
+    "action_windows": "Ctrl+Alt+Down Arrow or Ctrl+Alt+Up Arrow",
+    "action_mac": "Command+Option+Down Arrow or Command+Option+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease or increase baseline shift by 2 units",
+    "action_windows": "Alt+Shift+Down Arrow or Alt+Shift+Up Arrow",
+    "action_mac": "Option+Shift+Down Arrow or Option+Shift+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease or increase baseline shift by 10 units",
+    "action_windows": "Ctrl+Alt+Shift+Down Arrow or Ctrl+Alt+Shift+Up Arrow",
+    "action_mac": "Command+Option+Shift+Down Arrow or Command+Option+Shift+Up Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease or increase kerning or tracking 20 units (20/1000 ems)",
+    "action_windows": "Alt+Left Arrow or Alt+Right Arrow",
+    "action_mac": "Option+Left Arrow or Option+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease or increase kerning or tracking 100 units (100/1000 ems)",
+    "action_windows": "Ctrl+Alt+Left Arrow or Ctrl+Alt+Right Arrow",
+    "action_mac": "Command+Option+Left Arrow or Command+Option+Right Arrow"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle paragraph composer",
+    "action_windows": "Ctrl+Alt+Shift+T",
+    "action_mac": "Command+Option+Shift+T"
+  },
+  {
+    "groupname": "Masks",
+    "shortcut": "New mask",
+    "action_windows": "Ctrl+Shift+N",
+    "action_mac": "Command+Shift+N"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select all points in a mask",
+    "action_windows": "Alt-click mask",
+    "action_mac": "Option-click mask"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Select next or previous mask",
+    "action_windows": "Alt+` (accent grave) or Alt+Shift+` (accent grave)",
+    "action_mac": "Option+` (accent grave) or Option+Shift+` (accent grave)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Enter free-transform mask editing mode",
+    "action_windows": "Double-click mask with Selection tool or select mask in Timeline panel and \npress Ctrl+T",
+    "action_mac": "Double-click mask with Selection tool or select mask in Timeline panel and \npress Command+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Exit free-transform mask editing mode",
+    "action_windows": "Esc",
+    "action_mac": "Esc"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Scale around center point in Free Transform mode",
+    "action_windows": "Ctrl-drag",
+    "action_mac": "Command-drag"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected path points 1 pixel at current magnification",
+    "action_windows": "Arrow key",
+    "action_mac": "Arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move selected path points 10 pixels at current magnification",
+    "action_windows": "Shift+arrow key",
+    "action_mac": "Shift+arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Toggle between smooth and corner points",
+    "action_windows": "Ctrl+Alt-click vertex",
+    "action_mac": "Command+Option-click vertex"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Redraw Bezier handles",
+    "action_windows": "Ctrl+Alt-drag vertex",
+    "action_mac": "Command+Option-drag vertex"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Invert selected mask",
+    "action_windows": "Ctrl+Shift+I",
+    "action_mac": "Command+Shift+I"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Mask Feather dialog box for selected mask",
+    "action_windows": "Ctrl+Shift+F",
+    "action_mac": "Command+Shift+F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Open Mask Shape dialog box for selected mask",
+    "action_windows": "Ctrl+Shift+M",
+    "action_mac": "Command+Shift+M"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Subtract mode",
+    "action_windows": "S",
+    "action_mac": "S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Darken mode",
+    "action_windows": "D",
+    "action_mac": "D"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Difference mode",
+    "action_windows": "F",
+    "action_mac": "F"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add mode",
+    "action_windows": "A",
+    "action_mac": "S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Intersect mode",
+    "action_windows": "I",
+    "action_mac": "I"
+  },
+  {
+    "groupname": null,
+    "shortcut": "None",
+    "action_windows": "N",
+    "action_mac": "N"
+  },
+  {
+    "groupname": "Paint tools",
+    "shortcut": "Swap paint background color and foreground colors",
+    "action_windows": "X",
+    "action_mac": "X"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set paint foreground color to black and background color to white",
+    "action_windows": "D",
+    "action_mac": "D"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set foreground color to the color currently under any paint tool pointer",
+    "action_windows": "Alt-click",
+    "action_mac": "Option-click"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set foreground color to the average color of a 4-pixel x 4-pixel area under \nany paint tool pointer",
+    "action_windows": "Ctrl+Alt-click",
+    "action_mac": "Command+Option-click"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set brush size for a paint tool",
+    "action_windows": "Ctrl-drag",
+    "action_mac": "Command-drag"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set brush hardness for a paint tool",
+    "action_windows": "Ctrl-drag, then release Ctrl while dragging",
+    "action_mac": "Command-drag, then release Command while dragging"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Join current paint stroke to the previous stroke",
+    "action_windows": "Hold Shift while beginning stroke",
+    "action_mac": "Hold Shift while beginning stroke"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set starting sample point to point currently under Clone Stamp tool pointer",
+    "action_windows": "Alt-click",
+    "action_mac": "Option-click"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Momentarily activate Eraser tool with Last Stroke Only option",
+    "action_windows": "Ctrl+Shift",
+    "action_mac": "Command+Shift"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Show and move overlay (change Offset value of *aligned* Clone Stamp tool or \nchange Source Position value of *unaligned* Clone Stamp tool)",
+    "action_windows": "Alt+Shift-drag with Clone Stamp tool",
+    "action_mac": "Option+Shift-drag with Clone Stamp tool"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Activate a specific Clone Stamp tool preset",
+    "action_windows": "3, 4, 5, 6, or 7 on the main keyboard",
+    "action_mac": "3, 4, 5, 6, or 7 on the main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Duplicate a Clone Stamp tool preset in Paint panel",
+    "action_windows": "Alt-click the button for the preset",
+    "action_mac": "Option-click the button for the preset"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set opacity for a paint tool",
+    "action_windows": "Digit on numeric keypad (for example, 9=90%, 1=10%)*",
+    "action_mac": "Digit on numeric keypad (for example, 9=90%, 1=10%)*"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set opacity for a paint tool to 100%",
+    "action_windows": ". (decimal) on numeric keypad*",
+    "action_mac": ". (decimal) on numeric keypad*"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set flow for a paint tool",
+    "action_windows": "Shift+ a digit on numeric keypad (for example, 9=90%, 1=10%)*",
+    "action_mac": "Shift+ a digit on numeric keypad (for example, 9=90%, 1=10%)*"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set flow for a paint tool to 100%",
+    "action_windows": "Shift+. (decimal) on numeric keypad*",
+    "action_mac": "Shift+. (decimal) on numeric keypad*"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move earlier or later by number of frames specified for stroke Duration",
+    "action_windows": "Ctrl+Page Up or Ctrl+Page Down (or 1 or 2 on the main keyboard)",
+    "action_mac": "Command+Page Up or Command+Page Down (or 1 or 2 on the main keyboard)"
+  },
+  {
+    "groupname": "Shape layers",
+    "shortcut": "Group selected shapes",
+    "action_windows": "Ctrl+G",
+    "action_mac": "Command+G"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Ungroup selected shapes",
+    "action_windows": "Ctrl+Shift+G",
+    "action_mac": "Command+Shift+G"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Enter free-transform path editing mode",
+    "action_windows": "Select Path property in Timeline panel and press Ctrl+T",
+    "action_mac": "Select Path property in Timeline panel and press Command+T"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase star inner roundness",
+    "action_windows": "Page Up when dragging to create shape",
+    "action_mac": "Page Up when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease star inner roundness",
+    "action_windows": "Page Down when dragging to create shape",
+    "action_mac": "Page Down when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increase number of points for star or polygon; increase roundness for \nrounded rectangle",
+    "action_windows": "Up Arrow when dragging to create shape",
+    "action_mac": "Up Arrow when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Decrease number of points for star or polygon; decrease roundness for \nrounded rectangle",
+    "action_windows": "Down Arrow when dragging to create shape",
+    "action_mac": "Down Arrow when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Reposition shape during creation",
+    "action_windows": "Hold spacebar when dragging to create shape",
+    "action_mac": "Hold spacebar when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set rounded rectangle roundness to 0 (sharp corners); decrease polygon and \nstar outer roundness",
+    "action_windows": "Left Arrow when dragging to create shape",
+    "action_mac": "Left Arrow when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set rounded rectangle roundness to maximum; increase polygon and star outer \nroundness",
+    "action_windows": "Right Arrow when dragging to create shape",
+    "action_mac": "Right Arrow when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Constrain rectangles to squares; constrain ellipses to circles; constrain \npolygons and stars to zero rotation",
+    "action_windows": "Shift when dragging to create shape",
+    "action_mac": "Shift when dragging to create shape"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Change outer radius of star",
+    "action_windows": "Ctrl when dragging to create shape",
+    "action_mac": "Command when dragging to create shape"
+  },
+  {
+    "groupname": "Markers",
+    "shortcut": "Set marker at current time (works during preview and audio-only preview)",
+    "action_windows": "* (multiply) on numeric keypad",
+    "action_mac": "* (multiply) on numeric keypad or Control+8 on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set marker at current time and open marker dialog box",
+    "action_windows": "Alt+* (multiply) on numeric keypad",
+    "action_mac": "Option+* (multiply) on numeric keypad or Control+Option+8 on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Set and number a composition marker (0-9) at the current time",
+    "action_windows": "Shift+0-9 on main keyboard",
+    "action_mac": "Shift+0-9 on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Go to a composition marker (0-9)",
+    "action_windows": "0-9 on main keyboard",
+    "action_mac": "0-9 on main keyboard"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Display the duration between two layer markers or keyframes in the Info \npanel",
+    "action_windows": "Alt-click the markers or keyframes",
+    "action_mac": "Option-click the markers or keyframes"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Remove marker",
+    "action_windows": "Ctrl-click marker",
+    "action_mac": "Command-click marker"
+  },
+  {
+    "groupname": "Motion tracking",
+    "shortcut": "Move feature region, search region, and attach point 1 pixel at current \nmagnification",
+    "action_windows": "Arrow key",
+    "action_mac": "Arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move feature region, search region, and attach point 10 pixels at current \nmagnification",
+    "action_windows": "Shift+arrow key",
+    "action_mac": "Shift+arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move feature region and search region 1 pixel at current magnification",
+    "action_windows": "Alt+arrow key",
+    "action_mac": "Option+arrow key"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Move feature region and search region 10 pixels at current magnification",
+    "action_windows": "Alt+Shift+arrow key",
+    "action_mac": "Option+Shift+arrow key"
+  },
+  {
+    "groupname": "Saving, exporting, and rendering",
+    "shortcut": "Save project",
+    "action_windows": "Ctrl+S",
+    "action_mac": "Command+S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Increment and save project",
+    "action_windows": "Ctrl+Alt+Shift+S",
+    "action_mac": "Command+Option+Shift+S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Save As",
+    "action_windows": "Ctrl+Shift+S",
+    "action_mac": "Command+Shift+S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add active composition or selected items to render queue",
+    "action_windows": "Ctrl+Shift+/ (on main keyboard)",
+    "action_mac": "Command+Shift+/ (on main keyboard)"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add current frame to render queue",
+    "action_windows": "Ctrl+Alt+S",
+    "action_mac": "Command+Option+S"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Duplicate render item with same output filename as original",
+    "action_windows": "Ctrl+Shift+D",
+    "action_mac": "Command+Shift+D"
+  },
+  {
+    "groupname": null,
+    "shortcut": "Add a composition to the Adobe Media Encoder encoding queue",
+    "action_windows": "Ctrl+Alt+M",
+    "action_mac": "Cmd+Option+M"
+  }
+]

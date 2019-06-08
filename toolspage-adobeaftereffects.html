@@ -23,6 +23,51 @@
 
             gtag('config', 'UA-99827935-2', { 'anonymize_ip': true });
         </script>
+
+        <!--Sheety API scripts-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            // Load JSON from API Mac
+            $.getJSON(
+                // "https://api.sheety.co/fd02ea30-ac4e-41c6-a354-b7830c207dbc",
+                "json/toolspage-adobeaftereffects.json",
+                function(data) {
+                var template = Handlebars.compile($("#item-template-mac").html());
+                $("#items_mac").html(template(data));
+                }
+            );
+            // Load JSON from API Windows
+            $.getJSON(
+                // "https://api.sheety.co/fd02ea30-ac4e-41c6-a354-b7830c207dbc",
+                "json/toolspage-adobeaftereffects.json",
+                function(data) {
+                var template = Handlebars.compile($("#item-template-windows").html());
+                $("#items_windows").html(template(data));
+                }
+            );
+            });
+        </script>
+        <!-- Return data Mac -->
+        <script id="item-template-mac" type="text/x-handlebars-template">
+            <table id="myTable">
+                {{#each this}}
+                <tr><th colspan="2">{{groupname}}</th></tr>
+                <tr><td>{{shortcut}}</td><td>{{action_mac}}</td></tr>
+                {{/each}}
+            </table>
+        </script>
+        <!-- Return data Windows -->
+        <script id="item-template-windows" type="text/x-handlebars-template">
+            <table id="myTable">
+                {{#each this}}
+                <tr><th colspan="2">{{groupname}}</th></tr>
+                <tr><td>{{shortcut}}</td><td>{{action_windows}}</td></tr>
+                {{/each}}
+            </table>
+        </script>
+        <!--End Sheety API scripts-->
+
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <!-- Hotjar Tracking Code for http://shortcuts.design -->
         <script>
@@ -69,8 +114,8 @@
 
             <section class="edit-and-switch">
                 <div class="edit-and-switch-links">
-                    <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-adobeaftereffects-mac.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add Mac shortcuts on Github</strong></a>
-                    <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-adobeaftereffects-windows.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add Windows shortcuts on Github</strong></a>
+                    <!-- <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-adobeaftereffects-mac.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add Mac shortcuts on Github</strong></a>
+                    <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-adobeaftereffects-windows.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add Windows shortcuts on Github</strong></a> -->
                 </div>
                 <ul class="tabs">
                     <li class="tab-link current" data-tab="tab-1">Mac</li>
@@ -84,24 +129,26 @@
                         <div id="tab-1" class="tab-content current">
                             <div class="toolspage-shortcuts-tables">
                                 <section class="data">
-                                    <script>
+                                    <!-- <script>
                                         $( document ).ready(function(){
                                             $("#data-adobeaftereffects-mac").load("data-live/Design/toolspage-adobeaftereffects-mac.html");
                                         });
                                     </script>
-                                    <div id="data-adobeaftereffects-mac"></div>
+                                    <div id="data-adobeaftereffects-mac"></div> -->
+                                    <div id="items_mac"></div>
                                 </section>
                             </div>
                         </div>
                         <div id="tab-2" class="tab-content">
                             <div class="toolspage-shortcuts-tables">
                                 <section class="data">
-                                    <script>
+                                    <!-- <script>
                                         $( document ).ready(function(){
                                             $("#data-adobeaftereffects-windows").load("data-live/Design/toolspage-adobeaftereffects-windows.html");
                                         });
                                     </script>
-                                    <div id="data-adobeaftereffects-windows"></div>
+                                    <div id="data-adobeaftereffects-windows"></div> -->
+                                    <div id="items_windows"></div>
                                 </section>
                             </div>
                         </div>
