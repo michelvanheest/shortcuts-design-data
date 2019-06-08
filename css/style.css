@@ -12,7 +12,8 @@ strong {
 
 body {
     margin: 0;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    background-color: #FAFAFC;
     overflow-x: hidden;
 }
 
