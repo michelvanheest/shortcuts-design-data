@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/toolspage-design.css">
+        <link rel="stylesheet" href="css/toolspage.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/switch.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon@2x.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+        <script src="js/switch.js"></script>
+        <script src="js/search.js"></script>
+
+
+        <script src="https://www.google.com/jsapi" type="text/javascript"></script> <!--This script is for the prototype with Google Sheets-->
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99827935-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-99827935-2', { 'anonymize_ip': true });
+        </script>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <!-- Hotjar Tracking Code for http://shortcuts.design -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:695747,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <title>Figma shortcuts | All shortucts for Figma</title>
+        <meta name="description" content="Shortcuts.design is the ultimate shortcut reference for designers. Charge your
+        workflow in Figma with all the shortcuts in one place 👨‍🎨">
+    </head>
+    <body>
+
+        <section class="header">
+            <script>
+                $(function(){
+                    $("#header").load("header.html");
+                });
+            </script>
+            <div id="header"></div>
+        </section>
+
+        <object type="image/svg+xml" data="img/backgroundDesign.svg" class="blob"></object>
+
+        <section class="content-wrapper">
+
+            <section class="toolspage-hero">
+                <div class="toolspage-hero-left">
+                    <h1>Shortcuts.design</h1>
+                    <h2>Google sheets demo</h2>
+                    <div class="line toolspage-line"></div>
+                    <!-- <p>Figma is the collaborative interface designtool, like the Google Docs of the designtools. With Figma you can design, prototype, review and collaborate on your screen designs right from your browser or the desktop application. View or download Figma via <a href="http://www.figma.com" class="textlink" target="_blank">Figma.com</a>.</p> -->
+                </div>
+            </section>
+
+            <!--UNIVERSAL SEARCH-->
+            <section class="toolspage-search">
+                <input id="myInput" type="text" placeholder="Search for shortcuts...">
+            </section>
+
+            <section class="edit-and-switch">
+                <div class="edit-and-switch-links">
+                    <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/Design/toolspage-figma.html" class="textlink" target="_blank"><strong><i class="fa fa-github" aria-hidden="true"></i> Edit or add shortcuts on Github</strong></a>
+                </div>
+            </section>
+            <!-- OG Content-->
+            <!-- <section class="toolspage-shortucts new_section">
+                <div class="toolspage-shortcuts-wrapper">
+                    <div id="tab-1" class="tab-content current">
+                        <div class="toolspage-shortcuts-tables">
+                            <section class="data">
+                                <script>
+                                    $( document ).ready(function(){
+                                        $("#data-figma").load("data-live/Design/toolspage-figma.html");
+                                    });
+                                </script>
+                                <div id="data-figma"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+
+
+            <!-- Test with Google Sheets in an iFrame-->
+            <!-- <section class="toolspage-shortucts new_section">
+                <div class="toolspage-shortcuts-wrapper">
+                    <div id="tab-1" class="tab-content current">
+                        <div class="toolspage-shortcuts-tables">
+                            <section class="data">
+                                <iframe id="frame" src="https://docs.google.com/spreadsheets/d/1tUtXwfWM5hWeduHv24XZFedzYuKpXADNMkQOpl-vA00/gviz/tq?tqx=out:html&tq&gid=0"></iframe>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+
+            <!-- Another thest with Google Sheets, right now directly-->
+            <script src="js/google-sheets-html.js" type="text/javascript"></script>
+            <div id="table"></div>
+
+
+            <style>
+            /***************************
+                Google Table CSS
+            ***************************/
+
+            .google-visualization-table {
+                width: 100%;
+                margin: auto;
+                text-align: left;
+                table-layout: fixed;
+            }
+
+            .google-visualization-table-th {
+                display: none;
+            }
+
+            .google-visualization-table-tr-even,
+            .google-visualization-table-tr-even td,
+            .google-visualization-table-tr-even-nonstrict {
+            background-color: #fbfbfb !important;
+            color: #000000 !important;
+            }
+
+            .google-visualization-table-tr-odd,
+            .google-visualization-table-tr-odd td,
+            .google-visualization-table-tr-odd-nonstrict {
+            background-color: #fbfbfb !important;
+            color: #000000 !important;
+            }
+
+            .google-visualization-table-tr-sel,
+            .google-visualization-table-tr-sel td,
+            .google-visualization-table-tr-sel-nonstrict {
+            background-color: #333 !important;
+            color: #fff !important;
+            }
+
+            .google-visualization-table-tr-over,
+            .google-visualization-table-tr-over td,
+            .google-visualization-table-tr-over-nonstrict {
+            background-color: #f7f7f7 !important;
+            color: #000000 !important;
+            }
+
+            .google-visualization-table-td,
+            .google-visualization-table-th {
+            border: 0px !important;
+            color: #fff !important;
+            border-bottom: 1px solid #DDDDDD !important;
+            }
+
+            .google-visualization-table-tr-head,
+            .google-visualization-table-tr-head td,
+            .google-visualization-table-tr-head-nonstrict {
+            background-color: #333 !important;
+            background-image: none !important;
+            color: #fff !important;
+            }
+
+            .google-visualization-table .gradient {
+            background-image: none !important;
+            }
+            </style>
+
+            
+
+
+            
+
+            <section class="toolspage-related-apps tools new_section">
+                <h2>Related apps</h2>
+                <div class="line toolspage-line"></div>
+                <div class="tools-design" id="tools-design-click">
+                    <div class="tools-contentbox">
+                        <div class="tools-label" id="tools-label-design"></div>
+                        <div class="tools-logos">
+                            <a class="tools-logos-available" href="toolspage-principle.html"><img src="img/Principle@2x.png" alt="Principle app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-invision.html"><img src="img/InVision@2x.png" alt="InVision app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-framer.html"><img src="img/Framer@2x.png" alt="Framer app logo"></a>
+                            <a class="tools-logos-available" href="toolspage-zeplin.html"><img src="img/Zeplin@2x.png" alt="Zeplin app logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html#tools-design"><button type="button">All apps</button></a>
+            </section>
+        </section>
+
+        <section class="question">
+            <script>
+                $( document ).ready(function(){
+                    $("#question").load("question.html");
+                });
+            </script>
+            <div id="question"></div>
+        </section>
+
+        <section class="notification">
+            <script>
+                $( document ).ready(function(){
+                    $("#notification").load("notification.html");
+                });
+            </script>
+            <div id="notification"></div>
+        </section>
+
+        <footer>
+            <script>
+                $(function(){
+                    $("#footer").load("footer.html");
+                });
+            </script>
+            <div id="footer"></div>
+        </footer>
+    </body>
+</html>
