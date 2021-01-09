@@ -19,6 +19,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-rendering: optimizeSpeed;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
 /* ============COLORS============ */
 :root {
     --neutral-black: #0A121F;
@@ -58,7 +62,7 @@ a, a:hover {
     /* Note to self: set link-color unique for each tools-category */
 }
 
-a:hover {
+h5 a:hover, p a:hover {
     border-color: var(--neutral-white);
     /* Note to self: set link-color unique for each tools-category */
 }
@@ -81,17 +85,6 @@ footer, #banner-wrapper {
     }
 }
 
-/* ============ANIMATIONS============ */
-a, nav img {
-    transition:all .16s ease-out 0s;
-    -moz-transition:all .16s ease-out 0s;
-    -webkit-transition:all .16s ease-out 0s;
-    -o-transition:all .16s ease-out 0s;
-
-    /* transition: transform .3s;
-    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485); */
-}
-
 /* ============FONTS============ */
 h1 {
     font-weight: 700;
@@ -101,14 +94,14 @@ h1 {
 
 h2 {
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 72px;
 }
 
 h3 {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 24px;
+    line-height: auto;
 }
 
 h4, #banner {
@@ -129,8 +122,23 @@ p {
     line-height: 30px;
 }
 
+a.button {
+    font-weight: 500;
+    font-size: 18px;
+}
+
 /* ============LINKS============ */
-a {
+a, nav img, #profile-avatar {
+    transition:all .16s ease-out 0s;
+    -moz-transition:all .16s ease-out 0s;
+    -webkit-transition:all .16s ease-out 0s;
+    -o-transition:all .16s ease-out 0s;
+
+    /* transition: transform .3s;
+    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485); */
+}
+
+h5 a, p a {
     border-bottom: 2px solid transparent;
 }
 
@@ -142,22 +150,52 @@ a:hover {
     font-size: 12px;
 }
 
-.a-icon, #banner {
+.a-icon, #banner, .button {
     text-decoration: none;
     position: relative;
     display: inline-block;
 }
 
-.a-icon:hover, #banner:hover, nav a:hover {
-    border-bottom: 2px solid transparent !important;
-}
-
-.a-icon:hover, nav img:hover {
+.a-icon:hover, nav img:hover, #profile:hover #profile-avatar {
     transform: scale(1.2, 1.2);
     -webkit-transform: scale(1.2, 1.2);
 }
 
-#banner:hover {
+#banner:hover, .button:hover {
     transform: scale(1.05, 1.05);
     -webkit-transform: scale(1.05, 1.05);
+}
+
+.button {
+    padding: 16px 48px;
+    border-radius: 100px;
+}
+
+/* .button:hover {
+    border: none;
+} */
+
+.button-secondary {
+    border: 2px solid var(--brand-default-color);
+}
+
+.button-secondary:hover {
+    border: 2px solid var(--brand-default-color);
+}
+
+/* ============LAYOUT============ */
+.blob {
+    display: none;
+}
+
+/* ============MEDIAQUERIES============ */
+@media only screen and (min-width: 992px) {
+    .blob {
+        width: 50vw;
+        display: inline;
+        position: absolute;
+        top: -100px;
+        right: 0;
+        z-index: -1;
+    }
 }
