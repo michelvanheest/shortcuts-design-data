@@ -1,0 +1,163 @@
+/* ============BODY CUSTOM RESET============ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    line-height: 1.2;
+    kerning: none !important;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+}
+
+/* ============COLORS============ */
+:root {
+    --neutral-black: #0A121F;
+    --neutral-darkest: #131E2F;
+    --neutral-darker: rgba(10, 18, 31, 0.64);
+    --neutral-lighter: rgba(255, 255, 255, 0.64);
+    --neutral-lightest: #F9F9FB;
+    --neutral-white: #FFFFFF;
+    --brand-default-gradient: linear-gradient(109.09deg, #5547FF 0%, #7A70FF 100%);
+    --brand-default-color: #5447FF;
+    --brand-1-gradient: linear-gradient(289.09deg, #FF476D 0%, #FBB861 100%);
+    --brand-1-color: #FF476D;
+    --brand-2-gradient: linear-gradient(109.09deg, #08E5EA 0%, #09DC72 100%);
+    --brand-2-color: #09DC72;
+    --brand-3-gradient: linear-gradient(135deg, #8EC5FC 0%, #C047FF 100%);
+    --brand-3-color: #C047FF;
+    --brand-4-gradient: linear-gradient(135deg, #70F7F1 0%, #47BDFF 100%);
+    --brand-4-color: #47BDFF;
+    
+    /* --shadow-elevated: ; */
+}
+
+h1, h2, h4 {
+    color: var(--neutral-black)
+}
+
+h3, h5, p {
+    color: var(--neutral-darker)
+}
+
+body, #footer-curve {
+    background-color: var(--neutral-lightest);
+}
+
+a, a:hover {
+    color: var(--neutral-white);
+    /* Note to self: set link-color unique for each tools-category */
+}
+
+a:hover {
+    border-color: var(--neutral-white);
+    /* Note to self: set link-color unique for each tools-category */
+}
+
+footer, #banner-wrapper {
+    background: var(--brand-default-gradient);
+}
+
+@media (prefers-color-scheme: dark) {
+    body, #footer-curve {
+        background-color: var(--neutral-black);
+    }
+    
+    h3, h5, p {
+        color: var(--neutral-lighter)
+    }
+
+    h1, h2, h4 {
+        color: var(--neutral-white)
+    }
+}
+
+/* ============ANIMATIONS============ */
+a, nav img {
+    transition:all .16s ease-out 0s;
+    -moz-transition:all .16s ease-out 0s;
+    -webkit-transition:all .16s ease-out 0s;
+    -o-transition:all .16s ease-out 0s;
+
+    /* transition: transform .3s;
+    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485); */
+}
+
+/* ============FONTS============ */
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 72px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+h4, #banner {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* ============LINKS============ */
+a {
+    border-bottom: 2px solid transparent;
+}
+
+a:hover { 
+    text-decoration: none;
+}
+
+.a-icon {
+    font-size: 12px;
+}
+
+.a-icon, #banner {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.a-icon:hover, #banner:hover, nav a:hover {
+    border-bottom: 2px solid transparent !important;
+}
+
+.a-icon:hover, nav img:hover {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+}
+
+#banner:hover {
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+}
