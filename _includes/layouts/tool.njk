@@ -2,3 +2,81 @@
 layout: layouts/base.njk
 ---
 
+<link rel="stylesheet" href="/css/toolspage.css">
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/switch.js"></script>
+
+{# BLOB #}
+<object type="image/svg+xml" data="/assets/img/gradient-brand-{{ toolGroup }}.svg" class="blob"></object>
+
+{# INTRO #}
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <h3>Shortcuts.design</h3>
+        <h1>{{ tool }} Shortcuts</h1>
+        <p>{{ toolDescription }} <a href="{{ toolLink }}" target="_blank" class="a-{{ toolGroup }}">{{ toolLinkDescription }}</a>.</p>
+    </div>
+</div>
+
+{# SEARCH #}
+<div class="row">
+    <div class="col-12">
+        <div class="toolspage-search">
+            <input id="myInput" type="text" placeholder="Search for shortcuts...">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 edit-switch">
+        <div id="edit">
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-{{ toolGroup }}"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
+        </div>
+        <div id="switch">
+            <ul class="tabs">
+                <li class="tab-link current button button-primary a-{{ toolGroup }}" data-tab="tab-1">{{ os1 }}</li>
+                <li class="tab-link button button-secondary a-{{ toolGroup }}" data-tab="tab-2">{{ os2 }}</li>
+            </ul>
+            {# <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="button button-primary a-{{ toolGroup }}">Add a tool</a>
+            <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="button button-secondary a-{{ toolGroup }}">Add a tool</a> #}
+        </div>
+    </div>
+</div>
+
+{# DATA-TABLE #}
+<div class="row">
+    <div class="col-12 offset-lg-1 col-lg-10">
+        <div id="tab-1" class="tab-content current">
+            {% if os1 is null %}
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-{{ toolSlug }}").load("/data-live/Design/toolspage-{{ toolSlug }}.html");
+                    });
+                </script>
+                <div id="data-{{ toolSlug }}"></div>
+            {% else %}
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data-live/Design/toolspage-{{ toolSlug }}-{{ os1 }}.html");
+                    });
+                </script>
+                <div id="data-{{ toolSlug }}-{{ os1 }}"></div>
+            {% endif %}
+        </div>
+
+        <div id="tab-2" class="tab-content">
+            {% if os2 == "Windows" %}
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data-live/Design/toolspage-{{ toolSlug }}-{{ os2 }}.html");
+                    });
+                </script>
+                <div id="data-{{ toolSlug }}-{{ os2 }}"></div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{# LOAD JS #}
+{# <script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/switch.js"></script> #}

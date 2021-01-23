@@ -74,6 +74,74 @@
         
         <div class="container">
             
+<link rel="stylesheet" href="/css/toolspage.css">
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/switch.js"></script>
+
+
+<object type="image/svg+xml" data="/assets/img/gradient-brand-Design.svg" class="blob"></object>
+
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <h3>Shortcuts.design</h3>
+        <h1>Overflow Shortcuts</h1>
+        <p>Figma is the collaborative interface designtool, like the Google Docs of the designtools. With Figma you can design, prototype, review and collaborate on your screen designs right from your browser or the desktop application. View or download Figma via <a href="https://www.figma.com" target="_blank" class="a-Design">Figma.com</a>.</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="toolspage-search">
+            <input id="myInput" type="text" placeholder="Search for shortcuts...">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 edit-switch">
+        <div id="edit">
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-Design"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
+        </div>
+        <div id="switch">
+            <ul class="tabs">
+                <li class="tab-link current button button-primary a-Design" data-tab="tab-1">Mac</li>
+                <li class="tab-link button button-secondary a-Design" data-tab="tab-2">Windows</li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12 offset-lg-1 col-lg-10">
+        <div id="tab-1" class="tab-content current">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-overflow-Mac").load("/data-live/Design/toolspage-overflow-Mac.html");
+                    });
+                </script>
+                <div id="data-overflow-Mac"></div>
+            
+        </div>
+
+        <div id="tab-2" class="tab-content">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-overflow-Windows").load("/data-live/Design/toolspage-overflow-Windows.html");
+                    });
+                </script>
+                <div id="data-overflow-Windows"></div>
+            
+        </div>
+    </div>
+</div>
+
+
 
         </div>
 

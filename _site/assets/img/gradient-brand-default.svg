@@ -6,9 +6,9 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 -175C44.7715 -175 0 -130.228 0 -75V128.056V147.728C0 180.087 15.6576 210.446 42.0227 229.206L64.5916 245.266L1110.05 877.08C1123.6 860.386 1132 838.912 1132 814.326V-75C1132 -130.228 1087.23 -175 1032 -175H100Z" fill="url(#paint0_linear)"/>
 </g>
 <defs>
-<linearGradient id="paint0_linear" x1="1132" y1="877.08" x2="-206.205" y2="378.859" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF476D"/>
-<stop offset="1" stop-color="#FBB861"/>
+<linearGradient id="paint0_linear" x1="0" y1="-175" x2="1338.2" y2="323.221" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5547FF"/>
+<stop offset="1" stop-color="#7A70FF"/>
 </linearGradient>
 </defs>
 </svg>
