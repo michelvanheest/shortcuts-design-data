@@ -45,6 +45,16 @@ body {
     /* --shadow-elevated: ; */
 }
 
+::selection {
+    color: var(--neutral-white);
+    background: var(--brand-default-color);
+}
+
+::-moz-selection {
+    color: var(--neutral-white);
+    background: var(--brand-default-color);
+}
+
 h1, h2, h4 {
     color: var(--neutral-black)
 }
@@ -129,13 +139,13 @@ a.button {
 
 /* ============LINKS============ */
 a, nav img, #profile-avatar {
-    transition:all .16s ease-out 0s;
+    /* transition:all .16s ease-out 0s;
     -moz-transition:all .16s ease-out 0s;
     -webkit-transition:all .16s ease-out 0s;
-    -o-transition:all .16s ease-out 0s;
+    -o-transition:all .16s ease-out 0s; */
 
-    /* transition: transform .3s;
-    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485); */
+    transition: transform .3s;
+    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
 h5 a, p a {
@@ -156,9 +166,14 @@ a:hover {
     display: inline-block;
 }
 
-.a-icon:hover, nav img:hover, #profile:hover #profile-avatar {
+.a-icon:hover, #profile:hover #profile-avatar {
     transform: scale(1.2, 1.2);
     -webkit-transform: scale(1.2, 1.2);
+}
+
+nav img:hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
 }
 
 #banner:hover, .button:hover {
