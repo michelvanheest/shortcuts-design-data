@@ -31,12 +31,54 @@ permalink: /
     </div>
 </div>
 
-<div class="row">
+<div class="row tools-overview">
     <div class="col-12 col-lg-3">
-        <h3>Design shortcuts<h3>
+        <img src="/assets/img/toolGroup-design.png" alt="Design Shortcuts Icon">
+        <h2>Design shortcuts<h2>
     </div>
     <div class="col-12 col-lg-9">
         {% set toolslist = collections.tools %}
-        {% include "toolslist.njk" %}
+        {% for tool in toolslist %}
+            {% if tool.data.toolGroup == "Design" %}
+                {% include "toolslist.njk" %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<div class="row tools-overview">
+    <div class="col-12 col-lg-3">
+        <img src="/assets/img/toolGroup-development.png" alt="Development Shortcuts Icon">
+        <h2>Development shortcuts<h2>
+    </div>
+    <div class="col-12 col-lg-9">
+        {% set toolslist = collections.tools %}
+        {% for tool in toolslist %}
+            {% if tool.data.toolGroup == "Development" %}
+                {% include "toolslist.njk" %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<div class="row tools-overview">
+    <div class="col-12 col-lg-3">
+        <img src="/assets/img/toolGroup-productivity.png" alt="Productivity Shortcuts Icon">
+        <h2>Productivity shortcuts<h2>
+    </div>
+    <div class="col-12 col-lg-9">
+        {% set toolslist = collections.tools %}
+        {% for tool in toolslist %}
+            {% if tool.data.toolGroup == "Productivity" %}
+                {% include "toolslist.njk" %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-6">
+        <h2>Missing something?</h2>
+        <p>Feel free to request missing tools or give some feedback using Twitter, E-mail or GitHub! If you can, please help me out with adding the data yourself on GitHub.</p>
+        <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" class="button button-primary">Add a tool 💪</a>
+        <a href="https://twitter.com/michelvanheest?ref=shortcuts.design" target="_blank" class="button button-secondary">Tweet me 🐦</a>
     </div>
 </div>

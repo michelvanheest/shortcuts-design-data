@@ -90,7 +90,7 @@ footer a:hover {
     border-color: var(--neutral-100);
 }
 
-input {
+input, .tool-card {
     background-color: var(--neutral-100);
 }
 
@@ -147,7 +147,7 @@ footer, #banner-wrapper, .button-primary {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs {
+    input, .tabs, .tool-card {
         background-color: var(--neutral-800);
     }
 
@@ -176,7 +176,7 @@ h1 {
 h2, th {
     font-weight: 500;
     font-size: 40px;
-    line-height: 72px;
+    /* line-height: 72px; */
 }
 
 h3, input {
@@ -210,14 +210,14 @@ a.button, .tab-link {
 }
 
 /* ============LINKS============ */
-a {
+a, .tool-card.tool-card:after {
     transition:all .16s ease-out 0s;
     -moz-transition:all .16s ease-out 0s;
     -webkit-transition:all .16s ease-out 0s;
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #footer-right a {
+.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
