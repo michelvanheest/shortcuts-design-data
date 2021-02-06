@@ -27,19 +27,20 @@ layout: layouts/base.njk
     </div>
 </div>
 
+{# EDIT AND SWITCH #}
 <div class="row">
     <div class="col-12 edit-switch">
         <div id="edit">
             <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-{{ toolGroup }}"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
-        <div id="switch">
-            <ul class="tabs">
-                <li class="tab-link current button button-primary a-{{ toolGroup }}" data-tab="tab-1">{{ os1 }}</li>
-                <li class="tab-link button button-secondary a-{{ toolGroup }}" data-tab="tab-2">{{ os2 }}</li>
-            </ul>
-            {# <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="button button-primary a-{{ toolGroup }}">Add a tool</a>
-            <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="button button-secondary a-{{ toolGroup }}">Add a tool</a> #}
-        </div>
+        {% if os2 is not null %}
+            <div id="switch">
+                <ul class="tabs">
+                    <li class="tab-link current button a-{{ toolGroup }}" data-tab="tab-1">{{ os1 }}</li>
+                    <li class="tab-link button a-{{ toolGroup }}" data-tab="tab-2">{{ os2 }}</li>
+                </ul>
+            </div>
+        {% endif %}
     </div>
 </div>
 
@@ -76,7 +77,3 @@ layout: layouts/base.njk
         </div>
     </div>
 </div>
-
-{# LOAD JS #}
-{# <script type="text/javascript" src="/js/search.js"></script>
-<script type="text/javascript" src="/js/switch.js"></script> #}

@@ -25,14 +25,14 @@ body {
 
 /* ============COLORS============ */
 :root {
-    --neutral-black: #0A121F;
-    --neutral-darkest: #131E2F;
-    --neutral-darker: rgba(10, 18, 31, 0.64);
-    --neutral-lighter: rgba(255, 255, 255, 0.64);
-    --neutral-lightest: #F9F9FB;
-    --neutral-white: #FFFFFF;
-    --netraul-table-dark: rgba(10, 18, 31, 0.04);
-    --netraul-table-light: rgba(255, 255, 255, 0.04);
+    --neutral-900: #0A121F;
+    --neutral-800: #131E2F;
+    --neutral-700: rgba(10, 18, 31, 0.64);
+    --neutral-600: rgba(10, 18, 31, 0.04);
+    --neutral-400: rgba(255, 255, 255, 0.08);
+    --neutral-300: rgba(255, 255, 255, 0.64);
+    --neutral-200: #F9F9FB;
+    --neutral-100: #FFFFFF;
     --brand-default-gradient: linear-gradient(109.09deg, #5547FF 0%, #7A70FF 100%);
     --brand-default-color: #5447FF;
     --brand-1-gradient: linear-gradient(289.09deg, #FF476D 0%, #FBB861 100%);
@@ -44,44 +44,54 @@ body {
     --brand-4-gradient: linear-gradient(135deg, #8EC5FC 0%, #C047FF 100%);
     --brand-4-color: #C047FF;
     --shadow-primary: inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
+    --shadow-inset: inset 0px 2px 2px rgba(10, 18, 31, 0.04);
 }
 
 ::selection {
-    color: var(--neutral-white);
+    color: var(--neutral-100);
     background: var(--brand-default-color);
 }
 
 ::-moz-selection {
-    color: var(--neutral-white);
+    color: var(--neutral-100);
     background: var(--brand-default-color);
 }
 
 h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd) {
-    color: var(--neutral-black)
+    color: var(--neutral-900)
 }
 
 h3, h5, p, input, td:nth-child(even) {
-    color: var(--neutral-darker)
+    color: var(--neutral-700)
+}
+
+.tabs {
+    background-color: var(--neutral-600);
+    box-shadow: var(--shadow-inset);
+}
+
+td {
+    border-bottom: 1px solid var(--neutral-600);
 }
 
 footer h5 {
-    color: var(--neutral-lighter)
+    color: var(--neutral-300)
 }
 
 body, #footer-curve {
-    background-color: var(--neutral-lightest);
+    background-color: var(--neutral-200);
 }
 
-#banner-wrapper a, footer a, footer a:hover {
-    color: var(--neutral-white);
+#banner-wrapper a, footer a, footer a:hover, .tab-link.current {
+    color: var(--neutral-100);
 }
 
 footer a:hover {
-    border-color: var(--neutral-white);
+    border-color: var(--neutral-100);
 }
 
 input {
-    background-color: var(--neutral-white);
+    background-color: var(--neutral-100);
 }
 
 a, a:hover {
@@ -92,39 +102,39 @@ a:hover {
     border-color: var(--brand-default-color);
 }
 
-.a-Design, .a-Design:hover {
+.a-Design:not(.tab-link), .a-Design:hover:not(.tab-link) {
     color: var(--brand-1-color);
 }
 
-.a-Design:hover, .button-secondary.a-Design, .button-secondary.a-Design:hover {
+.a-Design:hover, .button-secondary.a-Design, .button-secondary.a-Design:hover, .tabs .tab-link.a-Design {
     border-color: var(--brand-1-color);
 }
 
-.button-primary.a-Design {
+.button-primary.a-Design, .tabs .tab-link.current.a-Design {
     background: var(--brand-1-gradient);
 }
 
-.a-Development, .a-Development:hover {
+.a-Development:not(.tab-link), .a-Development:hover:not(.tab-link) {
     color: var(--brand-2-color);
 }
 
-.a-Development:hover, .button-secondary.a-Development, .button-secondary.a-Development:hover {
+.a-Development:hover, .button-secondary.a-Development, .button-secondary.a-Development:hover, .tabs .tab-link.a-Development {
     border-color: var(--brand-2-color);
 }
 
-.button-primary.a-Development {
+.button-primary.a-Development, .tabs .tab-link.current.a-Development {
     background: var(--brand-2-gradient);
 }
 
-.a-Productivity, .a-Productivity:hover {
+.a-Productivity:not(.tab-link), .a-Productivity:hover:not(.tab-link) {
     color: var(--brand-3-color);
 }
 
-.a-Productivity:hover, .button-secondary.a-Productivity, .button-secondary.a-Productivity:hover {
+.a-Productivity:hover, .button-secondary.a-Productivity, .button-secondary.a-Productivity:hover, .tabs .tab-link.a-Productivity {
     border-color: var(--brand-3-color);
 }
 
-.button-primary.a-Productivity {
+.button-primary.a-Productivity, .tabs .tab-link.current.a-Productivity {
     background: var(--brand-3-gradient);
 }
 
@@ -132,29 +142,25 @@ footer, #banner-wrapper, .button-primary {
     background: var(--brand-default-gradient);
 }
 
-td {
-    border-bottom: 1px solid var(--netraul-table-dark);
-}
-
 @media (prefers-color-scheme: dark) {
     body, #footer-curve {
-        background-color: var(--neutral-black);
+        background-color: var(--neutral-900);
     }
 
-    input {
-        background-color: var(--neutral-darkest);
-    }
-
-    h3, h5, p, input, td:nth-child(even) {
-        color: var(--neutral-lighter);
-    }
-
-    h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd) {
-        color: var(--neutral-white);
+    input, .tabs {
+        background-color: var(--neutral-800);
     }
 
     td {
-        border-bottom: 1px solid var(--netraul-table-light);
+        border-bottom: 1px solid var(--neutral-400);
+    }
+
+    h3, h5, p, input, td:nth-child(even) {
+        color: var(--neutral-300);
+    }
+
+    h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), .tab-link {
+        color: var(--neutral-100);
     }
 }
 
@@ -198,7 +204,7 @@ p {
     line-height: 30px;
 }
 
-a.button {
+a.button, .tab-link {
     font-weight: 500;
     font-size: 18px;
 }
@@ -239,11 +245,11 @@ a:hover {
     border-radius: 100px;
 }
 
-.button-primary {
+.button-primary, .tabs .tab-link.current {
     box-shadow: var(--shadow-primary);
 }
 
-.button-primary:active {
+.button-primary:active, .tabs .tab-link.current:active {
     box-shadow: none;
 }
 

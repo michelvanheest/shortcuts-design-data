@@ -37,6 +37,22 @@ input:focus {
     outline: none;
 }
 
+.edit-switch { 
+    display: block;
+}
+
+#switch {
+    margin: 24px 0px;
+}
+
+.tabs {
+    padding: 5px;
+    border-radius: 100px;
+    width: fit-content;
+    width: -webkit-fit-content;
+    cursor: pointer;
+}
+
 .tab-content {
 	display: none;
 }
@@ -53,6 +69,10 @@ table {
 
 th {
     padding: 64px 0px 16px 0px;
+}
+
+th:first-of-type {
+    padding-top: 40px;
 }
 
 tr {
@@ -83,5 +103,16 @@ td {
     
     ::-moz-placeholder { /* Firefox 19+ */
         color: var(--neutral-input-dark);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .edit-switch {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #switch {
+        margin-top: 0px;
     }
 }
