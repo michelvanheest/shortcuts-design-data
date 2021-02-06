@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-permalink: "toolspage-{{ tool | slug }}"
+permalink: "toolspage-{{ tool | slug }}.html/index.html"
 ---
 
 <link rel="stylesheet" href="/css/toolspage.css">
@@ -15,7 +15,7 @@ permalink: "toolspage-{{ tool | slug }}"
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
         <h1>{{ tool }} Shortcuts</h1>
-        <p>{{ toolDescription }} <a href="{{ toolLink }}" target="_blank" class="a-{{ toolGroup }}">{{ toolLinkDescription }}</a>.</p>
+        <p>{{ toolDescription }} <a href="{{ toolLink }}?ref=shortcuts.design" target="_blank" class="a-{{ toolGroup }}">{{ toolLinkDescription }}</a>.</p>
     </div>
 </div>
 

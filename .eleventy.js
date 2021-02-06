@@ -3,4 +3,5 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("data-live");
+    eleventyConfig.addPassthroughCopy("_redirects");
 }
