@@ -24,10 +24,6 @@
     margin: 120px 0px;
 }
 
-.tools-list {
-    display: flex;
-}
-
 .tools-overview img:first-of-type {
     width: 56px;
     height: 56px;

@@ -23,18 +23,6 @@ body {
     overflow-x: hidden !important;
 }
 
-::-webkit-scrollbar {		
-    width: 16px;		
-    background-color: transparent;		
-}		
-		
-::-webkit-scrollbar-thumb {	
-    width: 16px;	
-    border-radius: 8px;	
-    background-color: var(--brand-default-color);
-    box-shadow: var(--shadow-primary);	
-}
-
 /* ============THEMING============ */
 :root {
     --neutral-900: #0A121F;
@@ -124,7 +112,7 @@ a:hover {
     border-color: var(--brand-1-color);
 }
 
-.button-primary.a-Design, .tabs .tab-link.current.a-Design {
+.button-primary.a-Design, .tabs .tab-link.current.a-Design, .tool-card.tool-card-Design:after {
     background: var(--brand-1-gradient);
 }
 
@@ -136,7 +124,7 @@ a:hover {
     border-color: var(--brand-2-color);
 }
 
-.button-primary.a-Development, .tabs .tab-link.current.a-Development {
+.button-primary.a-Development, .tabs .tab-link.current.a-Development, .tool-card.tool-card-Development:after {
     background: var(--brand-2-gradient);
 }
 
@@ -148,7 +136,7 @@ a:hover {
     border-color: var(--brand-3-color);
 }
 
-.button-primary.a-Productivity, .tabs .tab-link.current.a-Productivity {
+.button-primary.a-Productivity, .tabs .tab-link.current.a-Productivity, .tool-card.tool-card-Productivity:after {
     background: var(--brand-3-gradient);
 }
 

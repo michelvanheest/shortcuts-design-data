@@ -2,16 +2,16 @@
 
 {# {% for tool in toolslist %} #}
     <a href="{{ tool.url | url }}">
-        <div class="tool-card">
+        <div class="tool-card tool-card-{{ tool.data.toolGroup }}">
             <div class="logos-os">
                 {% if tool.data.os1 == "Windows" %}
-                    <img src="/assets/img/logo-windows.png" alt="Logo Windows">
+                    <img src="/assets/img/platform-logo-windows.png" alt="Logo Windows">
                 {% else %}
-                    <img src="/assets/img/logo-apple.png" alt="Logo Apple">
+                    <img src="/assets/img/platform-logo-apple.png" alt="Logo Apple">
                 {% endif %}
 
                 {% if tool.data.os2 == "Windows" %}
-                    <img src="/assets/img/logo-windows.png" alt="Logo Windows">
+                    <img src="/assets/img/platform-logo-windows.png" alt="Logo Windows">
                 {% endif %}
             </div>
             <img src="/assets/img/logo-{{ tool.data.toolSlug }}.png" alt="Logo {{ tool.data.tool }}" class="logo-app">

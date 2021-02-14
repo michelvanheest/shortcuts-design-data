@@ -52,14 +52,14 @@ permalink: "toolspage-{{ toolSlug | slug }}.html/index.html"
             {% if os1 is null %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}").load("/data-live/Design/toolspage-{{ toolSlug }}.html");
+                        $("#data-{{ toolSlug }}").load("/data-live/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
                     });
                 </script>
                 <div id="data-{{ toolSlug }}"></div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data-live/Design/toolspage-{{ toolSlug }}-{{ os1 }}.html");
+                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data-live/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html");
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-{{ os1 }}"></div>
@@ -70,7 +70,7 @@ permalink: "toolspage-{{ toolSlug | slug }}.html/index.html"
             {% if os2 == "Windows" %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data-live/Design/toolspage-{{ toolSlug }}-{{ os2 }}.html");
+                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data-live/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html");
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-{{ os2 }}"></div>

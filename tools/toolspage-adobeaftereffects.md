@@ -1,6 +1,6 @@
 ---
 layout: layouts/tool.njk
-tool: Adobe After Effects
+tool: After Effects
 os1: Mac
 os2: Windows
 toolSlug: adobeaftereffects
