@@ -74,149 +74,74 @@
         
         <div class="container">
             
-<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/toolspage.css">
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/switch.js"></script>
 
 
-<object type="image/svg+xml" data="/assets/img/gradient-brand-default.svg" class="blob"></object>
+<object type="image/svg+xml" data="/assets/img/gradient-brand-Design.svg" class="blob"></object>
 
 
 <div class="row">
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
-        <h1>Every shortcut for designers, centralized and searchable.</h1>
+        <h1>Zeplin Shortcuts</h1>
+        <p>Design hand-off with Zeplin has never been easier. Generate styleguides and resources, automatically. Just import your design and send it to your developer. View or download Zeplin via <a href="https://www.zeplin.com?ref=shortcuts.design" target="_blank" class="a-Design">Zeplin.com</a>.</p>
     </div>
 </div>
+
+
 <div class="row">
-    <div class="col-12 col-lg-3">
-        <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="button button-secondary">Add a tool</a>
-    </div>
-    <div class="col-12 col-lg-3">
-        <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" id="profile">
-            <img src="/assets/img/avatar-color.png" id="profile-avatar" alt="Michel van Heest - Creator of Shortcuts.design">
-            <div id="profile-text">
-                <h5>Created by</h5>
-                <h4>Michel van Heest</h4>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="row tools-overview">
-    <div class="col-12 col-lg-3">
-        <img src="/assets/img/toolGroup-design.png" alt="Design Shortcuts Icon">
-        <h2>Design shortcuts<h2>
-    </div>
-    <div class="col-12 col-lg-9 tools-list">
-        
-        
-            
-                <link rel="stylesheet" href="/css/toolslist.css">
-
-
-    <a href="/toolspage-adobeaftereffects.html/">
-        <div class="tool-card">
-            <div class="logos-os">
-                
-                    <img src="/assets/img/logo-apple.png" alt="Logo Apple">
-                
-
-                
-                    <img src="/assets/img/logo-windows.png" alt="Logo Windows">
-                
-            </div>
-            <img src="/assets/img/logo-adobeaftereffects.png" alt="Logo Adobe After Effects" class="logo-app">
-            <h4>Adobe After Effects</h4>
+    <div class="col-12">
+        <div class="toolspage-search">
+            <input id="myInput" type="text" placeholder="Search for shortcuts...">
         </div>
-    </a>
-
-            
-        
-            
-                <link rel="stylesheet" href="/css/toolslist.css">
+    </div>
+</div>
 
 
-    <a href="/toolspage-figma.html/">
-        <div class="tool-card">
-            <div class="logos-os">
-                
-                    <img src="/assets/img/logo-apple.png" alt="Logo Apple">
-                
-
-                
-            </div>
-            <img src="/assets/img/logo-figma.png" alt="Logo Figma" class="logo-app">
-            <h4>Figma</h4>
+<div class="row">
+    <div class="col-12 edit-switch">
+        <div id="edit">
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-Design"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
-    </a>
-
-            
         
-            
-                <link rel="stylesheet" href="/css/toolslist.css">
-
-
-    <a href="/toolspage-zeplin.html/">
-        <div class="tool-card">
-            <div class="logos-os">
-                
-                    <img src="/assets/img/logo-apple.png" alt="Logo Apple">
-                
-
-                
-                    <img src="/assets/img/logo-windows.png" alt="Logo Windows">
-                
+            <div id="switch">
+                <ul class="tabs">
+                    <li class="tab-link current button a-Design" data-tab="tab-1">Mac</li>
+                    <li class="tab-link button a-Design" data-tab="tab-2">Windows</li>
+                </ul>
             </div>
-            <img src="/assets/img/logo-zeplin.png" alt="Logo Zeplin" class="logo-app">
-            <h4>Zeplin</h4>
+        
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12 offset-lg-1 col-lg-10">
+        <div id="tab-1" class="tab-content current">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-zeplin-Mac").load("/data-live/Design/toolspage-zeplin-Mac.html");
+                    });
+                </script>
+                <div id="data-zeplin-Mac"></div>
+            
         </div>
-    </a>
 
+        <div id="tab-2" class="tab-content">
             
-        
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-zeplin-Windows").load("/data-live/Design/toolspage-zeplin-Windows.html");
+                    });
+                </script>
+                <div id="data-zeplin-Windows"></div>
+            
+        </div>
     </div>
 </div>
-<div class="row tools-overview">
-    <div class="col-12 col-lg-3">
-        <img src="/assets/img/toolGroup-development.png" alt="Development Shortcuts Icon">
-        <h2>Development shortcuts<h2>
-    </div>
-    <div class="col-12 col-lg-9">
-        
-        
-            
-        
-            
-        
-            
-        
-    </div>
-</div>
-<div class="row tools-overview">
-    <div class="col-12 col-lg-3">
-        <img src="/assets/img/toolGroup-productivity.png" alt="Productivity Shortcuts Icon">
-        <h2>Productivity shortcuts<h2>
-    </div>
-    <div class="col-12 col-lg-9">
-        
-        
-            
-        
-            
-        
-            
-        
-    </div>
-</div>
-
-<div class="row missing-something">
-    <div class="col-12 col-lg-6">
-        <h2>Missing something?</h2>
-        <p>Feel free to request missing tools or give some feedback using Twitter, E-mail or GitHub! If you can, please help me out with adding the data yourself on GitHub.</p>
-        <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" class="button button-primary">Add a tool 💪</a>
-        <a href="https://twitter.com/michelvanheest?ref=shortcuts.design" target="_blank" class="button button-secondary">Tweet me 🐦</a>
-    </div>
-</div>
-
         </div>
 
         <!DOCTYPE html>

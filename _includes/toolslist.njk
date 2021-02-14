@@ -1,21 +1,21 @@
-<ul>
-    {% for tool in toolslist %}
-        <a href="{{ tool.url | url }}">
-            <div class="col-4 col-lg-2 tool-card">
-                <div class="logos-os">
-                    {% if tool.data.os1 == "Windows" %}
-                        <img src="/assets/img/logo-windows.png" alt="Logo Windows">
-                    {% else %}
-                        <img src="/assets/img/logo-apple.png" alt="Logo Apple">
-                    {% endif %}
+<link rel="stylesheet" href="/css/toolslist.css">
 
-                    {% if tool.data.os2 == "Windows" %}
-                        <img src="/assets/img/logo-windows.png" alt="Logo Windows">
-                    {% endif %}
-                </div>
-                <img src="/assets/img/logo-{{ tool.data.tool }}.png" alt="Logo {{ tool.data.tool }}" class="logo-app">
-                <h4>{{ tool.data.tool }}</h4>
+{# {% for tool in toolslist %} #}
+    <a href="{{ tool.url | url }}">
+        <div class="tool-card">
+            <div class="logos-os">
+                {% if tool.data.os1 == "Windows" %}
+                    <img src="/assets/img/logo-windows.png" alt="Logo Windows">
+                {% else %}
+                    <img src="/assets/img/logo-apple.png" alt="Logo Apple">
+                {% endif %}
+
+                {% if tool.data.os2 == "Windows" %}
+                    <img src="/assets/img/logo-windows.png" alt="Logo Windows">
+                {% endif %}
             </div>
-        </a>
-    {% endfor %}
-</ul>
+            <img src="/assets/img/logo-{{ tool.data.toolSlug }}.png" alt="Logo {{ tool.data.tool }}" class="logo-app">
+            <h4>{{ tool.data.tool }}</h4>
+        </div>
+    </a>
+{# {% endfor %} #}

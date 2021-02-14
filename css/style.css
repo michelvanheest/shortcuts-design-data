@@ -23,7 +23,19 @@ body {
     overflow-x: hidden !important;
 }
 
-/* ============COLORS============ */
+::-webkit-scrollbar {		
+    width: 16px;		
+    background-color: transparent;		
+}		
+		
+::-webkit-scrollbar-thumb {	
+    width: 16px;	
+    border-radius: 8px;	
+    background-color: var(--brand-default-color);
+    box-shadow: var(--shadow-primary);	
+}
+
+/* ============THEMING============ */
 :root {
     --neutral-900: #0A121F;
     --neutral-800: #131E2F;
@@ -44,6 +56,8 @@ body {
     --brand-4-gradient: linear-gradient(135deg, #8EC5FC 0%, #C047FF 100%);
     --brand-4-color: #C047FF;
     --shadow-primary: inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
+    --shadow-primary-elevated: 0px 4px 16px 8px rgba(0, 0, 0, 0.08), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
+    --shadow-primary-elevated-space: 0px 0px 16px 8px rgba(110, 99, 255, 0.4), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-inset: inset 0px 2px 2px rgba(10, 18, 31, 0.04);
 }
 
@@ -61,7 +75,7 @@ h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd) {
     color: var(--neutral-900)
 }
 
-h3, h5, p, input, td:nth-child(even) {
+.tools-overview h2, h3, h5, p, input, td:nth-child(even) {
     color: var(--neutral-700)
 }
 
@@ -82,7 +96,7 @@ body, #footer-curve {
     background-color: var(--neutral-200);
 }
 
-#banner-wrapper a, footer a, footer a:hover, .tab-link.current {
+#banner-wrapper a, footer a, footer a:hover, a.button-primary, a.button-primary:hover, .tab-link.current {
     color: var(--neutral-100);
 }
 
@@ -142,6 +156,10 @@ footer, #banner-wrapper, .button-primary {
     background: var(--brand-default-gradient);
 }
 
+.button-primary:hover {
+    box-shadow: var(--shadow-primary-elevated);
+}
+
 @media (prefers-color-scheme: dark) {
     body, #footer-curve {
         background-color: var(--neutral-900);
@@ -155,12 +173,16 @@ footer, #banner-wrapper, .button-primary {
         border-bottom: 1px solid var(--neutral-400);
     }
 
-    h3, h5, p, input, td:nth-child(even) {
+    .tools-overview h2, h3, h5, p, input, td:nth-child(even) {
         color: var(--neutral-300);
     }
 
     h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), .tab-link {
         color: var(--neutral-100);
+    }
+
+    .button-primary:hover {
+        box-shadow: var(--shadow-primary-elevated-space);
     }
 }
 

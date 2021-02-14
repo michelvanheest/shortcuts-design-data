@@ -13,7 +13,6 @@ permalink: /
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
         <h1>Every shortcut for designers, centralized and searchable.</h1>
-        <p>This is a test paragraph, it contains a <a href="#">link</a></p>
     </div>
 </div>
 <div class="row">
@@ -36,7 +35,7 @@ permalink: /
         <img src="/assets/img/toolGroup-design.png" alt="Design Shortcuts Icon">
         <h2>Design shortcuts<h2>
     </div>
-    <div class="col-12 col-lg-9">
+    <div class="col-12 col-lg-9 tools-list">
         {% set toolslist = collections.tools %}
         {% for tool in toolslist %}
             {% if tool.data.toolGroup == "Design" %}
@@ -74,8 +73,8 @@ permalink: /
     </div>
 </div>
 
-<div class="row">
-    <div class="col-12 col-6">
+<div class="row missing-something">
+    <div class="col-12 col-lg-6">
         <h2>Missing something?</h2>
         <p>Feel free to request missing tools or give some feedback using Twitter, E-mail or GitHub! If you can, please help me out with adding the data yourself on GitHub.</p>
         <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" class="button button-primary">Add a tool 💪</a>
