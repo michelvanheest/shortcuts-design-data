@@ -4,11 +4,17 @@ permalink: "toolspage-{{ toolSlug | slug }}.html/index.html"
 ---
 
 <link rel="stylesheet" href="/css/toolspage.css">
+<script type="text/javascript" src="/js/animate.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/switch.js"></script>
 
 {# BLOB #}
 <object type="image/svg+xml" data="/assets/img/gradient-brand-{{ toolGroup }}.svg" class="blob"></object>
+
+{# SEARCH BUTTON #}
+<a href="#myInput" class="button button-primary" id="scroll-to-search">
+    <img src="/assets/icons/icon-24-search-white.png" alt="Search icon">
+</a>
 
 {# INTRO #}
 <div class="row">

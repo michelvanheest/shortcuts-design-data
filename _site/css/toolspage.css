@@ -4,6 +4,22 @@
     --shadow-search: 0px 4px 16px rgba(0, 0, 0, 0.08);
 }
 
+#scroll-to-search {
+    opacity: 0;
+    display: block;
+    position: fixed;
+    left: 24px;
+    bottom: 64px;
+    z-index: 999;
+    padding: 16px 19px 16px 19px;
+}
+
+#scroll-to-search img {
+    width: 24px;
+    height: 24px;
+    transform: translateY(2px);
+}
+
 input {
     width: 100%;
     box-shadow: var(--shadow-search);

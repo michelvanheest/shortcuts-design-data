@@ -59,7 +59,7 @@ body {
     background: var(--brand-default-color);
 }
 
-h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd) {
+h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-900)
 }
 
@@ -165,7 +165,7 @@ footer, #banner-wrapper, .button-primary {
         color: var(--neutral-300);
     }
 
-    h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), .tab-link {
+    h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), .tab-link, input:focus {
         color: var(--neutral-100);
     }
 
