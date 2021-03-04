@@ -1,6 +1,10 @@
 ---
 layout: layouts/base.njk
 permalink: /
+subtitle: Shortcuts.design
+title: Every shortcut for designers, centralized and searchable.
+buttonLink: https://github.com/michelvanheest/shortcuts-design-data
+buttonText: Add a tool
 ---
 
 <link rel="stylesheet" href="/css/index.css">
@@ -9,26 +13,7 @@ permalink: /
 <object type="image/svg+xml" data="/assets/img/gradient-brand-default.svg" class="blob"></object>
 
 {# INTRO #}
-<div class="row">
-    <div class="col-12 col-lg-6">
-        <h3>Shortcuts.design</h3>
-        <h1>Every shortcut for designers, centralized and searchable.</h1>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12 col-lg-3">
-        <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="button button-secondary">Add a tool</a>
-    </div>
-    <div class="col-12 col-lg-3">
-        <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" id="profile">
-            <img src="/assets/img/avatar-color.png" id="profile-avatar" alt="Michel van Heest - Creator of Shortcuts.design">
-            <div id="profile-text">
-                <h5>Created by</h5>
-                <h4>Michel van Heest</h4>
-            </div>
-        </a>
-    </div>
-</div>
+{% include "hero.njk" %}
 
 <div class="row tools-overview">
     <div class="col-12 col-lg-3">

@@ -47,6 +47,7 @@ body {
     --shadow-primary-elevated: 0px 4px 16px 8px rgba(0, 0, 0, 0.08), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-primary-elevated-space: 0px 0px 16px 8px rgba(110, 99, 255, 0.4), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-inset: inset 0px 2px 2px rgba(10, 18, 31, 0.04);
+    --shadow-footer: 0px 32px 40px rgba(23, 20, 51, 0.16);
 }
 
 ::selection {
@@ -63,7 +64,7 @@ h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-900)
 }
 
-.tools-overview h2, h3, h5, p, input, td:nth-child(even) {
+.tools-overview h2, h3, h5, p, li, input, td:nth-child(even) {
     color: var(--neutral-700)
 }
 
@@ -148,6 +149,10 @@ footer, #banner-wrapper, .button-primary {
     box-shadow: var(--shadow-primary-elevated);
 }
 
+#footer-curve {
+    box-shadow: var(--shadow-footer);
+}
+
 @media (prefers-color-scheme: dark) {
     body, #footer-curve {
         background-color: var(--neutral-900);
@@ -161,7 +166,7 @@ footer, #banner-wrapper, .button-primary {
         border-bottom: 1px solid var(--neutral-400);
     }
 
-    .tools-overview h2, h3, h5, p, input, td:nth-child(even) {
+    .tools-overview h2, h3, h5, p, li, input, td:nth-child(even) {
         color: var(--neutral-300);
     }
 
@@ -208,15 +213,35 @@ h5 {
     line-height: 16px;
 }
 
-p {
+p, li {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
 
-a.button, .tab-link {
+li {
+    list-style-type: none;
+    background-image: url("/assets/icons/icon-24-ul.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 0px 7px;
+    padding-left: 24px;
+    margin: 8px 0px;
+}
+
+li:last-of-type {
+    margin-bottom: 80px;
+}
+
+li.tab-link {
+    margin-top: initial;
+    margin-bottom: initial;
+}
+
+a.button, .tab-link, li.tab-link {
     font-weight: 500;
     font-size: 18px;
+    line-height: initial;
 }
 
 /* ============LINKS============ */
@@ -289,6 +314,10 @@ nav img:hover {
 /* ============LAYOUT============ */
 .blob {
     display: none;
+}
+
+img { 
+    max-width: 100%;
 }
 
 /* ============MEDIAQUERIES============ */

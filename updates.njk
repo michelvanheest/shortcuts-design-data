@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+subtitle: Shortcuts.design changelog
+title: New improvements and updates to Shortcuts.design
+buttonLink: mailto:shortcutsdesign@michelvanheest.com?subject=Mail%20from%20Shortcuts.design
+buttonText: Contact me
+---
+
+{# BLOB #}
+<object type="image/svg+xml" data="/assets/img/gradient-brand-default.svg" class="blob"></object>
+
+{# INTRO #}
+{% include "hero.njk" %}
+
+{# UPDATES #}
+{% set updateslist = collections.updates %}
+{% include "updateslist.njk" %}

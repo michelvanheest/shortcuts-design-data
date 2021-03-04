@@ -69,6 +69,10 @@ input:focus {
     cursor: pointer;
 }
 
+.tab-link {
+    background-image: none;
+}
+
 .tab-content {
 	display: none;
 }
