@@ -4,4 +4,5 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("data-live");
     eleventyConfig.addPassthroughCopy("_redirects");
+    eleventyConfig.addPassthroughCopy("shortcuts-design-social.jpg");
 }
