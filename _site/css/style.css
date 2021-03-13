@@ -153,6 +153,14 @@ footer, #banner-wrapper, .button-primary {
     box-shadow: var(--shadow-footer);
 }
 
+.img-light {
+    display: initial;
+}
+
+.img-dark {
+    display: none;
+}
+
 @media (prefers-color-scheme: dark) {
     body, #footer-curve {
         background-color: var(--neutral-900);
@@ -176,6 +184,14 @@ footer, #banner-wrapper, .button-primary {
 
     .button-primary:hover {
         box-shadow: var(--shadow-primary-elevated-space);
+    }
+
+    .img-light {
+        display: none;
+    }
+    
+    .img-dark {
+        display: initial;
     }
 }
 

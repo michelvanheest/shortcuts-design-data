@@ -108,6 +108,21 @@ td {
     vertical-align: top;
 }
 
+.error {
+    text-align: center;
+    display: none;
+    margin-bottom: 80px;
+}
+
+.error img {
+    max-width: 333px;
+    height: auto;
+}
+
+.error a {
+    margin-top: 32px;
+}
+
 @media (prefers-color-scheme: dark) {
     input {
         background-image: url(/assets/icons/icon-24-search-dark.png);

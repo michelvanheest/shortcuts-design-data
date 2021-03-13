@@ -5,4 +5,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("data-live");
     eleventyConfig.addPassthroughCopy("_redirects");
     eleventyConfig.addPassthroughCopy("shortcuts-design-social.jpg");
+    eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.ico");
+    eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.png");
 }
