@@ -4,7 +4,7 @@
 }
 
 .tool-card {
-    width: 170px;
+    width: 123px;
     min-height: 218px;
     text-align: center;
     border-radius: 24px;
@@ -16,7 +16,7 @@
 .tool-card:after {
     content: "";
     position: absolute;
-    width: 170px;
+    width: 123px;
     height: calc(100% + 4px);
     top: 0;
     left: 0;
@@ -65,4 +65,10 @@
 
 .tool-card h4 {
     margin: 0px 16px 24px 16px;
+}
+
+@media only screen and (min-width: 470px) {
+    .tool-card, .tool-card:after {
+        width: 170px;
+    }
 }

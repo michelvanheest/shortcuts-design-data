@@ -5,6 +5,7 @@
 }
 
 #profile {
+    margin-top: 32px;
     display: flex;
 }
 
@@ -19,4 +20,10 @@
     margin-right: 12px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 992px) {
+    #profile {
+        margin-top: 0px;
+    }
 }
