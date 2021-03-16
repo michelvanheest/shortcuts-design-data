@@ -101,6 +101,11 @@ a, a:hover {
     color: var(--brand-default-color);
 }
 
+input:focus {
+    outline: none;
+    border: 2px solid var(--brand-default-color);
+}
+
 a:hover {
     border-color: var(--brand-default-color);
 }

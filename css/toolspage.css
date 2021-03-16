@@ -27,7 +27,7 @@ input {
     -moz-box-shadow: var(--shadow-search);
     -webkit-appearance: none; /*Fixes box-shadow on iOS*/
     border: none;
-    border: 0;
+    border: 2px solid transparent;
     border-radius: 24px;
     padding: 24px 32px 24px 72px;
     margin: 80px 0px 40px 0px;
@@ -47,10 +47,6 @@ input {
 
 ::-moz-placeholder { /* Firefox 19+ */
     color: var(--neutral-input-light);
-}
-
-input:focus {
-    outline: none;
 }
 
 .edit-switch { 

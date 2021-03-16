@@ -31,4 +31,5 @@ $('#scroll-to-search').on('click', function(e){
     $('html, body').stop().animate({
        scrollTop: target.offset().top
     }, 600);
+    onclick=document.querySelector('#myInput').focus()
 });
