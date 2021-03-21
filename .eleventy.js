@@ -21,7 +21,7 @@ const imageminPngquant = require('imagemin-pngquant');
         plugins: [
             imageminJpegtran(),
             imageminPngquant({
-                quality: [0.6, 0.8]
+                quality: [0.7, 0.9]
             })
         ]
     });
