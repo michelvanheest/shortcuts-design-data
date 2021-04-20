@@ -3,7 +3,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/fonts");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
-    eleventyConfig.addPassthroughCopy("data-live");
+    eleventyConfig.addPassthroughCopy("data");
     eleventyConfig.addPassthroughCopy("_redirects");
     eleventyConfig.addPassthroughCopy("shortcuts-design-social.jpg");
     eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.ico");
