@@ -1,4 +1,4 @@
-#banner-wrapper {
+#toast-wrapper {
     opacity: 0;
     width: 100%;
     text-align: center;
@@ -9,7 +9,7 @@
 }
 
 @supports(padding: max(0px)) {
-    #banner-wrapper {
+    #toast-wrapper {
         padding-top: max(15px, env(safe-area-inset-top));
         padding-bottom: max(15px, env(safe-area-inset-bottom));
         padding-left: max(15px, env(safe-area-inset-left));

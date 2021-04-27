@@ -60,11 +60,11 @@ body {
     background: var(--brand-default-color);
 }
 
-h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), input:focus {
+h1, h2, a.button, a.button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-900)
 }
 
-.tools-overview h2, h3, h5, p, li, input, td:nth-child(even) {
+.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
     color: var(--neutral-700)
 }
 
@@ -77,7 +77,7 @@ td {
     border-bottom: 1px solid var(--neutral-600);
 }
 
-footer h5 {
+footer h5, .missing-something-card h4, .missing-something-card p {
     color: var(--neutral-300)
 }
 
@@ -85,19 +85,19 @@ body, #footer-curve {
     background-color: var(--neutral-200);
 }
 
-#banner-wrapper a, footer a, footer a:hover, a.button-primary, a.button-primary:hover, .tab-link.current {
+#toast-wrapper a, footer a, footer a:hover, a.button-primary, a.button-primary:hover, .tab-link.current, .missing-something-card h2, .missing-something-card a, .missing-something-card a:hover {
     color: var(--neutral-100);
 }
 
-footer a:hover {
+footer a:hover, .missing-something-card a:hover {
     border-color: var(--neutral-100);
 }
 
-input, .tool-card {
+input, .tool-card, .profile-card, .button-tertiary {
     background-color: var(--neutral-100);
 }
 
-a, a:hover {
+a, a:hover, a.button-tertiary, a.button-tertiary:hover {
     color: var(--brand-default-color);
 }
 
@@ -146,7 +146,7 @@ a:hover {
     background: var(--brand-3-gradient);
 }
 
-footer, #banner-wrapper, .button-primary {
+footer, #toast-wrapper, .button-primary, .missing-something-card {
     background: var(--brand-default-gradient);
 }
 
@@ -171,7 +171,7 @@ footer, #banner-wrapper, .button-primary {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs, .tool-card {
+    input, .tabs, .tool-card, .profile-card {
         background-color: var(--neutral-800);
     }
 
@@ -179,12 +179,16 @@ footer, #banner-wrapper, .button-primary {
         border-bottom: 1px solid var(--neutral-400);
     }
 
-    .tools-overview h2, h3, h5, p, li, input, td:nth-child(even) {
+    .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
         color: var(--neutral-300);
     }
 
-    h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), .tab-link, input:focus {
+    h1, h2, a.button, a.button:hover, th, td:nth-child(odd), .tab-link, input:focus {
         color: var(--neutral-100);
+    }
+
+    a.button-tertiary, a.button-tertiary:hover {
+        color: var(--brand-default-color);
     }
 
     .button-primary:hover {
@@ -212,6 +216,7 @@ h1 {
 h2, th {
     font-weight: 500;
     font-size: 40px;
+    margin-bottom: 8px;
     /* line-height: 72px; */
 }
 
@@ -222,7 +227,11 @@ h3, input {
     margin-bottom: 8px;
 }
 
-h4, #banner {
+h4 {
+    margin-bottom: 8px;
+}
+
+h4, #toast {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -290,7 +299,7 @@ a:hover {
     font-size: 12px;
 }
 
-.a-icon, #banner, .button {
+.a-icon, #toast, .button {
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -301,7 +310,7 @@ a:hover {
     border-radius: 100px;
 }
 
-.button-primary, .tabs .tab-link.current {
+.button-primary, .button-tertiary .tabs .tab-link.current {
     box-shadow: var(--shadow-primary);
 }
 
@@ -323,12 +332,12 @@ nav img:hover {
     -webkit-transform: scale(1.1, 1.1);
 }
 
-#banner:hover, .button:hover {
+#toast:hover, .button:hover {
     transform: scale(1.05, 1.05);
     -webkit-transform: scale(1.05, 1.05);
 }
 
-#banner:active, .button:active, #profile:active #profile-avatar, nav img:active {
+#toast:active, .button:active, #profile:active #profile-avatar, nav img:active {
     transform: scale(0.98, 0.98);
 }
 

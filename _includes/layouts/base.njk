@@ -68,9 +68,10 @@
         
         <div class="container">
             {{ content | safe }}
+            {% include "banners.njk" %}
         </div>
 
         {% include "footer.njk" %}
-        {% include "banner.njk" %}
+        {% include "toast.njk" %}
     </body>
 </html>

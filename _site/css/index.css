@@ -1,5 +1,5 @@
 .tools-overview {
-    margin: 120px 0px;
+    margin-top: 120px;
 }
 
 .tools-overview img:first-of-type {
@@ -10,12 +10,4 @@
 
 .tools-overview h2 {
     margin-bottom: 40px;
-}
-
-.missing-something {
-    margin-bottom: 40px;
-}
-
-.missing-something a {
-    margin: 32px 24px 0px 0px;
 }

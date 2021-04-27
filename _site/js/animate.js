@@ -1,7 +1,7 @@
-// Fade in banner.njk
+// Fade in toast.njk
 $(function() {
     $(window).scroll( function(){
-        $('#banner-wrapper').each( function(i){
+        $('#toast-wrapper').each( function(i){
             var bottom_of_object = $(this).position().top + 500;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
@@ -22,6 +22,15 @@ $(function() {
             }
         });
     });
+});
+
+// Scroll to card-row
+$('#profile').on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'profile' ? $('#card-row') : $('#profile');
+    $('html, body').stop().animate({
+       scrollTop: target.offset().top
+    }, 600);
 });
 
 // Scroll to searchbar
