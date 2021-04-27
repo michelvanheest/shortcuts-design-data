@@ -1,8 +1,8 @@
 ---
 layout: layouts/tool.njk
 tool: Miro
-os1: 
-os2: 
+os1: Mac
+os2: Windows
 toolSlug: miro
 toolGroup: Design
 toolDescription: 
