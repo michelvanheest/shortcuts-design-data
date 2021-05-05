@@ -1,8 +1,3 @@
-:root {
-    --shadow-card: 0px 4px 16px rgba(0, 0, 0, 0.16);
-    --shadow-card-elevated: 0px 4px 16px rgba(0, 0, 0, 0.24);
-}
-
 .tool-card {
     width: 123px;
     min-height: 218px;
@@ -53,14 +48,13 @@
 }
 
 .tool-card:hover .logo-app {
-    transform: rotate(4deg) scale(1.1, 1.1);
-    -webkit-transform: rotate(4deg) scale(1.1, 1.1);
+    transform: rotate(4deg) scale(1.16, 1.16);
+    -webkit-transform: rotate(4deg) scale(1.16, 1.16);
 }
 
 .tool-card:active .logo-app {
     transform: rotate(0deg) scale(1, 1);
     -webkit-transform: rotate(0deg) scale(1, 1);
-    box-shadow: var(--shadow-card);
 }
 
 .tool-card h4 {
