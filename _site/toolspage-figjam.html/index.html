@@ -8,8 +8,8 @@
 
         <!-- DYNAMIC META TITLE + DESCRIPTION -->
         
-            <title>Apple Calender shortcuts | All shortcuts for Apple Calender - Shortcuts.design</title>
-            <meta name="description" content="Learn or search for all essential keyboard shortcuts for Apple Calender in one place, with the ultimate keyboard shortcut reference / overview">
+            <title>Figjam shortcuts | All shortcuts for Figjam - Shortcuts.design</title>
+            <meta name="description" content="Learn or search for all essential keyboard shortcuts for Figjam in one place, with the ultimate keyboard shortcut reference / overview">
         
 
         <!-- CSS / JS -->
@@ -87,7 +87,7 @@
 <script type="text/javascript" src="/js/switch.js"></script>
 
 
-<object type="image/svg+xml" data="/assets/img/gradient-brand-Productivity.svg" class="blob"></object>
+<object type="image/svg+xml" data="/assets/img/gradient-brand-Design.svg" class="blob"></object>
 
 
 <a href="#myInput" class="button button-primary" id="scroll-to-search">
@@ -98,8 +98,8 @@
 <div class="row">
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
-        <h1>Apple Calender Shortcuts</h1>
-        <p> <a href="?ref=shortcuts.design" target="_blank" class="a-Productivity"></a>.</p>
+        <h1>Figjam Shortcuts</h1>
+        <p> <a href="https://www.figma.com/figjam/?ref=shortcuts.design" target="_blank" class="a-Design">Figma.com/figjam</a>.</p>
     </div>
 </div>
 
@@ -116,8 +116,15 @@
 <div class="row">
     <div class="col-12 edit-switch">
         <div id="edit">
-            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-Productivity"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-Design"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
+        
+            <div id="switch">
+                <ul class="tabs">
+                    <li class="tab-link current button a-Design" data-tab="tab-1">Mac</li>
+                    <li class="tab-link button a-Design" data-tab="tab-2">Windows</li>
+                </ul>
+            </div>
         
     </div>
 </div>
@@ -129,14 +136,21 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-applecalendar").load("/data/Productivity/toolspage-applecalendar.html");
+                        $("#data-figjam-Mac").load("/data/Design/toolspage-figjam-Mac.html");
                     });
                 </script>
-                <div id="data-applecalendar"></div>
+                <div id="data-figjam-Mac"></div>
             
         </div>
 
         <div id="tab-2" class="tab-content">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-figjam-Windows").load("/data/Design/toolspage-figjam-Windows.html");
+                    });
+                </script>
+                <div id="data-figjam-Windows"></div>
             
         </div>
     </div>
