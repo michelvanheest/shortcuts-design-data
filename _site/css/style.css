@@ -282,7 +282,7 @@ a, .tool-card.tool-card:after {
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app {
+.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
