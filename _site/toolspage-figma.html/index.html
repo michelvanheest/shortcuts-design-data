@@ -9,8 +9,8 @@
         <!-- DYNAMIC META TITLE + DESCRIPTION -->
         
             
-                <title>Figma shortcuts | All shortcuts for Figma - Shortcuts.design</title>
-                <meta name="description" content="Learn or search for all essential keyboard shortcuts for Figma in one place, with the ultimate keyboard shortcut reference / overview">
+                <title>Figma shortcuts | All Mac & Windows shortcuts for Figma</title>
+                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for Figma in one place, with the ultimate keyboard shortcut reference / overview">
             
         
 
@@ -121,6 +121,13 @@
             <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-Design"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
         
+            <div id="switch">
+                <ul class="tabs">
+                    <li class="tab-link current button a-Design" data-tab="tab-1">Mac</li>
+                    <li class="tab-link button a-Design" data-tab="tab-2">Windows</li>
+                </ul>
+            </div>
+        
     </div>
 </div>
 
@@ -131,14 +138,21 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-figma").load("/data/Design/toolspage-figma.html");
+                        $("#data-figma-Mac").load("/data/Design/toolspage-figma-Mac.html");
                     });
                 </script>
-                <div id="data-figma"></div>
+                <div id="data-figma-Mac"></div>
             
         </div>
 
         <div id="tab-2" class="tab-content">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-figma-Windows").load("/data/Design/toolspage-figma-Windows.html");
+                    });
+                </script>
+                <div id="data-figma-Windows"></div>
             
         </div>
     </div>
