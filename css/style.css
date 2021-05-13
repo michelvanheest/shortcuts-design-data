@@ -1,5 +1,5 @@
 /* ============BODY CUSTOM RESET============ */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, input, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
     margin: 0;
     padding: 0;
     border: 0;
@@ -33,6 +33,8 @@ body {
     --neutral-300: rgba(255, 255, 255, 0.64);
     --neutral-200: #F9F9FB;
     --neutral-100: #FFFFFF;
+    --neutral-input-light: rgba(10, 18, 31, 0.24);
+    --neutral-input-dark: rgba(255, 255, 255, 0.24);
     --brand-default-gradient: linear-gradient(109.09deg, #5547FF 0%, #7A70FF 100%);
     --brand-default-color: #5447FF;
     --brand-1-gradient: linear-gradient(289.09deg, #FF476D 0%, #FBB861 100%);
@@ -47,7 +49,8 @@ body {
     --shadow-primary-elevated: 0px 4px 16px 8px rgba(0, 0, 0, 0.08), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-primary-elevated-space: 0px 0px 16px 8px rgba(110, 99, 255, 0.4), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-inset: inset 0px 2px 2px rgba(10, 18, 31, 0.04);
-    --shadow-footer: 0px 32px 40px rgba(23, 20, 51, 0.16);
+    --shadow-floating: 0px 32px 40px rgba(23, 20, 51, 0.16);
+    --shadow-search: 0px 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 ::selection {
@@ -60,7 +63,7 @@ body {
     background: var(--brand-default-color);
 }
 
-h1, h2, a.button, a.button:hover, th, td:nth-child(odd), input:focus {
+h1, h2, .button, .button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-900)
 }
 
@@ -81,11 +84,11 @@ footer h5, .missing-something-card h4, .missing-something-card p {
     color: var(--neutral-300)
 }
 
-body, #footer-curve {
+body, #footer-curve, .newsletter {
     background-color: var(--neutral-200);
 }
 
-#toast-wrapper a, footer a, footer a:hover, a.button-primary, a.button-primary:hover, .tab-link.current, .missing-something-card h2, .missing-something-card a, .missing-something-card a:hover {
+#toast-wrapper a, footer a, footer a:hover, .button-primary, .button-primary:hover, .tab-link.current, .missing-something-card h2, .missing-something-card a, .missing-something-card a:hover {
     color: var(--neutral-100);
 }
 
@@ -97,8 +100,12 @@ input, .tool-card, .profile-card, .button-tertiary {
     background-color: var(--neutral-100);
 }
 
-a, a:hover, a.button-tertiary, a.button-tertiary:hover {
+a, a:hover {
     color: var(--brand-default-color);
+}
+
+.button-tertiary, .button-tertiary:hover {
+    color: var(--brand-default-color) !important;
 }
 
 input:focus {
@@ -154,8 +161,8 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
     box-shadow: var(--shadow-primary-elevated);
 }
 
-#footer-curve {
-    box-shadow: var(--shadow-footer);
+#footer-curve, .newsletter {
+    box-shadow: var(--shadow-floating);
 }
 
 .img-light {
@@ -167,7 +174,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, #footer-curve {
+    body, #footer-curve, .newsletter {
         background-color: var(--neutral-900);
     }
 
@@ -183,11 +190,11 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         color: var(--neutral-300);
     }
 
-    h1, h2, a.button, a.button:hover, th, td:nth-child(odd), .tab-link, input:focus {
+    h1, h2, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus {
         color: var(--neutral-100);
     }
 
-    a.button-tertiary, a.button-tertiary:hover {
+    .button-tertiary, .button-tertiary:hover {
         color: var(--brand-default-color);
     }
 
@@ -259,7 +266,7 @@ li {
     margin: 8px 0px;
 }
 
-li:last-of-type {
+.update-row li:last-of-type {
     margin-bottom: 80px;
 }
 
@@ -268,21 +275,25 @@ li.tab-link {
     margin-bottom: initial;
 }
 
-a.button, .tab-link, li.tab-link {
+.button, .tab-link, li.tab-link {
     font-weight: 500;
     font-size: 18px;
     line-height: initial;
 }
 
 /* ============LINKS============ */
-a, .tool-card.tool-card:after {
+.button, .newsletter img {
+    cursor: pointer;
+}
+
+a, .tool-card.tool-card:after, .newsletter-wrapper {
     transition:all .16s ease-out 0s;
     -moz-transition:all .16s ease-out 0s;
     -webkit-transition:all .16s ease-out 0s;
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img {
+.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
@@ -359,5 +370,65 @@ img {
         top: -100px;
         right: 0;
         z-index: -1;
+    }
+}
+
+/* ============INPUTS============ */
+input {
+    width: 100%;
+    box-shadow: var(--shadow-search);
+    -webkit-box-shadow: var(--shadow-search);
+    -moz-box-shadow: var(--shadow-search);
+    -webkit-appearance: none; /*Fixes box-shadow on iOS*/
+    border: none;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    padding: 24px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center left 32px;
+}
+
+input.button {
+    width: initial;
+    border: none;
+    margin-left: 16px;
+}
+
+input.email {
+    min-width: 350px;
+    font-size: 18px;
+    padding: 16px 24px;
+}
+
+form, #mc_embed_signup_scroll {
+    display: flex;
+    align-items: center;
+    margin: 8px 0px 16px 0px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+    color: var(--neutral-input-light);
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: var(--neutral-input-light);
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: var(--neutral-input-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-input-placeholder { /* Chrome */
+        color: var(--neutral-input-dark);
+    }
+    
+    :-ms-input-placeholder { /* IE 10+ */
+        color: var(--neutral-input-dark);
+    }
+    
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: var(--neutral-input-dark);
     }
 }

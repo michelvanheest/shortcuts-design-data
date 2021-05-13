@@ -42,3 +42,12 @@ $('#scroll-to-search').on('click', function(e){
     }, 600);
     onclick=document.querySelector('#myInput').focus()
 });
+
+// Toggle newsletter modal
+$('#hero-button').on('click', function () {
+    $('.newsletter-wrapper').addClass('active');
+});
+
+$('.newsletter img').on('click', function () {
+    $('.newsletter-wrapper').removeClass('active');
+});
