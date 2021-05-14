@@ -1,5 +1,5 @@
-**<h1 align="center">
-  <img src="docs/logo@2x.png" width="140" alt="icon"><br>
+<h1 align="center">
+  <img src="/docs/logo@2x.png" width="140" alt="icon"><br>
   Shortcuts.design — Every shortcuts for designers, centralized and searchable.<br>
   <p align="center">
 	  <a href="https://stats.uptimerobot.com/kXWkYTnGQn">
@@ -8,12 +8,12 @@
 	    <img src="https://img.shields.io/badge/contact-michelvanheest-blue.svg?style=flat" alt="Contact">
 	  </a>
   </p>
-</h1>**
+</h1>
 
 
 
 <p align="center">
-  <img src="Docs/shortcuts.design.jpg" width="1600" alt="Shortcuts.design">
+  <img src="/docs/shortcuts.design.jpg" width="1600" alt="Shortcuts.design">
 </p>
 
 ## Introduction
