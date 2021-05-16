@@ -1,5 +1,5 @@
 /* ============BODY CUSTOM RESET============ */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, input, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
     margin: 0;
     padding: 0;
     border: 0;
@@ -33,6 +33,8 @@ body {
     --neutral-300: rgba(255, 255, 255, 0.64);
     --neutral-200: #F9F9FB;
     --neutral-100: #FFFFFF;
+    --neutral-input-light: rgba(10, 18, 31, 0.24);
+    --neutral-input-dark: rgba(255, 255, 255, 0.24);
     --brand-default-gradient: linear-gradient(109.09deg, #5547FF 0%, #7A70FF 100%);
     --brand-default-color: #5447FF;
     --brand-1-gradient: linear-gradient(289.09deg, #FF476D 0%, #FBB861 100%);
@@ -47,7 +49,8 @@ body {
     --shadow-primary-elevated: 0px 4px 16px 8px rgba(0, 0, 0, 0.08), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-primary-elevated-space: 0px 0px 16px 8px rgba(110, 99, 255, 0.4), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-inset: inset 0px 2px 2px rgba(10, 18, 31, 0.04);
-    --shadow-footer: 0px 32px 40px rgba(23, 20, 51, 0.16);
+    --shadow-floating: 0px 32px 40px rgba(23, 20, 51, 0.16);
+    --shadow-search: 0px 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 ::selection {
@@ -60,11 +63,11 @@ body {
     background: var(--brand-default-color);
 }
 
-h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), input:focus {
+h1, h2, .button, .button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-900)
 }
 
-.tools-overview h2, h3, h5, p, li, input, td:nth-child(even) {
+.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
     color: var(--neutral-700)
 }
 
@@ -77,28 +80,32 @@ td {
     border-bottom: 1px solid var(--neutral-600);
 }
 
-footer h5 {
+footer h5, .missing-something-card h4, .missing-something-card p {
     color: var(--neutral-300)
 }
 
-body, #footer-curve {
+body, #footer-curve, .newsletter {
     background-color: var(--neutral-200);
 }
 
-#banner-wrapper a, footer a, footer a:hover, a.button-primary, a.button-primary:hover, .tab-link.current {
+#toast-wrapper a, footer a, footer a:hover, .button-primary, .button-primary:hover, .tab-link.current, .missing-something-card h2, .missing-something-card a, .missing-something-card a:hover {
     color: var(--neutral-100);
 }
 
-footer a:hover {
+footer a:hover, .missing-something-card a:hover {
     border-color: var(--neutral-100);
 }
 
-input, .tool-card {
+input, .tool-card, .profile-card, .button-tertiary {
     background-color: var(--neutral-100);
 }
 
 a, a:hover {
     color: var(--brand-default-color);
+}
+
+.button-tertiary, .button-tertiary:hover {
+    color: var(--brand-default-color) !important;
 }
 
 input:focus {
@@ -146,7 +153,7 @@ a:hover {
     background: var(--brand-3-gradient);
 }
 
-footer, #banner-wrapper, .button-primary {
+footer, #toast-wrapper, .button-primary, .missing-something-card {
     background: var(--brand-default-gradient);
 }
 
@@ -154,8 +161,8 @@ footer, #banner-wrapper, .button-primary {
     box-shadow: var(--shadow-primary-elevated);
 }
 
-#footer-curve {
-    box-shadow: var(--shadow-footer);
+#footer-curve, .newsletter {
+    box-shadow: var(--shadow-floating);
 }
 
 .img-light {
@@ -167,11 +174,11 @@ footer, #banner-wrapper, .button-primary {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, #footer-curve {
+    body, #footer-curve, .newsletter {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs, .tool-card {
+    input, .tabs, .tool-card, .profile-card {
         background-color: var(--neutral-800);
     }
 
@@ -179,12 +186,16 @@ footer, #banner-wrapper, .button-primary {
         border-bottom: 1px solid var(--neutral-400);
     }
 
-    .tools-overview h2, h3, h5, p, li, input, td:nth-child(even) {
+    .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
         color: var(--neutral-300);
     }
 
-    h1, h2, h4, a.button, a.button:hover, th, td:nth-child(odd), .tab-link, input:focus {
+    h1, h2, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus {
         color: var(--neutral-100);
+    }
+
+    .button-tertiary, .button-tertiary:hover {
+        color: var(--brand-default-color);
     }
 
     .button-primary:hover {
@@ -212,6 +223,7 @@ h1 {
 h2, th {
     font-weight: 500;
     font-size: 40px;
+    margin-bottom: 8px;
     /* line-height: 72px; */
 }
 
@@ -222,7 +234,11 @@ h3, input {
     margin-bottom: 8px;
 }
 
-h4, #banner {
+h4 {
+    margin-bottom: 8px;
+}
+
+h4, #toast {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -250,7 +266,7 @@ li {
     margin: 8px 0px;
 }
 
-li:last-of-type {
+.update-row li:last-of-type {
     margin-bottom: 80px;
 }
 
@@ -259,26 +275,30 @@ li.tab-link {
     margin-bottom: initial;
 }
 
-a.button, .tab-link, li.tab-link {
+.button, .tab-link, li.tab-link {
     font-weight: 500;
     font-size: 18px;
     line-height: initial;
 }
 
 /* ============LINKS============ */
-a, .tool-card.tool-card:after {
+.button, .newsletter img {
+    cursor: pointer;
+}
+
+a, .tool-card.tool-card:after, .newsletter-wrapper {
     transition:all .16s ease-out 0s;
     -moz-transition:all .16s ease-out 0s;
     -webkit-transition:all .16s ease-out 0s;
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app {
+.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
-h5 a, p a {
+h5 a, p a, li a {
     border-bottom: 2px solid transparent;
 }
 
@@ -290,7 +310,7 @@ a:hover {
     font-size: 12px;
 }
 
-.a-icon, #banner, .button {
+.a-icon, #toast, .button {
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -301,7 +321,7 @@ a:hover {
     border-radius: 100px;
 }
 
-.button-primary, .tabs .tab-link.current {
+.button-primary, .button-tertiary .tabs .tab-link.current {
     box-shadow: var(--shadow-primary);
 }
 
@@ -323,12 +343,12 @@ nav img:hover {
     -webkit-transform: scale(1.1, 1.1);
 }
 
-#banner:hover, .button:hover {
+#toast:hover, .button:hover {
     transform: scale(1.05, 1.05);
     -webkit-transform: scale(1.05, 1.05);
 }
 
-#banner:active, .button:active, #profile:active #profile-avatar, nav img:active {
+#toast:active, .button:active, #profile:active #profile-avatar, nav img:active {
     transform: scale(0.98, 0.98);
 }
 
@@ -350,5 +370,47 @@ img {
         top: -100px;
         right: 0;
         z-index: -1;
+    }
+}
+
+/* ============INPUTS============ */
+input {
+    width: 100%;
+    box-shadow: var(--shadow-search);
+    -webkit-box-shadow: var(--shadow-search);
+    -moz-box-shadow: var(--shadow-search);
+    -webkit-appearance: none; /*Fixes box-shadow on iOS*/
+    border: none;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    padding: 24px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center left 32px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+    color: var(--neutral-input-light);
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: var(--neutral-input-light);
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: var(--neutral-input-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-input-placeholder { /* Chrome */
+        color: var(--neutral-input-dark);
+    }
+    
+    :-ms-input-placeholder { /* IE 10+ */
+        color: var(--neutral-input-dark);
+    }
+    
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: var(--neutral-input-dark);
     }
 }

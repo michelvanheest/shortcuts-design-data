@@ -1,5 +1,5 @@
 .tools-overview {
-    margin: 120px 0px;
+    margin-top: 120px;
 }
 
 .tools-overview img:first-of-type {
@@ -12,10 +12,24 @@
     margin-bottom: 40px;
 }
 
-.missing-something {
-    margin-bottom: 40px;
+.add-new-tool {
+    width: 170px;
+    text-align: center;
+    border-radius: 24px;
+    position: relative;
+    display: inline-block;
 }
 
-.missing-something a {
-    margin: 32px 24px 0px 0px;
+.add-new-tool img {
+    transform: translateY(-16px);
+}
+
+.add-new-tool:hover img {
+    transform: translateY(-16px) rotate(4deg) scale(1.16, 1.16);
+    -webkit-transform: translateY(-16px) rotate(4deg) scale(1.16, 1.16);
+}
+
+.add-new-tool:active img {
+    transform: translateY(-16px) rotate(0deg) scale(1, 1);
+    -webkit-transform: translateY(-16px) rotate(0deg) scale(1, 1);
 }

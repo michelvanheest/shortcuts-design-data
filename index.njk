@@ -3,8 +3,6 @@ layout: layouts/base.njk
 permalink: /
 subtitle: Shortcuts.design
 title: Every shortcut for designers, centralized and searchable.
-buttonLink: https://github.com/michelvanheest/shortcuts-design-data
-buttonText: Add a tool
 ---
 
 <link rel="stylesheet" href="/css/index.css">
@@ -27,6 +25,7 @@ buttonText: Add a tool
                 {% include "toolslist.njk" %}
             {% endif %}
         {% endfor %}
+        {% include "add-new-tool.njk" %}
     </div>
 </div>
 <div class="row tools-overview">
@@ -41,6 +40,7 @@ buttonText: Add a tool
                 {% include "toolslist.njk" %}
             {% endif %}
         {% endfor %}
+        {% include "add-new-tool.njk" %}
     </div>
 </div>
 <div class="row tools-overview">
@@ -55,14 +55,6 @@ buttonText: Add a tool
                 {% include "toolslist.njk" %}
             {% endif %}
         {% endfor %}
-    </div>
-</div>
-
-<div class="row missing-something">
-    <div class="col-12 col-lg-6">
-        <h2>Missing something?</h2>
-        <p>Feel free to request missing tools or give some feedback using Twitter, E-mail or GitHub! If you can, please help me out with adding the data yourself on GitHub.</p>
-        <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" class="button button-primary">Add a tool 💪</a>
-        <a href="https://twitter.com/michelvanheest?ref=shortcuts.design" target="_blank" class="button button-secondary">Tweet me 🐦</a>
+        {% include "add-new-tool.njk" %}
     </div>
 </div>

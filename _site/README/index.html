@@ -1,4 +1,102 @@
+<h1 align="center">
+  <img src="docs/logo@2x.png" width="140" alt="icon"><br>
+  Shortcuts.design — Every shortcuts for designers, centralized and searchable.<br>
+  <p align="center">
+	  <a href="https://stats.uptimerobot.com/kXWkYTnGQn">
+	    <img src="https://img.shields.io/badge/status-stable-green.svg?style=flat" alt="Status">
+	  <a href="https://twitter.com/michelvanheest">
+	    <img src="https://img.shields.io/badge/contact-michelvanheest-blue.svg?style=flat" alt="Contact">
+	  </a>
+  </p>
+</h1>
+<p align="center">
+  <img src="docs/shortcuts.design.png" width="1600" alt="Shortcuts.design">
+</p>
+<h2>Introduction</h2>
+<p>Hi, I'm <a href="https://www.michelvanheest.com">Michel</a>, the creator of <a href="https://shortcuts.design">Shortcuts.design</a>. Shortcuts.design lists every shortcut for designers in one place and in a simple and clear way. It's a centralized and searchable online database that helps over 10K designers every month to quickly charge their workflow. Whether you're a beginning designer looking to work more efficient, when you switched to a new designtool or when you just want a reference to see which shortcut to use for that action you have to do all day long, it'll help you get there.</p>
+<h2>Contributing</h2>
+<p>Please use <a href="https://github.com/michelvanheest/shortcuts-design-data/issues/new">GitHub issues</a> to report any bugs or feature requests. If you can fix it yourself, please fix it and send in a pull request.</p>
+<p><strong>Note:</strong> all data is in plain HTML, we're working on that 😅</p>
+<h3>Running the project</h3>
+<p>Shortcuts.design runs on [Eleventy](eleventy is a simpler static site generator.). Use the following commands to get started:</p>
 <ul>
+<li>Install: <code>npm install</code></li>
 <li>Build: <code>npx @11ty/eleventy</code></li>
 <li>Run: <code>npx @11ty/eleventy --serve</code></li>
+</ul>
+<h3>Changing data</h3>
+<p>Edit the data of a specific tool in <em>data/{category}/{toolpages-toolname.html}</em>.</p>
+<h3>Adding tools</h3>
+<ol>
+<li>
+<p>Add a new file to <em>/tools</em>, for example <code>toolspage-{tool-name-here}.md</code> with the following data:</p>
+<pre><code>---
+layout: layouts/tool.njk
+tool: {tool-name-here}
+os1: Mac {leave empty if only Mac or Windows}
+os2: Windows {leave empty if only Mac or Windows}
+toolSlug: {tool-name-with-dashes}
+toolGroup: {pick from *Design*, *Development* or *Productivity*}
+toolDescription: {write a description about the tool here}
+toolLink: {link to the tool here}
+toolLinkDescription: {how the link should be displayed}
+---
+</code></pre>
+</li>
+<li>
+<p>Add a logo to <em>assets/img</em> with the following naming-convention: <code>logo-{toolslug-here}.png</code>, logo's should be 264*264px.</p>
+</li>
+<li>
+<p>Add the data to <em>data/{category}/</em>. Use the formating instructions below. For quick generation of the needed HTML, use the following file:</p>
+<ul>
+<li><a href="https://github.com/michelvanheest/shortcuts-design-data/docs/Shortcuts.design-data-creator.xlsx">MS Excel</a></li>
+<li><a href="https://github.com/michelvanheest/shortcuts-design-data/docs/Shortcuts.design-data-creator.xlsx">Apple Numbers</a></li>
+</ul>
+</li>
+</ol>
+<h3>Symbols</h3>
+<p>Please keep the code/data clean and consistent by using the following symbols when adding shortcuts on Mac tools-pages:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Control</td>
+<td>⌃</td>
+</tr>
+<tr>
+<td>Option / Alt</td>
+<td>⌥</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>⌘</td>
+</tr>
+<tr>
+<td>Shift</td>
+<td>⇧</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>↩</td>
+</tr>
+<tr>
+<td>Arrow keys</td>
+<td>↑ ↓ ← →</td>
+</tr>
+</tbody>
+</table>
+<h3>Using GitHub</h3>
+<p>In case you don't know how to contribute using GitHub, please check out <a href="https://gist.github.com/MarcDiethelm/7303312">this short post</a>.</p>
+<h2>About the designer / developer</h2>
+<p>Hi, I'm <a href="https://twitter.com/michelvanheest">Michel</a>, I created Shortcuts.design to help others charge their workflow. I'm a Product Designer on a mission to build products for others that enable them to become more productive and effective · Product Design <a href="https://yipyip.nl?ref=shortcuts.design" target="_blank">@YipYip</a> · Prev <a href="https://about.wetransfer.com/en/?ref=shortcuts.design" target="_blank">@WeTransfer</a> &amp; <a href="https://awkward.co?ref=shortcuts.design" target="_blank">@Awkward</a>.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="http://shortcuts.design/">Shortcuts.design website</a></li>
+<li><a href="https://www.michelvanheest.com">Personal website - Michel van Heest</a></li>
+<li><a href="https://twitter.com/michelvanheest">Twitter - Michel van Heest</a></li>
 </ul>

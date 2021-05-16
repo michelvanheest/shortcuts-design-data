@@ -1,0 +1,44 @@
+#card-row {
+    padding: 120px 0px 80px 0px;
+}
+
+.missing-something-card, .profile-card {
+    padding: 32px;
+    margin-bottom: 32px;
+    border-radius: 24px;
+}
+
+.missing-something-card .button, .profile-card .button {
+    margin: 32px 24px 0px 0px;
+}
+
+.profile-card #profile-card-name {
+    display: block;
+}
+
+#profile-avatar-large {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+    margin-top: -16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .profile-card #profile-card-name {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+    #profile-avatar-large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .missing-something-card, .profile-card {
+        padding: 56px;
+        margin-bottom: 0px;
+    }
+}
