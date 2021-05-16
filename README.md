@@ -1,5 +1,4 @@
 <h1 align="center">
-  <img src="docs/logo@2x.png" width="140" alt="icon"><br>
   Shortcuts.design — Every shortcuts for designers, centralized and searchable.<br>
   <p align="center">
 	  <a href="https://stats.uptimerobot.com/kXWkYTnGQn">
@@ -12,9 +11,7 @@
 
 
 
-<p align="center">
-  <img src="docs/shortcuts.design.png" width="1600" alt="Shortcuts.design">
-</p>
+![Shortcuts.design V2.0](docs/shortcuts.design.png)
 
 ## Introduction
 Hi, I'm [Michel](https://www.michelvanheest.com), the creator of [Shortcuts.design](https://shortcuts.design). Shortcuts.design lists every shortcut for designers in one place and in a simple and clear way. It's a centralized and searchable online database that helps over 10K designers every month to quickly charge their workflow. Whether you're a beginning designer looking to work more efficient, when you switched to a new designtool or when you just want a reference to see which shortcut to use for that action you have to do all day long, it'll help you get there.
