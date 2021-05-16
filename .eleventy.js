@@ -10,6 +10,15 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.ico");
     eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.png");
     eleventyConfig.addPassthroughCopy("sitemap.xml");
+    eleventyConfig.addCollection("tools", function(collection) {
+        return collection.getFilteredByGlob("tools/*.md").sort(function(a, b) {
+            let nameA = a.data.tool.toUpperCase();
+            let nameB = b.data.tool.toUpperCase();
+            if (nameA < nameB) return -1;
+            else if (nameA > nameB) return 1;
+            else return 0;
+        });
+    });
 }
 
 

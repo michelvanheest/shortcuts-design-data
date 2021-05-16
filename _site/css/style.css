@@ -71,8 +71,11 @@ h1, h2, .button, .button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-700)
 }
 
-.tabs {
+.tabs, tr:hover {
     background-color: var(--neutral-600);
+}
+
+.tabs {
     box-shadow: var(--shadow-inset);
 }
 
@@ -184,6 +187,10 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
 
     td {
         border-bottom: 1px solid var(--neutral-400);
+    }
+
+    tr:hover {
+        background-color: var(--neutral-400);
     }
 
     .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
