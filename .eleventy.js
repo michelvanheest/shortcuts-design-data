@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("shortcuts-design-social.jpg");
     eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.ico");
     eleventyConfig.addPassthroughCopy("shortcuts-design-favicon.png");
+    eleventyConfig.addPassthroughCopy("sitemap.xml");
 }
 
 
