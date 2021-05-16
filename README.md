@@ -13,7 +13,7 @@
 
 
 <p align="center">
-  <img src="docs/shortcuts.design.jpg" width="1600" alt="Shortcuts.design">
+  <img src="docs/shortcuts.design.png" width="1600" alt="Shortcuts.design">
 </p>
 
 ## Introduction

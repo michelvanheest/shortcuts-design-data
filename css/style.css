@@ -298,7 +298,7 @@ a, .tool-card.tool-card:after, .newsletter-wrapper {
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
-h5 a, p a {
+h5 a, p a, li a {
     border-bottom: 2px solid transparent;
 }
 

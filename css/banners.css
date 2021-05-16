@@ -3,7 +3,7 @@
 }
 
 .missing-something-card, .profile-card {
-    padding: 56px;
+    padding: 32px;
     margin-bottom: 32px;
     border-radius: 24px;
 }
@@ -13,8 +13,7 @@
 }
 
 .profile-card #profile-card-name {
-    display: flex;
-    align-items: center;
+    display: block;
 }
 
 #profile-avatar-large {
@@ -24,8 +23,22 @@
     margin-top: -16px;
 }
 
+@media only screen and (min-width: 768px) {
+    .profile-card #profile-card-name {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+    #profile-avatar-large {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     .missing-something-card, .profile-card {
+        padding: 56px;
         margin-bottom: 0px;
     }
 }
