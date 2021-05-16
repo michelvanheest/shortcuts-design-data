@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="/docs/logo@2x.png" width="140" alt="icon"><br>
+  <img src="docs/logo@2x.png" width="140" alt="icon"><br>
   Shortcuts.design — Every shortcuts for designers, centralized and searchable.<br>
   <p align="center">
 	  <a href="https://stats.uptimerobot.com/kXWkYTnGQn">
@@ -13,7 +13,7 @@
 
 
 <p align="center">
-  <img src="/docs/shortcuts.design.jpg" width="1600" alt="Shortcuts.design">
+  <img src="docs/shortcuts.design.jpg" width="1600" alt="Shortcuts.design">
 </p>
 
 ## Introduction
