@@ -389,24 +389,6 @@ input {
     background-position: center left 32px;
 }
 
-input.button {
-    width: initial;
-    border: none;
-    margin-left: 16px;
-}
-
-input.email {
-    min-width: 350px;
-    font-size: 18px;
-    padding: 16px 24px;
-}
-
-form, #mc_embed_signup_scroll {
-    display: flex;
-    align-items: center;
-    margin: 8px 0px 16px 0px;
-}
-
 ::-webkit-input-placeholder { /* Chrome */
     color: var(--neutral-input-light);
 }
