@@ -74,7 +74,7 @@ In case you don't know how to contribute using GitHub, please check out [this sh
 
 
 ## About the designer / developer
-Hi, I'm [Michel](https://twitter.com/michelvanheest), I created Shortcuts.design to help others charge their workflow. I'm a Product Designer on a mission to build products for others that enable them to become more productive and effective · Product Design <a href="https://yipyip.nl?ref=shortcuts.design" target="_blank">@YipYip</a> · Prev <a href="https://about.wetransfer.com/en/?ref=shortcuts.design" target="_blank">@WeTransfer</a> &amp; <a href="https://awkward.co?ref=shortcuts.design" target="_blank">@Awkward</a>.
+Hi, I'm [Michel](https://twitter.com/michelvanheest), I created Shortcuts.design to help others charge their workflow. I'm a Product Designer on a mission to build products for others that enable them to become more productive and effective · Product Design <a href="https://yipyip.nl?ref=shortcuts.design" target="_blank" rel="noopener">@YipYip</a> · Prev <a href="https://about.wetransfer.com/en/?ref=shortcuts.design" target="_blank" rel="noopener">@WeTransfer</a> &amp; <a href="https://awkward.co?ref=shortcuts.design" target="_blank" rel="noopener">@Awkward</a>.
 
 ## Links
 - [Shortcuts.design website](http://shortcuts.design/)

@@ -20,7 +20,7 @@ layout: layouts/base.njk
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
         <h1>{{ tool }} Shortcuts</h1>
-        <p>{{ toolDescription }} <a href="{{ toolLink }}?ref=shortcuts.design" target="_blank" class="a-{{ toolGroup }}">{{ toolLinkDescription }}</a>.</p>
+        <p>{{ toolDescription }} <a href="{{ toolLink }}?ref=shortcuts.design" target="_blank" rel="noopener" class="a-{{ toolGroup }}">{{ toolLinkDescription }}</a>.</p>
     </div>
 </div>
 
@@ -37,7 +37,7 @@ layout: layouts/base.njk
 <div class="row">
     <div class="col-12 edit-switch">
         <div id="edit">
-            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" class="a-{{ toolGroup }}"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-{{ toolGroup }}"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
         {% if os2 is not null %}
             <div id="switch">
@@ -91,6 +91,6 @@ layout: layouts/base.njk
         <img src="/assets/img/Empty-state-illustration-dark.png" class="img-dark" alt="Empty state Shortcuts.design toolspage search">
         <h3>We searched everywhere, but we couldn’t fine a shortcut matching your search-query.</h3>
         <p>Try searching for something else. Think we’re missing something? Send us an issue or add it yourself.</p>
-        <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" class="button button-primary">Add a missing shortcut 💪️</a>
+        <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" rel="noopener" class="button button-primary">Add a missing shortcut 💪️</a>
     </div>
 </div>

@@ -1,9 +1,3 @@
-/* :root {
-    --neutral-input-light: rgba(10, 18, 31, 0.24);
-    --neutral-input-dark: rgba(255, 255, 255, 0.24);
-    --shadow-search: 0px 4px 16px rgba(0, 0, 0, 0.08);
-} */
-
 #scroll-to-search {
     opacity: 0;
     display: block;

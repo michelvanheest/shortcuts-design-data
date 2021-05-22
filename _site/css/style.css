@@ -25,13 +25,13 @@ body {
 
 /* ============THEMING============ */
 :root {
-    --neutral-900: #0A121F;
+    --neutral-900: #09101B;
     --neutral-800: #131E2F;
     --neutral-700: rgba(10, 18, 31, 0.64);
     --neutral-600: rgba(10, 18, 31, 0.04);
     --neutral-400: rgba(255, 255, 255, 0.08);
     --neutral-300: rgba(255, 255, 255, 0.64);
-    --neutral-200: #F9F9FB;
+    --neutral-200: #F6F6F9;
     --neutral-100: #FFFFFF;
     --neutral-input-light: rgba(10, 18, 31, 0.24);
     --neutral-input-dark: rgba(255, 255, 255, 0.24);
