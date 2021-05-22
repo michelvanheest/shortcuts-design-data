@@ -3,6 +3,9 @@
   <p align="center">
 	  <a href="https://stats.uptimerobot.com/kXWkYTnGQn">
 	    <img src="https://img.shields.io/badge/status-stable-green.svg?style=flat" alt="Status">
+	    <a href="https://app.netlify.com/sites/agitated-poincare-681d60/deploys">
+	    <img src="https://api.netlify.com/api/v1/badges/1290ea78-7896-43cc-b8af-3742cc51f0d5/deploy-status" alt="Contact">
+	  </a>
 	  <a href="https://twitter.com/michelvanheest">
 	    <img src="https://img.shields.io/badge/contact-michelvanheest-blue.svg?style=flat" alt="Contact">
 	  </a>
