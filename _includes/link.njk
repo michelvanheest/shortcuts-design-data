@@ -3,9 +3,9 @@
 {% set sponsorlist = collections.sponsors %}
 {% for sponsor in sponsorlist %}
     {% if sponsor.data.active == "yes" %}
-        <div class="link">
+        <div class="card link">
             <h4>Sponsored by {{ sponsor.data.sponsorName }}</h4>
-            <div>
+            <div class="card-title-flex">
                 <h3>{{ sponsor.data.title }}</h3>
                 <h4>{{ sponsor.data.subtitle }}</h4>
             </div>
