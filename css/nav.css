@@ -6,4 +6,19 @@ nav {
 nav img {
     width: 75px;
     height: 57px;
+    min-width: 75px;
+    min-height: 57px;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    margin-right: 40px;
 }
