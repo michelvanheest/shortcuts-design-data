@@ -63,7 +63,7 @@ body {
     background: var(--brand-default-color);
 }
 
-h1, h2, .button, .button:hover, th, td:nth-child(odd), input:focus {
+h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus {
     color: var(--neutral-900)
 }
 
@@ -99,7 +99,7 @@ footer a:hover, .missing-something-card a:hover {
     border-color: var(--neutral-100);
 }
 
-input, .tool-card, .profile-card, .button-tertiary {
+input, .tool-card, .profile-card, .button-tertiary, .link {
     background-color: var(--neutral-100);
 }
 
@@ -116,7 +116,7 @@ input:focus {
     border: 2px solid var(--brand-default-color);
 }
 
-a:hover {
+a:hover, .link a:hover {
     border-color: var(--brand-default-color);
 }
 
@@ -181,7 +181,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs, .tool-card, .card {
+    input, .tabs, .tool-card, .card, .link {
         background-color: var(--neutral-800);
     }
 
@@ -197,7 +197,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         color: var(--neutral-300);
     }
 
-    h1, h2, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus {
+    h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus {
         color: var(--neutral-100);
     }
 
@@ -305,7 +305,7 @@ a, .tool-card.tool-card:after, .newsletter-wrapper {
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
-h5 a, p a, li a, .nav-links a {
+h5 a, p a, li a, .nav-links a, .link a {
     border-bottom: 2px solid transparent;
 }
 

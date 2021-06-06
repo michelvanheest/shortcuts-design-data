@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/link.css">
+
+{% set sponsorlist = collections.sponsors %}
+{% for sponsor in sponsorlist %}
+    {% if sponsor.data.active == "yes" %}
+        <div class="link">
+            <h4>Sponsored by {{ sponsor.data.sponsorName }}</h4>
+            <div>
+                <h3>{{ sponsor.data.title }}</h3>
+                <h4>{{ sponsor.data.subtitle }}</h4>
+            </div>
+            <p>{{ sponsor.data.body }}</p>
+            <a href="{{ link }}?ref=shortcuts.design" target="_blank">Get it from {{ sponsor.data.sponsorName }}</a>
+        </div>
+    {% endif %}
+{% endfor %}
