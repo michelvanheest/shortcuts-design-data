@@ -181,7 +181,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs, .tool-card, .profile-card {
+    input, .tabs, .tool-card, .card {
         background-color: var(--neutral-800);
     }
 
@@ -305,7 +305,7 @@ a, .tool-card.tool-card:after, .newsletter-wrapper {
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
-h5 a, p a, li a {
+h5 a, p a, li a, .nav-links a {
     border-bottom: 2px solid transparent;
 }
 
@@ -418,6 +418,14 @@ img {
         top: -100px;
         right: 0;
         z-index: -1;
+    }
+
+    .nav-links a, .nav-links a:hover {
+        color: var(--neutral-100);
+    }
+
+    .nav-links a:hover {
+        border-color: var(--neutral-100);
     }
 }
 
