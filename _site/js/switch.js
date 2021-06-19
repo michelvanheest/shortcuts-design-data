@@ -12,12 +12,15 @@ if (navigator.appVersion.indexOf("Linux") != -1)
 $(function() {
     if (detectOS == "macOS") {
         $('ul.tabs .macOS').addClass('current');
+        $('.tab-content .macOS').addClass('current');
     } 
     if (detectOS == "Windows") {
         $('ul.tabs .windows').addClass('current');
+        $('.tab-content .windows').addClass('current');
     }
     if (detectOS == "Linux") {
         $('ul.tabs .windows').addClass('current');
+        $('.tab-content .windows').addClass('current');
     }
 });
 
