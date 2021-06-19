@@ -9,8 +9,8 @@
                 <h3>{{ sponsor.data.title }}</h3>
                 <h4>{{ sponsor.data.subtitle }}</h4>
             </div>
-            <p>{{ sponsor.data.body }}</p>
-            <a href="{{ link }}?ref=shortcuts.design" target="_blank">Get it from {{ sponsor.data.sponsorName }}</a>
+            {{ sponsor.templateContent | safe }}
+            <a href="{{ sponsor.data.url }}?ref=shortcuts.design" target="_blank" rel="sponsored">Get it from {{ sponsor.data.sponsorName }}</a>
         </div>
     {% endif %}
 {% endfor %}
