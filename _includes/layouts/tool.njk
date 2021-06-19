@@ -53,7 +53,7 @@ layout: layouts/base.njk
 {# DATA-TABLE #}
 <div class="row">
     <div class="col-12 offset-lg-1 col-lg-10">
-        <div id="tab-1" class="tab-content current">
+        <div id="tab-1" class="tab-content macOS">
             {% if os1 is null %}
                 <script>
                     $( document ).ready(function(){
@@ -71,7 +71,7 @@ layout: layouts/base.njk
             {% endif %}
         </div>
 
-        <div id="tab-2" class="tab-content">
+        <div id="tab-2" class="tab-content windows">
             {% if os2 == "Windows" %}
                 <script>
                     $( document ).ready(function(){
