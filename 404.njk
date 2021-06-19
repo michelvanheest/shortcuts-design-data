@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+subtitle: 404
+title: Sorry, the link you're trying to open doesn't seem to exist.
+---
+
+{# BLOB #}
+<object type="image/svg+xml" data="/assets/img/gradient-brand-default.svg" class="blob"></object>
+
+{# INTRO #}
+{% include "hero.njk" %}
+
+<a href="/" class="button button-primary">Take me home</a>
+
+<style>
+#hero-buttons, #card-row {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+    position: absolute;
+    display: block;
+    bottom: 0;
+}
+}
+</style>
