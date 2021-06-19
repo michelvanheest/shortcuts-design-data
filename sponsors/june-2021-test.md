@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: Epic Company
 title: Free .design domain
 subtitle: for the first year
