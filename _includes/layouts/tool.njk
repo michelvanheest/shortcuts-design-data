@@ -42,8 +42,8 @@ layout: layouts/base.njk
         {% if os2 is not null %}
             <div id="switch">
                 <ul class="tabs">
-                    <li class="tab-link macOS button a-{{ toolGroup }}" data-tab="tab-1">{{ os1 }}</li>
-                    <li class="tab-link windows button a-{{ toolGroup }}" data-tab="tab-2">{{ os2 }}</li>
+                    <li class="tab-link Mac button a-{{ toolGroup }}" data-tab="tab-1">{{ os1 }}</li>
+                    <li class="tab-link Windows button a-{{ toolGroup }}" data-tab="tab-2">{{ os2 }}</li>
                 </ul>
             </div>
         {% endif %}
@@ -53,14 +53,14 @@ layout: layouts/base.njk
 {# DATA-TABLE #}
 <div class="row">
     <div class="col-12 offset-lg-1 col-lg-10">
-        <div id="tab-1" class="tab-content macOS">
+        <div id="tab-1" class="tab-content Mac">
             {% if os1 is null %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
+                        $("#data-{{ toolSlug }}-1").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
                     });
                 </script>
-                <div id="data-{{ toolSlug }}"></div>
+                <div id="data-{{ toolSlug }}-1"></div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
@@ -71,7 +71,7 @@ layout: layouts/base.njk
             {% endif %}
         </div>
 
-        <div id="tab-2" class="tab-content windows">
+        <div id="tab-2" class="tab-content Windows">
             {% if os2 == "Windows" %}
                 <script>
                     $( document ).ready(function(){
@@ -79,6 +79,13 @@ layout: layouts/base.njk
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-{{ os2 }}"></div>
+            {% else %}
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-{{ toolSlug }}-2").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
+                    });
+                </script>
+                <div id="data-{{ toolSlug }}-2"></div>
             {% endif %}
         </div>
     </div>
