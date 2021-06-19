@@ -4,23 +4,23 @@ if (navigator.appVersion.indexOf("Win") != -1)
     detectOS = "Windows";
 
 if (navigator.appVersion.indexOf("Mac") != -1) 
-    detectOS = "macOS";
+    detectOS = "Mac";
 
 if (navigator.appVersion.indexOf("Linux") != -1) 
     detectOS = "Linux";
 
 $(function() {
-    if (detectOS == "macOS") {
-        $('ul.tabs .macOS').addClass('current');
-        $('.tab-content.macOS').addClass('current');
+    if (detectOS == "Mac") {
+        $('ul.tabs .Mac').addClass('current');
+        $('.tab-content.Mac').addClass('current');
     } 
     if (detectOS == "Windows") {
-        $('ul.tabs .windows').addClass('current');
-        $('.tab-content.windows').addClass('current');
+        $('ul.tabs .Windows').addClass('current');
+        $('.tab-content.Windows').addClass('current');
     }
     if (detectOS == "Linux") {
-        $('ul.tabs .windows').addClass('current');
-        $('.tab-content.windows').addClass('current');
+        $('ul.tabs .Windows').addClass('current');
+        $('.tab-content.Windows').addClass('current');
     }
 });
 
