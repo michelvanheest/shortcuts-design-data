@@ -10,7 +10,7 @@
                 <h4>{{ sponsor.data.subtitle }}</h4>
             </div>
             {{ sponsor.templateContent | safe }}
-            <a href="{{ sponsor.data.url }}?ref=shortcuts.design" target="_blank" rel="sponsored">Get it from {{ sponsor.data.sponsorName }}</a>
+            <a href="{{ sponsor.data.url }}?ref=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from {{ sponsor.data.sponsorName }}</a>
         </div>
     {% endif %}
 {% endfor %}

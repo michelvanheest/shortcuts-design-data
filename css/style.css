@@ -116,7 +116,7 @@ input:focus {
     border: 2px solid var(--brand-default-color);
 }
 
-a:hover, .link a:hover {
+a:hover {
     border-color: var(--brand-default-color);
 }
 
@@ -305,7 +305,7 @@ a, .tool-card.tool-card:after, .newsletter-wrapper {
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
-h5 a, p a, li a, .nav-links a, .link a {
+h5 a, p a, li a, .nav-links a {
     border-bottom: 2px solid transparent;
 }
 
