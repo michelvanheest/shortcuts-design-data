@@ -50,8 +50,8 @@ Edit the data of a specific tool in `data/{category}/toolpages-{toolname}.html`.
 	```
 2. Add a logo to `assets/img` with the following naming-convention: `logo-{toolslug}.png`, logo's should be 264*264px and don't have a shadow.
 3. Add the data to `data/{category}/`. Use the formating instructions below. For quick generation of the needed HTML, use one of the following files:
-	- <a href="https://github.com/michelvanheest/shortcuts-design-data/docs/Shortcuts.design-data-creator.xlsx">MS Excel</a>
-	- <a href="https://github.com/michelvanheest/shortcuts-design-data/docs/Shortcuts.design-data-creator.xlsx">Apple Numbers</a>
+	- <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/docs/Shortcuts.design-data-creator.xlsx">MS Excel</a>
+	- <a href="https://github.com/michelvanheest/shortcuts-design-data/blob/master/docs/Shortcuts.design-data-creator.numbers">Apple Numbers</a>
 
 ### Symbols
 
