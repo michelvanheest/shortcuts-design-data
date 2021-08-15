@@ -396,6 +396,10 @@ img {
     margin-right: 16px;
 }
 
+.card .button:nth-of-type(2) {
+    margin-top: 24px;
+}
+
 @media only screen and (min-width: 768px) {
     .card-title-flex {
         display: flex;
@@ -406,6 +410,12 @@ img {
 @media only screen and (min-width: 992px) {
     .card-large {
         padding: 56px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .card .button:nth-of-type(2) {
+        margin-top: 0px;
     }
 }
 
