@@ -120,6 +120,18 @@ a:hover {
     border-color: var(--brand-default-color);
 }
 
+.card.link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 4px);
+    top: 0;
+    left: 0;
+    border-radius: 26px;
+    z-index: -1;
+    background: var(--brand-default-gradient);
+}
+
 .a-Design:not(.tab-link), .a-Design:hover:not(.tab-link) {
     color: var(--brand-1-color);
 }
