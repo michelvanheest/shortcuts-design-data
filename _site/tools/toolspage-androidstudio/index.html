@@ -107,10 +107,14 @@
 
 
 <script>
-    $( document ).ready(function(){
+    $(document).ready(function(){
         $("#data-toc").load("/data/Development/toolspage-androidstudio-Mac.html", function() {
-            jQuery("#myTable th").each(function(){
-                $( this ).addClass("toc-link");
+            jQuery("#data-toc #myTable tr").each(function(){
+                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                //$(this).addClass("toc-link");
+                $(this).attr('id', "scroll-to-" + thValue);
+                $(this).wrap('<a href="#' + thValue + '"/>')
+
             });
         });
     });
@@ -167,7 +171,12 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-androidstudio-Mac").load("/data/Development/toolspage-androidstudio-Mac.html");
+                        $("#data-androidstudio-Mac").load("/data/Development/toolspage-androidstudio-Mac.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-androidstudio-Mac" class="data-table"></div>
@@ -178,7 +187,12 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-androidstudio-Windows").load("/data/Development/toolspage-androidstudio-Windows.html");
+                        $("#data-androidstudio-Windows").load("/data/Development/toolspage-androidstudio-Windows.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-androidstudio-Windows" class="data-table"></div>

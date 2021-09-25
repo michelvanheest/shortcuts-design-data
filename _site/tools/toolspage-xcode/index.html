@@ -107,10 +107,14 @@
 
 
 <script>
-    $( document ).ready(function(){
+    $(document).ready(function(){
         $("#data-toc").load("/data/Development/toolspage-xcode-Mac.html", function() {
-            jQuery("#myTable th").each(function(){
-                $( this ).addClass("toc-link");
+            jQuery("#data-toc #myTable tr").each(function(){
+                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                //$(this).addClass("toc-link");
+                $(this).attr('id', "scroll-to-" + thValue);
+                $(this).wrap('<a href="#' + thValue + '"/>')
+
             });
         });
     });
@@ -160,7 +164,12 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-xcode-Mac").load("/data/Development/toolspage-xcode-Mac.html");
+                        $("#data-xcode-Mac").load("/data/Development/toolspage-xcode-Mac.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-xcode-Mac" class="data-table"></div>
@@ -171,7 +180,12 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-xcode-2").load("/data/Development/toolspage-xcode.html");
+                        $("#data-xcode-2").load("/data/Development/toolspage-xcode.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-xcode-2" class="data-table"></div>

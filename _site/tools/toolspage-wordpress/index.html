@@ -107,10 +107,14 @@
 
 
 <script>
-    $( document ).ready(function(){
+    $(document).ready(function(){
         $("#data-toc").load("/data/Development/toolspage-wordpress-.html", function() {
-            jQuery("#myTable th").each(function(){
-                $( this ).addClass("toc-link");
+            jQuery("#data-toc #myTable tr").each(function(){
+                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                //$(this).addClass("toc-link");
+                $(this).attr('id', "scroll-to-" + thValue);
+                $(this).wrap('<a href="#' + thValue + '"/>')
+
             });
         });
     });
@@ -160,7 +164,11 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-wordpress-1").load("/data/Development/toolspage-wordpress.html");
+                        $("#data-wordpress-1").load("/data/Development/toolspage-wordpress.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            }););
                     });
                 </script>
                 <div id="data-wordpress-1" class="data-table"></div>
@@ -171,7 +179,12 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-wordpress-2").load("/data/Development/toolspage-wordpress.html");
+                        $("#data-wordpress-2").load("/data/Development/toolspage-wordpress.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-wordpress-2" class="data-table"></div>

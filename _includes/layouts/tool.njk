@@ -9,10 +9,14 @@ layout: layouts/base.njk
 
 {# TOC #}
 <script>
-    $( document ).ready(function(){
+    $(document).ready(function(){
         $("#data-toc").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html", function() {
-            jQuery("#myTable th").each(function(){
-                $( this ).addClass("toc-link");
+            jQuery("#data-toc #myTable tr").each(function(){
+                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                //$(this).addClass("toc-link");
+                $(this).attr('id', "scroll-to-" + thValue);
+                $(this).wrap('<a href="#' + thValue + '"/>')
+
             });
         });
     });
@@ -69,14 +73,23 @@ layout: layouts/base.njk
             {% if os1 is null %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-1").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
+                        $("#data-{{ toolSlug }}-1").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            }););
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-1" class="data-table"></div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html");
+                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-{{ os1 }}" class="data-table"></div>
@@ -87,14 +100,24 @@ layout: layouts/base.njk
             {% if os2 == "Windows" %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html");
+                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-{{ os2 }}" class="data-table"></div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-2").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
+                        $("#data-{{ toolSlug }}-2").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
+                            jQuery(".data-table #myTable tr").each(function(){
+                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
+                                $(this).attr('id', thValue);
+                            });
+                        });
                     });
                 </script>
                 <div id="data-{{ toolSlug }}-2" class="data-table"></div>
