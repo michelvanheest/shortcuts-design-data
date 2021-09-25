@@ -106,6 +106,18 @@
 <script type="text/javascript" src="/js/switch.js"></script>
 
 
+<script>
+    $( document ).ready(function(){
+        $("#data-toc").load("/data/Development/toolspage-visualstudiocode-Mac.html", function() {
+            jQuery("#myTable th").each(function(){
+                $( this ).addClass("toc-link");
+            });
+        });
+    });
+</script>
+<div id="data-toc"></div>
+
+
 <object type="image/svg+xml" data="/assets/img/gradient-brand-Development.svg" class="blob"></object>
 
 
@@ -158,7 +170,7 @@
                         $("#data-visualstudiocode-Mac").load("/data/Development/toolspage-visualstudiocode-Mac.html");
                     });
                 </script>
-                <div id="data-visualstudiocode-Mac"></div>
+                <div id="data-visualstudiocode-Mac" class="data-table"></div>
             
         </div>
 
@@ -169,7 +181,7 @@
                         $("#data-visualstudiocode-Windows").load("/data/Development/toolspage-visualstudiocode-Windows.html");
                     });
                 </script>
-                <div id="data-visualstudiocode-Windows"></div>
+                <div id="data-visualstudiocode-Windows" class="data-table"></div>
             
         </div>
     </div>
@@ -193,8 +205,6 @@
 
 
     
-
-    
         <div class="card link">
             <h4>Sponsored by Swiftlee</h4>
             <div class="card-title-flex">
@@ -205,6 +215,8 @@
 
             <a href="https://www.avanderlee.com/swiftlee-weekly-subscribe/?utm_source=shortcuts-design&amp;utm_medium=banner&amp;utm_campaign=advertisement?ref=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from Swiftlee</a>
         </div>
+    
+
     
 
     </div>

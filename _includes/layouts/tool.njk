@@ -7,6 +7,18 @@ layout: layouts/base.njk
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/switch.js"></script>
 
+{# TOC #}
+<script>
+    $( document ).ready(function(){
+        $("#data-toc").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html", function() {
+            jQuery("#myTable th").each(function(){
+                $( this ).addClass("toc-link");
+            });
+        });
+    });
+</script>
+<div id="data-toc"></div>
+
 {# BLOB #}
 <object type="image/svg+xml" data="/assets/img/gradient-brand-{{ toolGroup }}.svg" class="blob"></object>
 
@@ -60,14 +72,14 @@ layout: layouts/base.njk
                         $("#data-{{ toolSlug }}-1").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-1"></div>
+                <div id="data-{{ toolSlug }}-1" class="data-table"></div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
                         $("#data-{{ toolSlug }}-{{ os1 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html");
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-{{ os1 }}"></div>
+                <div id="data-{{ toolSlug }}-{{ os1 }}" class="data-table"></div>
             {% endif %}
         </div>
 
@@ -78,14 +90,14 @@ layout: layouts/base.njk
                         $("#data-{{ toolSlug }}-{{ os2 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html");
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-{{ os2 }}"></div>
+                <div id="data-{{ toolSlug }}-{{ os2 }}" class="data-table"></div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
                         $("#data-{{ toolSlug }}-2").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-2"></div>
+                <div id="data-{{ toolSlug }}-2" class="data-table"></div>
             {% endif %}
         </div>
     </div>

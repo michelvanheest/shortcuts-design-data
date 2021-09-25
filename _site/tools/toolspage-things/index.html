@@ -106,6 +106,18 @@
 <script type="text/javascript" src="/js/switch.js"></script>
 
 
+<script>
+    $( document ).ready(function(){
+        $("#data-toc").load("/data/Productivity/toolspage-things-.html", function() {
+            jQuery("#myTable th").each(function(){
+                $( this ).addClass("toc-link");
+            });
+        });
+    });
+</script>
+<div id="data-toc"></div>
+
+
 <object type="image/svg+xml" data="/assets/img/gradient-brand-Productivity.svg" class="blob"></object>
 
 
@@ -151,7 +163,7 @@
                         $("#data-things-1").load("/data/Productivity/toolspage-things.html");
                     });
                 </script>
-                <div id="data-things-1"></div>
+                <div id="data-things-1" class="data-table"></div>
             
         </div>
 
@@ -162,7 +174,7 @@
                         $("#data-things-2").load("/data/Productivity/toolspage-things.html");
                     });
                 </script>
-                <div id="data-things-2"></div>
+                <div id="data-things-2" class="data-table"></div>
             
         </div>
     </div>
@@ -186,8 +198,6 @@
 
 
     
-
-    
         <div class="card link">
             <h4>Sponsored by Swiftlee</h4>
             <div class="card-title-flex">
@@ -198,6 +208,8 @@
 
             <a href="https://www.avanderlee.com/swiftlee-weekly-subscribe/?utm_source=shortcuts-design&amp;utm_medium=banner&amp;utm_campaign=advertisement?ref=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from Swiftlee</a>
         </div>
+    
+
     
 
     </div>
