@@ -107,22 +107,35 @@
 
 
 <script>
-    $(document).ready(function(){
-        $("#data-toc").load("/data/Design/toolspage-adobeindesign-Mac.html", function() {
-            jQuery("#data-toc #myTable tr").each(function(){
-                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
-                $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+    function createDataToc() {
+        jQuery("#data-toc #myTable tr").each(function(){
+            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
-                $('#scroll-to-' + thValue).on('click', function(e){
-                    e.preventDefault();
-                    var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
-                    $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                    }, 600);
-                });
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
             });
         });
-    });
+    }
+
+    function addIdToTh() {
+        jQuery(".data-table #myTable tr").each(function(){
+            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            $(this).attr('id', thValue);
+        });
+    }
+    
+    
+        $(document).ready(function(){
+            $("#data-toc").load("/data/Design/toolspage-adobeindesign-Mac.html", function() {
+                createDataToc();
+            });
+        });
+    
 </script>
 <div id="data-toc"></div>
 
@@ -177,10 +190,7 @@
                 <script>
                     $( document ).ready(function(){
                         $("#data-adobeindesign-Mac").load("/data/Design/toolspage-adobeindesign-Mac.html", function() {
-                            jQuery(".data-table #myTable tr").each(function(){
-                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
-                                $(this).attr('id', thValue);
-                            });
+                            addIdToTh();
                         });
                     });
                 </script>
@@ -193,10 +203,7 @@
                 <script>
                     $( document ).ready(function(){
                         $("#data-adobeindesign-Windows").load("/data/Design/toolspage-adobeindesign-Windows.html", function() {
-                            jQuery(".data-table #myTable tr").each(function(){
-                                var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
-                                $(this).attr('id', thValue);
-                            });
+                            addIdToTh();
                         });
                     });
                 </script>
