@@ -14,9 +14,17 @@ layout: layouts/base.njk
             jQuery("#data-toc #myTable tr").each(function(){
                 var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
                 //$(this).addClass("toc-link");
-                $(this).attr('id', "scroll-to-" + thValue);
-                $(this).wrap('<a href="#' + thValue + '"/>')
+                //$(this).attr('id', "scroll-to-" + thValue);
+                //$(this).wrap('<a href="#' + thValue + '"/>')
+                $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
+                $('#scroll-to-' + thValue).on('click', function(e){
+                    e.preventDefault();
+                    var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                    $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                    }, 600);
+                });
             });
         });
     });
