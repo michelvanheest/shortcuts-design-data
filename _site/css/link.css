@@ -1,0 +1,13 @@
+.link {
+    margin-top: 24px;
+}
+
+#card-sponsor {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    #card-sponsor {
+        display: block;
+    }
+}

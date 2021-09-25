@@ -111,9 +111,6 @@
         $("#data-toc").load("/data/Design/toolspage-adobephotoshop-Mac.html", function() {
             jQuery("#data-toc #myTable tr").each(function(){
                 var thValue = $(this).children("th:nth-child(n)").text().replace(" ", "-").toLowerCase();
-                //$(this).addClass("toc-link");
-                //$(this).attr('id', "scroll-to-" + thValue);
-                //$(this).wrap('<a href="#' + thValue + '"/>')
                 $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
                 $('#scroll-to-' + thValue).on('click', function(e){
