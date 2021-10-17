@@ -1,22 +1,3 @@
-#data-toc {
-    display: block;
-    position: fixed;
-    left: 0;
-}
-
-#data-toc td {
-    display: none;
-}
-
-#data-toc th {
-    font-size: 12px;
-    padding: 0px;
-}
-
-
-
-
-
 #scroll-to-search {
     opacity: 0;
     display: block;

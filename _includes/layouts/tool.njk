@@ -8,52 +8,15 @@ layout: layouts/base.njk
 <script type="text/javascript" src="/js/switch.js"></script>
 
 {# TOC #}
-<script>
-    function createDataToc() {
-        jQuery("#data-toc #myTable tr").each(function(){
-            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
-            $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
-
-            $('#scroll-to-' + thValue).on('click', function(e){
-                e.preventDefault();
-                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
-                $('html, body').stop().animate({
-                scrollTop: target.offset().top
-                }, 600);
-            });
-        });
-    }
-
-    function addIdToTh() {
-        jQuery(".data-table #myTable tr").each(function(){
-            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
-            $(this).attr('id', thValue);
-        });
-    }
-    
-    {% if os1 is null %}
-        $(document).ready(function(){
-            $("#data-toc").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
-                createDataToc();
-            });
-        });
-    {% else %}
-        $(document).ready(function(){
-            $("#data-toc").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html", function() {
-                createDataToc();
-            });
-        });
-    {% endif %}
-</script>
-<div id="data-toc"></div>
+{% include "table-of-contents.njk" %}
 
 {# BLOB #}
 <object type="image/svg+xml" data="/assets/img/gradient-brand-{{ toolGroup }}.svg" class="blob"></object>
 
 {# SEARCH BUTTON #}
-<a href="#myInput" class="button button-primary" id="scroll-to-search">
+{# <a href="#myInput" class="button button-primary" id="scroll-to-search">
     <img src="/assets/icons/icon-24-search-white.png" alt="Search icon">
-</a>
+</a> #}
 
 {# INTRO #}
 <div class="row">

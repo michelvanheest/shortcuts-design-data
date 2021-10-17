@@ -29,6 +29,7 @@ body {
     --neutral-800: #131E2F;
     --neutral-700: rgba(10, 18, 31, 0.64);
     --neutral-600: rgba(10, 18, 31, 0.04);
+    --neutral-500: rgba(108, 123, 147, 0.32);
     --neutral-400: rgba(255, 255, 255, 0.08);
     --neutral-300: rgba(255, 255, 255, 0.64);
     --neutral-200: #F6F6F9;
@@ -63,11 +64,11 @@ body {
     background: var(--brand-default-color);
 }
 
-h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus {
+h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
     color: var(--neutral-900)
 }
 
-.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
+.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc th {
     color: var(--neutral-700)
 }
 
@@ -81,6 +82,10 @@ h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus {
 
 td {
     border-bottom: 1px solid var(--neutral-600);
+}
+
+#data-toc th:before {
+    color: var(--neutral-500);
 }
 
 footer h5, .missing-something-card h4, .missing-something-card p {
@@ -99,7 +104,7 @@ footer a:hover, .missing-something-card a:hover {
     border-color: var(--neutral-100);
 }
 
-input, .tool-card, .profile-card, .button-tertiary, .link {
+input, .tool-card, .profile-card, .button-tertiary, .link, #data-toc:hover {
     background-color: var(--neutral-100);
 }
 
@@ -168,6 +173,10 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
     box-shadow: var(--shadow-floating);
 }
 
+#data-toc:hover {
+    box-shadow: var(--shadow-search);
+}
+
 .img-light {
     display: initial;
 }
@@ -181,7 +190,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs, .tool-card, .card, .link {
+    input, .tabs, .tool-card, .card, .link, #data-toc:hover {
         background-color: var(--neutral-800);
     }
 
@@ -193,11 +202,11 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         background-color: var(--neutral-400);
     }
 
-    .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
+    .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc th {
         color: var(--neutral-300);
     }
 
-    h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus {
+    h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
         color: var(--neutral-100);
     }
 
@@ -245,7 +254,7 @@ h4 {
     margin-bottom: 8px;
 }
 
-h4, #toast {
+h4, #toast, #data-toc th {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -293,14 +302,14 @@ li.tab-link {
     cursor: pointer;
 }
 
-a, .tool-card.tool-card:after, .newsletter-wrapper {
+a, .tool-card.tool-card:after, .newsletter-wrapper, #data-toc {
     transition:all .16s ease-out 0s;
     -moz-transition:all .16s ease-out 0s;
     -webkit-transition:all .16s ease-out 0s;
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter {
+.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter, #data-toc th:before {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
