@@ -68,7 +68,7 @@ h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus, #d
     color: var(--neutral-900)
 }
 
-.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc th {
+.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc:hover th {
     color: var(--neutral-700)
 }
 
@@ -302,7 +302,7 @@ li.tab-link {
     cursor: pointer;
 }
 
-a, .tool-card.tool-card:after, .newsletter-wrapper, #data-toc {
+a, .tool-card.tool-card:after, .newsletter-wrapper, #data-toc, #data-toc th {
     transition:all .16s ease-out 0s;
     -moz-transition:all .16s ease-out 0s;
     -webkit-transition:all .16s ease-out 0s;
