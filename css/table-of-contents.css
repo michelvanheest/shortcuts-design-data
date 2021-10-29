@@ -1,6 +1,5 @@
 #data-toc {
     max-height: calc(100vh - 240px);
-    /* border-radius: 16px; */
     border-radius: 0px 16px 16px 0px;
     padding: 16px;
     overflow-y: hidden;

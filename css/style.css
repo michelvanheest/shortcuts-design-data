@@ -64,12 +64,16 @@ body {
     background: var(--brand-default-color);
 }
 
+#data-toc:hover th {
+    color: var(--neutral-700);
+}
+
 h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
     color: var(--neutral-900)
 }
 
-.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc:hover th {
-    color: var(--neutral-700)
+.tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even) {
+    color: var(--neutral-700);
 }
 
 .tabs, tr:hover {
@@ -202,7 +206,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         background-color: var(--neutral-400);
     }
 
-    .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc th {
+    .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc:hover th {
         color: var(--neutral-300);
     }
 
