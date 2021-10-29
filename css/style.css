@@ -123,6 +123,7 @@ a, a:hover {
 input:focus {
     outline: none;
     border: 2px solid var(--brand-default-color);
+    
 }
 
 a:hover {
