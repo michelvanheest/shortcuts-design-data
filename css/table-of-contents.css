@@ -1,7 +1,7 @@
 #data-toc {
     max-height: calc(100vh - 240px);
     border-radius: 0px 16px 16px 0px;
-    padding: 16px;
+    padding: 16px 32px 16px 0px;
     overflow-y: hidden;
     display: block;
     position: fixed;
@@ -23,7 +23,7 @@
 }
 
 #data-toc table {
-    width: auto;
+    width: 100%;
     table-layout: initial;
 }
 
@@ -33,9 +33,8 @@
 
 #data-toc th {
     border-radius: 8px;
-    padding: 12px;
+    padding: 12px 12px 12px 28px;
     transform: translateX(16px);
-    border-right: 28px solid transparent;
     color: transparent;
 }
 

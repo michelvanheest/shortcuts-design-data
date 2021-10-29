@@ -203,8 +203,12 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         border-bottom: 1px solid var(--neutral-400);
     }
 
-    tr:hover {
+    tr:hover, #data-toc th:hover {
         background-color: var(--neutral-400);
+    }
+
+    #data-toc tr:hover {
+        background-color: transparent;
     }
 
     .tools-overview h2, h3, h4, h5, p, li, input, td:nth-child(even), #data-toc:hover th {
