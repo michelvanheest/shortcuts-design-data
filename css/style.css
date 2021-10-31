@@ -76,12 +76,16 @@ h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus, #d
     color: var(--neutral-700);
 }
 
-.tabs, tr:hover {
+.tabs, tr:hover, #data-toc th:hover {
     background-color: var(--neutral-600);
 }
 
 .tabs {
     box-shadow: var(--shadow-inset);
+}
+
+#data-toc tr:hover {
+    background-color: transparent;
 }
 
 td {
