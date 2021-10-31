@@ -68,7 +68,7 @@
         <meta name="author" content="Michel van Heest">
         <meta property="og:url" content="http://shortcuts.design" />
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".data-toc-scrollspy" data-offset="10">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLPNLFJ"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -104,6 +104,7 @@
 <script type="text/javascript" src="/js/animate.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/switch.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 <link rel="stylesheet" href="/css/table-of-contents.css">
@@ -112,7 +113,7 @@
     function createDataToc() {
         jQuery("#data-toc #myTable tr").each(function(){
             var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
-            $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
             $('#scroll-to-' + thValue).on('click', function(e){
                 e.preventDefault();
@@ -139,7 +140,10 @@
         });
     
 </script>
-<div id="data-toc"></div>
+
+<div class="data-toc-scrollspy">
+    <div id="data-toc" class="nav-pils"></div>
+</div>
 
 
 <object type="image/svg+xml" data="/assets/img/gradient-brand-Design.svg" class="blob"></object>
