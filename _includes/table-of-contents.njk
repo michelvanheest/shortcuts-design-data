@@ -4,7 +4,7 @@
     function createDataToc() {
         jQuery("#data-toc #myTable tr").each(function(){
             var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
-            $(this).wrap('<a' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
             $('#scroll-to-' + thValue).on('click', function(e){
                 e.preventDefault();
@@ -37,4 +37,7 @@
         });
     {% endif %}
 </script>
-<div id="data-toc"></div>
+
+<div class="data-toc-scrollspy">
+    <div id="data-toc" class="nav-pils"></div>
+</div>

@@ -19,6 +19,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-rendering: optimizeSpeed;
 }
 
+.nav-link {
+    padding: 0;
+}
+
 body {
     overflow-x: hidden !important;
 }
@@ -118,6 +122,10 @@ input, .tool-card, .profile-card, .button-tertiary, .link, #data-toc:hover {
 
 a, a:hover {
     color: var(--brand-default-color);
+}
+
+.nav-link.active th:before {
+    color: var(--brand-default-color) !important;
 }
 
 .button-tertiary, .button-tertiary:hover {
