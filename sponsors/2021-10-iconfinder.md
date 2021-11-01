@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: Iconfinder
 title: Thousands of high-quality illustrations
 subtitle: 
