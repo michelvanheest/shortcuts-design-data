@@ -12,10 +12,6 @@
     background-color: transparent;
 }
 
-#data-toc:hover {
-    overflow-y: scroll;
-}
-
 @media only screen and (max-width: 768px) {
     #data-toc {
         display: none;
