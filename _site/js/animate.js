@@ -1,41 +1,41 @@
 // Fade in toast.njk
-$(function() {
-    $(window).scroll( function(){
-        $('#toast-wrapper').each( function(i){
-            var bottom_of_object = $(this).position().top + 500;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},600);
-            }
-        });
-    });
-});
+// $(function() {
+//     $(window).scroll( function(){
+//         $('#toast-wrapper').each( function(i){
+//             var bottom_of_object = $(this).position().top + 500;
+//             var bottom_of_window = $(window).scrollTop() + $(window).height();
+//             if( bottom_of_window > bottom_of_object ){
+//                 $(this).animate({'opacity':'1'},600);
+//             }
+//         });
+//     });
+// });
 
 // Fade in scroll-button.njk
-$(function() {
-    $(window).scroll( function(){
-        $('#scroll-to-search').each( function(i){
-            var bottom_of_object = $(this).position().top + 500;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},600);
-            }
-        });
-    });
-});
+// $(function() {
+//     $(window).scroll( function(){
+//         $('#scroll-to-search').each( function(i){
+//             var bottom_of_object = $(this).position().top + 500;
+//             var bottom_of_window = $(window).scrollTop() + $(window).height();
+//             if( bottom_of_window > bottom_of_object ){
+//                 $(this).animate({'opacity':'1'},600);
+//             }
+//         });
+//     });
+// });
 
 // Fade in table-of-contents.njk
-$(function() {
-    $(window).scroll( function(){
-        $('#data-toc').each( function(i){
-            var bottom_of_object = $(this).position().top + 1000;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},600);
-            }
-        });
-    });
-});
+// $(function() {
+//     $(window).scroll( function(){
+//         $('#data-toc').each( function(i){
+//             var bottom_of_object = $(this).position().top + 500;
+//             var bottom_of_window = $(window).scrollTop() + $(window).height();
+//             if( bottom_of_window > bottom_of_object ){
+//                 $(this).animate({'opacity':'1'},600);
+//             }
+//         });
+//     });
+// });
 
 // Hide table-of-contents.njk when search is active
 $(document).ready(function(){
