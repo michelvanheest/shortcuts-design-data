@@ -12,6 +12,10 @@
     background-color: transparent;
 }
 
+#data-toc:hover {
+    overflow-y: scroll;
+}
+
 @media only screen and (max-width: 768px) {
     #data-toc {
         display: none;
@@ -29,7 +33,7 @@
 
 #data-toc th {
     border-radius: 8px;
-    padding: 12px 12px 12px 28px;
+    padding: 8px 8px 8px 28px;
     transform: translateX(16px);
     color: transparent;
 }
@@ -40,7 +44,7 @@
     border-style: solid;
     height: 4px;
     border-width: 4px;
-    top: 18px;
+    top: 14px;
     border-radius: 100px;
     transform: translateX(-16px);
 }
