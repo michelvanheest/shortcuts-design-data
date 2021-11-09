@@ -72,7 +72,7 @@ body {
     color: var(--neutral-700);
 }
 
-h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
+h1, h2, .link h3, .label, .button, .button:hover, th, td:nth-child(odd), input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
     color: var(--neutral-900)
 }
 
@@ -80,7 +80,7 @@ h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), input:focus, #d
     color: var(--neutral-700);
 }
 
-.tabs, tr:hover, #data-toc th:hover {
+.tabs, tr:hover, #data-toc th:hover, .label {
     background-color: var(--neutral-600);
 }
 
@@ -207,11 +207,11 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         background-color: var(--neutral-900);
     }
 
-    input, .tabs, .tool-card, .card, .link, #data-toc:hover {
+    input, .tabs, .tool-card, .card, .link, #data-toc:hover, .label {
         background-color: var(--neutral-800);
     }
 
-    td {
+    td, .divider {
         border-bottom: 1px solid var(--neutral-400);
     }
 
@@ -227,7 +227,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         color: var(--neutral-300);
     }
 
-    h1, h2, .link h3, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
+    h1, h2, .link h3, .label, .button, .button:hover, th, td:nth-child(odd), .tab-link, input:focus, #data-toc th:hover, #data-toc tr:hover th:before {
         color: var(--neutral-100);
     }
 
@@ -259,9 +259,21 @@ h1 {
 
 h2, th {
     font-weight: 500;
-    font-size: 40px;
-    margin-bottom: 8px;
+    font-size: 32px;
+    margin-bottom: 12px;
     /* line-height: 72px; */
+}
+
+.label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: auto;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 8px;
+    /* background-color: var(--neutral-800); */
+    margin-bottom: 16px;
+    margin-left: -12px;
 }
 
 h3, input {
@@ -396,6 +408,10 @@ nav img:hover {
 
 img { 
     max-width: 100%;
+}
+
+.divider {
+    width: 100%;
 }
 
 .card {

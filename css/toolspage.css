@@ -54,11 +54,11 @@ table {
 }
 
 th {
-    padding: 64px 0px 16px 0px;
+    padding: 72px 0px 16px 0px;
 }
 
 th:first-of-type {
-    padding-top: 40px;
+    padding-top: 64px;
 }
 
 tr {
