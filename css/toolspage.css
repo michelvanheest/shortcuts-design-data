@@ -15,7 +15,7 @@
 
 input {
     padding: 24px 32px 24px 72px;
-    margin: 80px 0px 40px 0px;
+    margin: 56px 0px 32px 0px;
     background-image: url(/assets/icons/icon-24-search-light.png);
 }
 
@@ -51,6 +51,14 @@ table {
     width: 100%;
     text-align: left;
     table-layout: fixed;
+}
+
+.data-table #myTable {
+    margin-top: -15px;
+}
+
+.data-table #myTable tbody:first-child tr th {
+    padding-top: 25px;
 }
 
 th {
