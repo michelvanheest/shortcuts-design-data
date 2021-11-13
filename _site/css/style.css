@@ -92,7 +92,7 @@ h1, h2, .link h3, .label, .button, .button:hover, th, td:nth-child(odd), input:f
     background-color: transparent;
 }
 
-td {
+td, .divider {
     border-bottom: 1px solid var(--neutral-600);
 }
 
