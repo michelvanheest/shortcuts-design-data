@@ -53,10 +53,6 @@ table {
     table-layout: fixed;
 }
 
-.data-table #myTable {
-    margin-top: -15px;
-}
-
 .data-table #myTable tbody:first-child tr th {
     padding-top: 25px;
 }
