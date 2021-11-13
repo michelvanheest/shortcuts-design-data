@@ -110,9 +110,11 @@
 <link rel="stylesheet" href="/css/table-of-contents.css">
 
 <script>
+    //Create ToC for when there's one OS, for Mac, and for Windows
     function createDataToc() {
         jQuery("#data-toc #myTable tr").each(function(){
-            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
             $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
             $('#scroll-to-' + thValue).on('click', function(e){
@@ -125,25 +127,63 @@
         });
     }
 
+    function createDataTocMac() {
+        jQuery("#data-toc-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    function createDataTocWindows() {
+        jQuery("#data-toc-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    //Add IDs to datatable for when there's one OS, for Mac, and for Windows
     function addIdToTh() {
         jQuery(".data-table #myTable tr").each(function(){
-            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
+            $(this).attr('id', thValue);
+        });
+    }
+
+    function addIdToThMac() {
+        jQuery("#data-atom- #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
             $(this).attr('id', thValue);
         });
     }
     
-    
-        $(document).ready(function(){
-            $("#data-toc").load("/data/Development/toolspage-atom.html", function() {
-                createDataToc();
-            });
+    function addIdToThWindows() {
+        jQuery("#data-atom- #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).attr('id', thValue);
         });
-    
+    }
 </script>
-
-<div class="data-toc-scrollspy">
-    <div id="data-toc" class="nav-pils"></div>
-</div>
 
 
 <object type="image/svg+xml" data="/assets/img/gradient-brand-Development.svg" class="blob"></object>
@@ -191,9 +231,15 @@
                         $("#data-atom-1").load("/data/Development/toolspage-atom.html", function() {
                             addIdToTh();
                         });
+                        $("#data-toc").load("/data/Development/toolspage-atom.html", function() {
+                            createDataToc();
+                        });
                     });
                 </script>
                 <div id="data-atom-1" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc" class="data-toc nav-pils"></div>
+                </div>
             
         </div>
 
@@ -204,9 +250,15 @@
                         $("#data-atom-2").load("/data/Development/toolspage-atom.html", function() {
                             addIdToTh();
                         });
+                        $("#data-toc").load("/data/Development/toolspage-atom.html", function() {
+                            createDataToc();
+                        });
                     });
                 </script>
                 <div id="data-atom-2" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc" class="data-toc nav-pils"></div>
+                </div>
             
         </div>
     </div>

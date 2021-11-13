@@ -110,9 +110,11 @@
 <link rel="stylesheet" href="/css/table-of-contents.css">
 
 <script>
+    //Create ToC for when there's one OS, for Mac, and for Windows
     function createDataToc() {
         jQuery("#data-toc #myTable tr").each(function(){
-            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
             $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
 
             $('#scroll-to-' + thValue).on('click', function(e){
@@ -125,25 +127,63 @@
         });
     }
 
+    function createDataTocMac() {
+        jQuery("#data-toc-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    function createDataTocWindows() {
+        jQuery("#data-toc-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    //Add IDs to datatable for when there's one OS, for Mac, and for Windows
     function addIdToTh() {
         jQuery(".data-table #myTable tr").each(function(){
-            var thValue = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
+            $(this).attr('id', thValue);
+        });
+    }
+
+    function addIdToThMac() {
+        jQuery("#data-webflow-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
             $(this).attr('id', thValue);
         });
     }
     
-    
-        $(document).ready(function(){
-            $("#data-toc").load("/data/Development/toolspage-webflow-Mac.html", function() {
-                createDataToc();
-            });
+    function addIdToThWindows() {
+        jQuery("#data-webflow-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).attr('id', thValue);
         });
-    
+    }
 </script>
-
-<div class="data-toc-scrollspy">
-    <div id="data-toc" class="nav-pils"></div>
-</div>
 
 
 <object type="image/svg+xml" data="/assets/img/gradient-brand-Development.svg" class="blob"></object>
@@ -196,11 +236,17 @@
                 <script>
                     $( document ).ready(function(){
                         $("#data-webflow-Mac").load("/data/Development/toolspage-webflow-Mac.html", function() {
-                            addIdToTh();
+                            addIdToThMac();
+                        });
+                        $("#data-toc-Mac").load("/data/Development/toolspage-webflow-Mac.html", function() {
+                            createDataTocMac();
                         });
                     });
                 </script>
                 <div id="data-webflow-Mac" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Mac" class="data-toc nav-pils"></div>
+                </div>
             
         </div>
 
@@ -209,11 +255,17 @@
                 <script>
                     $( document ).ready(function(){
                         $("#data-webflow-Windows").load("/data/Development/toolspage-webflow-Windows.html", function() {
-                            addIdToTh();
+                            addIdToThWindows();
+                        });
+                        $("#data-toc-Windows").load("/data/Development/toolspage-webflow-Windows.html", function() {
+                            createDataTocWindows();
                         });
                     });
                 </script>
                 <div id="data-webflow-Windows" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
+                </div>
             
         </div>
     </div>

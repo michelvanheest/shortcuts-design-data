@@ -1,11 +1,11 @@
 // Hide table-of-contents.njk when search is active
 $(document).ready(function(){
     $('#myInput').on('input', function() {
-        $('#data-toc #myTable')[$(this).val().length > 0 ? 'fadeOut' : 'fadeIn']();
+        $('.data-toc #myTable')[$(this).val().length > 0 ? 'fadeOut' : 'fadeIn']();
     });
 
     $('#myInput').on('focus', function() {
-        $('#data-toc #myTable').fadeIn();
+        $('.data-toc #myTable').fadeIn();
     });
 });
 

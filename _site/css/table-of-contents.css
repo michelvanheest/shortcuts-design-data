@@ -1,4 +1,4 @@
-#data-toc {
+.data-toc {
     max-height: calc(100vh - 310px);
     border-radius: 0px 16px 16px 0px;
     padding: 16px 32px 16px 0px;
@@ -12,33 +12,33 @@
     background-color: transparent;
 }
 
-#data-toc:hover {
+.data-toc:hover {
     overflow-y: scroll;
 }
 
 @media only screen and (max-width: 768px) {
-    #data-toc {
+    .data-toc {
         display: none;
     }
 }
 
-#data-toc table {
+.data-toc table {
     width: 100%;
     table-layout: initial;
 }
 
-#data-toc tbody:nth-of-type(even) {
+.data-toc tbody:nth-of-type(even) {
     display: none;
 }
 
-#data-toc th {
+.data-toc th {
     border-radius: 8px;
     padding: 8px 8px 8px 28px;
     transform: translateX(16px);
     color: transparent;
 }
 
-#data-toc th:before {
+.data-toc th:before {
     content: '';
     position: absolute;
     border-style: solid;
@@ -49,6 +49,6 @@
     transform: translateX(-16px);
 }
 
-#data-toc tr:hover th:before {
+.data-toc tr:hover th:before {
     transform: translateX(-16px) scale(1.4);
 }
