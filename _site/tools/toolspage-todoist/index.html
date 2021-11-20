@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=0, viewport-fit=cover">
+        <link rel="icon" type="image/x-icon" href="/shortcuts-design-favicon.ico" />
+        <link rel="icon" type="image/png" href="/shortcuts-design-favicon.png" />
+        <meta name="keywords" content="shortcuts, shortcuts.design, Figma shortcuts mac, Figma shortcuts windows, all Figma shortcuts mac, all Figma shortcuts windows, figma keyboard shortcuts, windows shortcuts, sublime shortcuts, figma hotkeys, figma zoom to selection, all shortcuts, design shortcuts, shortcuts overview"/>
+
+        <!-- DYNAMIC META TITLE + DESCRIPTION -->
+        
+            
+                <title>ToDoist shortcuts | All Mac & Windows shortcuts for ToDoist</title>
+                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for ToDoist in one place, with the ultimate keyboard shortcut reference / overview">
+            
+        
+
+        <!-- CSS / JS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap-custom.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99827935-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-99827935-2', { 'anonymize_ip': true });
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MLPNLFJ');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Hotjar Tracking Code for http://shortcuts.design -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:695747,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="http://shortcuts.design">
+        <meta name="twitter:creator" content="@michelvanheest">
+        <meta name="twitter:title" content="Every shortcut for designers, centralized and searchable">
+        <meta name="twitter:description" content="Shortcuts.design is the ultimate shortcut reference for designers. Charge your workflow with all the shortcuts of your favorite tools in one place 🚀">
+        <meta name="twitter:image" content="http://shortcuts.design/shortcuts-design-social.jpg">
+
+        <!-- LinkedIn -->
+        <meta property="og:title" content="Every shortcut for designers, centralized and searchable"/>
+        <meta property="og:type" content="Resource for designers">
+        <meta name="image" property="og:image" content="http://shortcuts.design/shortcuts-design-social.jpg/">
+        <meta property="og:description" content="Shortcuts.design is the ultimate shortcut reference for designers. Charge your workflow with all the shortcuts of your favorite tools in one place 🚀"/>
+        <meta name="author" content="Michel van Heest">
+        <meta property="og:url" content="http://shortcuts.design" />
+    </head>
+    <body data-spy="scroll" data-target=".data-toc-scrollspy" data-offset="8">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLPNLFJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="/css/nav.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="/"><img src="/assets/img/shortcuts-design-logo.png" alt="Shortcuts.design logo"></a>
+                    </div>
+                    <div class="col-10">
+                        <div class="nav-links">
+                            <a href="/sponsor">Sponsor</a>
+                            <a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener">Submit tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
+        
+        <div class="container">
+            
+<link rel="stylesheet" href="/css/toolspage.css">
+<script type="text/javascript" src="/js/animate.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/switch.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/table-of-contents.css">
+
+<script>
+    //Create ToC for when there's one OS, for Mac, and for Windows
+    function createDataToc() {
+        jQuery("#data-toc #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    function createDataTocMac() {
+        jQuery("#data-toc-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    function createDataTocWindows() {
+        jQuery("#data-toc-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    //Add IDs to datatable for when there's one OS, for Mac, and for Windows
+    function addIdToTh() {
+        jQuery(".data-table #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
+            $(this).attr('id', thValue);
+        });
+    }
+
+    function addIdToThMac() {
+        jQuery("#data-todoist-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
+            $(this).attr('id', thValue);
+        });
+    }
+    
+    function addIdToThWindows() {
+        jQuery("#data-todoist-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).attr('id', thValue);
+        });
+    }
+</script>
+
+
+<object type="image/svg+xml" data="/assets/img/gradient-brand-Productivity.svg" class="blob"></object>
+
+
+<a href="#myInput" class="button button-primary" id="scroll-to-search">
+    <img src="/assets/icons/icon-24-search-white.png" alt="Search icon">
+</a>
+
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <h3>Shortcuts.design</h3>
+        <h1>ToDoist Shortcuts</h1>
+        <p>Regain clarity and calmness by getting all those tasks out of your head and onto your to-do list (no matter where you are or what device you use). <a href="https://todoist.com?ref=shortcuts.design" target="_blank" rel="noopener" class="a-Productivity">ToDoist.com</a>.</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="toolspage-search">
+            <input id="myInput" type="text" placeholder="Search for shortcuts...">
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12 edit-switch">
+        <div>
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-Productivity"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
+        </div>
+        
+            <div id="switch">
+                <ul class="tabs">
+                    <li class="tab-link Mac button a-Productivity" data-tab="tab-1">Mac</li>
+                    <li class="tab-link Windows button a-Productivity" data-tab="tab-2">Windows</li>
+                </ul>
+            </div>
+        
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12 offset-lg-1 col-lg-10">
+        <div id="tab-1" class="tab-content Mac">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-todoist-Mac").load("/data/Productivity/toolspage-todoist-Mac.html", function() {
+                            addIdToThMac();
+                        });
+                        $("#data-toc-Mac").load("/data/Productivity/toolspage-todoist-Mac.html", function() {
+                            createDataTocMac();
+                        });
+                    });
+                </script>
+                <div id="data-todoist-Mac" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Mac" class="data-toc nav-pils"></div>
+                </div>
+            
+        </div>
+
+        <div id="tab-2" class="tab-content Windows">
+            
+                <script>
+                    $( document ).ready(function(){
+                        $("#data-todoist-Windows").load("/data/Productivity/toolspage-todoist-Windows.html", function() {
+                            addIdToThWindows();
+                        });
+                        $("#data-toc-Windows").load("/data/Productivity/toolspage-todoist-Windows.html", function() {
+                            createDataTocWindows();
+                        });
+                    });
+                </script>
+                <div id="data-todoist-Windows" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="row error">
+    <div class="col-12 col-lg-6 offset-lg-3">
+        <img src="/assets/img/Empty-state-illustration-light.png" class="img-light" alt="Empty state Shortcuts.design toolspage search">
+        <img src="/assets/img/Empty-state-illustration-dark.png" class="img-dark" alt="Empty state Shortcuts.design toolspage search">
+        <h3>We searched everywhere, but we couldn’t fine a shortcut matching your search-query.</h3>
+        <p>Try searching for something else. Think we’re missing something? Send us an issue or add it yourself.</p>
+        <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" rel="noopener" class="button button-primary">Add a missing shortcut 💪️</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 offset-lg-2 col-lg-8">
+        <link rel="stylesheet" href="/css/link.css">
+
+
+
+    
+        <div class="card link">
+            <h4>Sponsored by Swiftlee</h4>
+            <div class="card-title-flex">
+                <h3>Staying up to date with Swift Development as a designer</h3>
+                <h4></h4>
+            </div>
+            <p>From articles covering Swift basics to a deep dive into SF Symbols. Discounts to great books &amp; courses will become available after subscribing to the SwiftLee Weekly Newsletter, which will all help you level up your Swift knowledge.</p>
+
+            <a href="https://www.avanderlee.com/swiftlee-weekly-subscribe/?utm_source=shortcuts-design&amp;utm_medium=banner&amp;utm_campaign=advertisement?ref=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from Swiftlee</a>
+        </div>
+    
+
+    
+
+    </div>
+</div>
+            <link rel="stylesheet" href="/css/banners.css">
+
+<div class="row" id="card-row">
+    <div class="col-12 col-lg-6">
+        <div class="card card-large missing-something-card">
+            <h4>Helping out</h4>  
+            <h2>Missing something?</h2>
+            <p>Feel free to request missing tools or give some feedback using <a href="https://twitter.com/michelvanheest" target="_blank" rel="noopener">Twitter</a>, <a href="mailto:shortcutsdesign@michelvanheest.com?subject=Contact%20via%Shortcuts.design">E-mail</a> or <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" rel="noopener">GitHub</a>! If you can, please help out by adding the data yourself and be the hero of the ±12k people per month using this resource.</p>
+            <a href="https://github.com/michelvanheest/shortcuts-design-data?ref=shortcuts.design" target="_blank" rel="noopener" class="button button-tertiary">Add a tool 💪</a>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="card card-large profile-card">
+            <div id="profile-card-name">
+                <img src="/assets/img/avatar-color.png" id="profile-avatar-large" alt="Michel van Heest - Creator of Shortcuts.design">
+                <div>
+                    <h4>Created by</h4>  
+                    <h2>Michel van Heest</h2>
+                </div>
+            </div>
+            <p>Product Designer on a mission to build products for others that enable them to become more productive and effective · Product Design <a href="https://yipyip.nl?ref=shortcuts.design" target="_blank" rel="noopener">@YipYip</a> · Prev <a href="https://about.wetransfer.com/en/?ref=shortcuts.design" target="_blank" rel="noopener">@WeTransfer</a> &amp; <a href="https://awkward.co?ref=shortcuts.design" target="_blank" rel="noopener">@Awkward</a>.</p>
+            <a href="https://michelvanheest.com?ref=shortcuts.design" target="_blank" rel="noopener" class="button button-primary">Website 🌍</a>
+            <a href="https://twitter.com/michelvanheest?ref=shortcuts.design" target="_blank" rel="noopener" class="button button-secondary">Tweet me 🐦</a>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="/css/footer.css">
+    </head>
+    <body>
+        <footer>
+            <div id="footer-curve"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="footer-left">
+                            <h5>© 2021 - Created by <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" rel="noopener">Michel van Heest</a> using <a href="http://11ty.dev?ref=shortcuts.design" target="_blank" rel="noopener">11ty</a></h5>
+                            <h5><a href="/status" target="_blank" rel="noopener">Status</a></h5>
+                            <h5><a href="/sponsor">Sponsor</a></h5>
+                            <h5><a href="/updates">Updates</a></h5>
+                            <h5><a href ="/privacy-statement">Privacy</a></h5>
+                            <h5><a href ="https://michelvanheest.us1.list-manage.com/unsubscribe?u=3907430f68f64a0c3f7f673b7&id=4549cab974" target="_blank" rel="noopener">Unsubscribe</a></h5>
+                        </div>
+                        <div id="footer-right">
+                            <a href="mailto:shortcutsdesign@michelvanheest.com?subject=Contact%20via%Shortcuts.design" class="a-icon" alt="E-mail Michel van Heest"><i class="far fa-envelope fa-lg"></i></a>
+                            <a href="https://twitter.com/michelvanheest" target="_blank" rel="noopener" class="a-icon" alt="Find Michel van Heest on Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="https://dribbble.com/michelvanheest" target="_blank" rel="noopener" class="a-icon" alt="Find Michel van Heest on Dribbble"><i class="fab fa-dribbble fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/michelvanheest" target="_blank" rel="noopener" class="a-icon" alt="Find Michel van Heest on LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script defer src="/js/fontawesome-all.js"></script>
+        </footer>
+    </body>
+</html>
+        <!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="/css/toast.css">
+    </head>
+    <body>
+        <div id="toast-wrapper">
+            <a href="https://paypal.me/michelvanheest?ref=shortcuts.design" id="toast" target="_blank" rel="noopener">Buy me a coffee ☕❤️</a>
+        </div>
+        <script type="text/javascript" src="/js/animate.js"></script>
+    </body>
+</html>
+    </body>
+</html>
