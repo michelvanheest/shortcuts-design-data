@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: Swiftlee
 title: Staying up to date with Swift Development as a designer
 subtitle:
