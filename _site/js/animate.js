@@ -1,26 +1,11 @@
-// Fade in toast.njk
-$(function() {
-    $(window).scroll( function(){
-        $('#toast-wrapper').each( function(i){
-            var bottom_of_object = $(this).position().top + 500;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},600);
-            }
-        });
+// Hide table-of-contents.njk when search is active
+$(document).ready(function(){
+    $('#myInput').on('input', function() {
+        $('.data-toc #myTable')[$(this).val().length > 0 ? 'fadeOut' : 'fadeIn']();
     });
-});
 
-// Fade in scroll-button.njk
-$(function() {
-    $(window).scroll( function(){
-        $('#scroll-to-search').each( function(i){
-            var bottom_of_object = $(this).position().top + 500;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},600);
-            }
-        });
+    $('#myInput').on('focus', function() {
+        $('.data-toc #myTable').fadeIn();
     });
 });
 

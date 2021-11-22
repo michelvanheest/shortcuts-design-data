@@ -1,22 +1,21 @@
 #scroll-to-search {
-    opacity: 0;
     display: block;
     position: fixed;
-    left: 24px;
-    bottom: 64px;
+    left: 10px;
+    bottom: 52px;
     z-index: 999;
-    padding: 16px 19px 16px 19px;
+    padding: 12px 15px 12px 15px;
 }
 
 #scroll-to-search img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     transform: translateY(2px);
 }
 
 input {
     padding: 24px 32px 24px 72px;
-    margin: 80px 0px 40px 0px;
+    margin: 56px 0px 32px 0px;
     background-image: url(/assets/icons/icon-24-search-light.png);
 }
 
@@ -54,12 +53,16 @@ table {
     table-layout: fixed;
 }
 
+.data-table #myTable tbody:first-child tr th {
+    padding-top: 25px;
+}
+
 th {
-    padding: 64px 0px 16px 0px;
+    padding: 72px 0px 16px 0px;
 }
 
 th:first-of-type {
-    padding-top: 40px;
+    padding-top: 64px;
 }
 
 tr {

@@ -6,6 +6,10 @@ layout: layouts/base.njk
 <script type="text/javascript" src="/js/animate.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/switch.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{# TOC #}
+{% include "table-of-contents.njk" %}
 
 {# BLOB #}
 <object type="image/svg+xml" data="/assets/img/gradient-brand-{{ toolGroup }}.svg" class="blob"></object>
@@ -36,7 +40,7 @@ layout: layouts/base.njk
 {# EDIT AND SWITCH #}
 <div class="row">
     <div class="col-12 edit-switch">
-        <div id="edit">
+        <div>
             <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-{{ toolGroup }}"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
         {% if os2 is not null %}
@@ -57,17 +61,33 @@ layout: layouts/base.njk
             {% if os1 is null %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-1").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
+                        $("#data-{{ toolSlug }}-1").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
+                            addIdToTh();
+                        });
+                        $("#data-toc").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
+                            createDataToc();
+                        });
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-1"></div>
+                <div id="data-{{ toolSlug }}-1" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc" class="data-toc nav-pils"></div>
+                </div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html");
+                        $("#data-{{ toolSlug }}-{{ os1 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html", function() {
+                            addIdToThMac();
+                        });
+                        $("#data-toc-Mac").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os1 }}.html", function() {
+                            createDataTocMac();
+                        });
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-{{ os1 }}"></div>
+                <div id="data-{{ toolSlug }}-{{ os1 }}" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Mac" class="data-toc nav-pils"></div>
+                </div>
             {% endif %}
         </div>
 
@@ -75,17 +95,33 @@ layout: layouts/base.njk
             {% if os2 == "Windows" %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html");
+                        $("#data-{{ toolSlug }}-{{ os2 }}").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html", function() {
+                            addIdToThWindows();
+                        });
+                        $("#data-toc-Windows").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}-{{ os2 }}.html", function() {
+                            createDataTocWindows();
+                        });
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-{{ os2 }}"></div>
+                <div id="data-{{ toolSlug }}-{{ os2 }}" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
+                </div>
             {% else %}
                 <script>
                     $( document ).ready(function(){
-                        $("#data-{{ toolSlug }}-2").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html");
+                        $("#data-{{ toolSlug }}-2").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
+                            addIdToTh();
+                        });
+                        $("#data-toc").load("/data/{{ toolGroup }}/toolspage-{{ toolSlug }}.html", function() {
+                            createDataToc();
+                        });
                     });
                 </script>
-                <div id="data-{{ toolSlug }}-2"></div>
+                <div id="data-{{ toolSlug }}-2" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc" class="data-toc nav-pils"></div>
+                </div>
             {% endif %}
         </div>
     </div>

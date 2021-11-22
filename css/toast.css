@@ -1,5 +1,4 @@
 #toast-wrapper {
-    opacity: 0;
     width: 100%;
     text-align: center;
     padding: 12px 0px;
@@ -10,9 +9,9 @@
 
 @supports(padding: max(0px)) {
     #toast-wrapper {
-        padding-top: max(15px, env(safe-area-inset-top));
-        padding-bottom: max(15px, env(safe-area-inset-bottom));
-        padding-left: max(15px, env(safe-area-inset-left));
-        padding-right: max(15px, env(safe-area-inset-right));
+        padding-top: max(10px, env(safe-area-inset-top));
+        padding-bottom: max(10px, env(safe-area-inset-bottom));
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
     }
 }

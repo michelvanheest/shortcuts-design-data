@@ -3,11 +3,12 @@
 {% for update in updateslist | reverse %}
     <div class="row update-row">
         <div class="col-12 col-lg-3">
-            <h2>Version {{ update.data.version }}</h2>
-            <h3>{{ update.date.toDateString() }}</h3>
+            <div class="label">Version {{ update.data.version }}</div>
+            <h5>{{ update.date.toDateString() }}</h5>
         </div>
         <div class="col-12 col-lg-9">
             {{ update.templateContent | safe }}
         </div>
+        <div class="divider"></div>
     </div>
 {% endfor %}

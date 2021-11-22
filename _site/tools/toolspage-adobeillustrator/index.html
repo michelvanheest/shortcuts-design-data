@@ -68,7 +68,7 @@
         <meta name="author" content="Michel van Heest">
         <meta property="og:url" content="http://shortcuts.design" />
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".data-toc-scrollspy" data-offset="8">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLPNLFJ"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -104,6 +104,86 @@
 <script type="text/javascript" src="/js/animate.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/switch.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/table-of-contents.css">
+
+<script>
+    //Create ToC for when there's one OS, for Mac, and for Windows
+    function createDataToc() {
+        jQuery("#data-toc #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    function createDataTocMac() {
+        jQuery("#data-toc-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    function createDataTocWindows() {
+        jQuery("#data-toc-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).wrap('<a class="nav-link" ' + ' id="scroll-to-' + thValue + '" href="#' + thValue + '"/>')
+
+            $('#scroll-to-' + thValue).on('click', function(e){
+                e.preventDefault();
+                var target= $(this).get(0).id == ('scroll-to-' + thValue) ? $('#' + thValue) : $('#scroll-to-' + thValue);
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 600);
+            });
+        });
+    }
+
+    //Add IDs to datatable for when there's one OS, for Mac, and for Windows
+    function addIdToTh() {
+        jQuery(".data-table #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent);
+            $(this).attr('id', thValue);
+        });
+    }
+
+    function addIdToThMac() {
+        jQuery("#data-adobeillustrator-Mac #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Mac');
+            $(this).attr('id', thValue);
+        });
+    }
+    
+    function addIdToThWindows() {
+        jQuery("#data-adobeillustrator-Windows #myTable tr").each(function(){
+            var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
+            var thValue = (thContent + '-Windows');
+            $(this).attr('id', thValue);
+        });
+    }
+</script>
 
 
 <object type="image/svg+xml" data="/assets/img/gradient-brand-Design.svg" class="blob"></object>
@@ -134,7 +214,7 @@
 
 <div class="row">
     <div class="col-12 edit-switch">
-        <div id="edit">
+        <div>
             <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-Design"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
         
@@ -155,10 +235,18 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-adobeillustrator-Mac").load("/data/Design/toolspage-adobeillustrator-Mac.html");
+                        $("#data-adobeillustrator-Mac").load("/data/Design/toolspage-adobeillustrator-Mac.html", function() {
+                            addIdToThMac();
+                        });
+                        $("#data-toc-Mac").load("/data/Design/toolspage-adobeillustrator-Mac.html", function() {
+                            createDataTocMac();
+                        });
                     });
                 </script>
-                <div id="data-adobeillustrator-Mac"></div>
+                <div id="data-adobeillustrator-Mac" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Mac" class="data-toc nav-pils"></div>
+                </div>
             
         </div>
 
@@ -166,10 +254,18 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-adobeillustrator-Windows").load("/data/Design/toolspage-adobeillustrator-Windows.html");
+                        $("#data-adobeillustrator-Windows").load("/data/Design/toolspage-adobeillustrator-Windows.html", function() {
+                            addIdToThWindows();
+                        });
+                        $("#data-toc-Windows").load("/data/Design/toolspage-adobeillustrator-Windows.html", function() {
+                            createDataTocWindows();
+                        });
                     });
                 </script>
-                <div id="data-adobeillustrator-Windows"></div>
+                <div id="data-adobeillustrator-Windows" class="data-table"></div>
+                <div class="data-toc-scrollspy">
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
+                </div>
             
         </div>
     </div>
