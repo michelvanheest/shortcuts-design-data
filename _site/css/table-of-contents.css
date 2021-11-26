@@ -13,7 +13,7 @@
 }
 
 .data-toc:hover {
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 @media only screen and (max-width: 768px) {
