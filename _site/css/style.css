@@ -80,7 +80,7 @@ h1, h2, .link h3, .label, .button, .button:hover, th, td:nth-child(odd), input:f
     color: var(--neutral-700);
 }
 
-.tabs, tr:hover, .data-toc th:hover, .label {
+.tabs, tr:hover td, .data-toc th:hover, .label {
     background-color: var(--neutral-600);
 }
 
@@ -227,7 +227,7 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
         border-bottom: 1px solid var(--neutral-400);
     }
 
-    tr:hover, .data-toc th:hover {
+    tr:hover td, .data-toc th:hover {
         background-color: var(--neutral-400);
     }
 

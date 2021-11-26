@@ -61,10 +61,6 @@ th {
     padding: 72px 0px 16px 0px;
 }
 
-th:first-of-type {
-    padding-top: 64px;
-}
-
 tr {
     width: 100%;
 }
