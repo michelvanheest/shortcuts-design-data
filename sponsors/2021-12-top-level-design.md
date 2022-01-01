@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: Top Level Design, LLC
 title: Claim a Free .design Domain Name for Your Website
 subtitle: 
