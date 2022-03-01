@@ -10,8 +10,8 @@
         <!-- DYNAMIC META TITLE + DESCRIPTION -->
         
             
-                <title>Zoom shortcuts | All shortcuts for Zoom - Shortcuts.design</title>
-                <meta name="description" content="Learn or search for all essential keyboard shortcuts for Zoom in one place, with the ultimate keyboard shortcut reference / overview">
+                <title>Zoom shortcuts | All Mac & Windows shortcuts for Zoom</title>
+                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for Zoom in one place, with the ultimate keyboard shortcut reference / overview">
             
         
 
@@ -169,7 +169,7 @@
     }
 
     function addIdToThMac() {
-        jQuery("#data-zoom- #myTable tr").each(function(){
+        jQuery("#data-zoom-Mac #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Mac');
             $(this).attr('id', thValue);
@@ -177,7 +177,7 @@
     }
     
     function addIdToThWindows() {
-        jQuery("#data-zoom- #myTable tr").each(function(){
+        jQuery("#data-zoom-Windows #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Windows');
             $(this).attr('id', thValue);
@@ -218,6 +218,13 @@
             <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-Productivity"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
         
+            <div id="switch">
+                <ul class="tabs">
+                    <li class="tab-link Mac button a-Productivity" data-tab="tab-1">Mac</li>
+                    <li class="tab-link Windows button a-Productivity" data-tab="tab-2">Windows</li>
+                </ul>
+            </div>
+        
     </div>
 </div>
 
@@ -228,17 +235,17 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-zoom-1").load("/data/Productivity/toolspage-zoom.html", function() {
-                            addIdToTh();
+                        $("#data-zoom-Mac").load("/data/Productivity/toolspage-zoom-Mac.html", function() {
+                            addIdToThMac();
                         });
-                        $("#data-toc").load("/data/Productivity/toolspage-zoom.html", function() {
-                            createDataToc();
+                        $("#data-toc-Mac").load("/data/Productivity/toolspage-zoom-Mac.html", function() {
+                            createDataTocMac();
                         });
                     });
                 </script>
-                <div id="data-zoom-1" class="data-table"></div>
+                <div id="data-zoom-Mac" class="data-table"></div>
                 <div class="data-toc-scrollspy">
-                    <div id="data-toc" class="data-toc nav-pils"></div>
+                    <div id="data-toc-Mac" class="data-toc nav-pils"></div>
                 </div>
             
         </div>
@@ -247,17 +254,17 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-zoom-2").load("/data/Productivity/toolspage-zoom.html", function() {
-                            addIdToTh();
+                        $("#data-zoom-Windows").load("/data/Productivity/toolspage-zoom-Windows.html", function() {
+                            addIdToThWindows();
                         });
-                        $("#data-toc").load("/data/Productivity/toolspage-zoom.html", function() {
-                            createDataToc();
+                        $("#data-toc-Windows").load("/data/Productivity/toolspage-zoom-Windows.html", function() {
+                            createDataTocWindows();
                         });
                     });
                 </script>
-                <div id="data-zoom-2" class="data-table"></div>
+                <div id="data-zoom-Windows" class="data-table"></div>
                 <div class="data-toc-scrollspy">
-                    <div id="data-toc" class="data-toc nav-pils"></div>
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
                 </div>
             
         </div>
@@ -298,15 +305,17 @@
     
 
     
+
+    
         <div class="card link">
-            <h4>Sponsored by Uxcel</h4>
+            <h4>Sponsored by CleanShot</h4>
             <div class="card-title-flex">
-                <h3>Improve Your UX/UI Design Skills</h3>
+                <h3>📸 A smarter way to take screenshots on Mac</h3>
                 <h4></h4>
             </div>
-            <p>Level up your design game with Uxcel, the gamified learning platform for designers &amp; developers! Learn new design skills, earn certificates, benchmark your knowledge with skill tests, and build your design career — interactively.</p>
+            <p>CleanShot is the most feature-rich screenshot and screen recording app for Mac with built-in annotation tool, Cloud uploading, scrolling capture, and a lot more.</p>
 
-            <a href="https://uxcel.com/?ref=shortcuts.design?ref=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from Uxcel</a>
+            <a href="https://cleanshot.com/?ref=shortcutsdesign?ref=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from CleanShot</a>
         </div>
     
 
