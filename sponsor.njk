@@ -71,3 +71,19 @@ title: Reach world-wide creatives with your product!
         </div>
     </div>
 </div>
+
+{% set sponsorlist = collections.sponsors %}
+{% for sponsor in sponsorlist %}
+    {% if sponsor.data.active == "yes" %}
+        <div class="row" id="example-this-month">
+            <div class="col-12 col-lg-6">
+                <h2>This month sponsored by ⤵️</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                {% include "link.njk" %}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

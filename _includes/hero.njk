@@ -24,6 +24,20 @@
                     </div>
                 </a>
             </div>
+            {% set sponsorlist = collections.sponsors %}
+            {% for sponsor in sponsorlist %}
+                {% if sponsor.data.active == "yes" %}
+                    <div class="col-12 col-lg-3">
+                        <a href="#link" id="this-months-sponsor">
+                            <img src="/assets/img/sponsor-{{ sponsor.data.sponsorName }}.png" id="this-months-sponsor-avatar" alt="This month sponsored by {{ sponsor.data.sponsorName }}">
+                            <div id="profile-text">
+                                <h5>Proudly sponsored by ✨</h5>
+                                <h4>{{ sponsor.data.sponsorName }}</h4>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
         
         <div class="newsletter-wrapper">
