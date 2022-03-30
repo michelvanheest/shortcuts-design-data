@@ -4,17 +4,17 @@
     margin-bottom: 88px;
 }
 
-#profile {
+#profile, #this-months-sponsor {
     margin-top: 32px;
     display: flex;
 }
 
-#profile:hover #profile-avatar {
+#profile:hover #profile-avatar, #this-months-sponsor:hover #this-months-sponsor-avatar {
     -webkit-filter: none;
     filter: none;
 }
 
-#profile-avatar {
+#profile-avatar, #this-months-sponsor-avatar {
     width: 36px;
     height: 36px;
     margin-right: 12px;
@@ -81,7 +81,7 @@ input.button {
 }
 
 @media only screen and (min-width: 992px) {
-    #profile {
+    #profile, #this-months-sponsor {
         margin-top: 0px;
     }
 

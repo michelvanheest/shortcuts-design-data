@@ -354,7 +354,7 @@ a, .tool-card.tool-card:after, .newsletter-wrapper, .data-toc, .data-toc th {
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter, .data-toc th:before {
+.button, nav img, #profile-avatar, #this-months-sponsor-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter, .data-toc th:before {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
@@ -394,7 +394,7 @@ a:hover {
     border: 2px solid var(--brand-default-color);
 }
 
-.a-icon:hover, #profile:hover #profile-avatar {
+.a-icon:hover, #profile:hover #profile-avatar, #this-months-sponsor:hover #this-months-sponsor-avatar {
     transform: scale(1.2, 1.2);
     -webkit-transform: scale(1.2, 1.2);
 }
@@ -409,7 +409,7 @@ nav img:hover {
     -webkit-transform: scale(1.05, 1.05);
 }
 
-#toast:active, .button:active, #profile:active #profile-avatar, nav img:active {
+#toast:active, .button:active, #profile:active #profile-avatar, #this-months-sponsor:active #this-months-sponsor-avatar, nav img:active {
     transform: scale(0.98, 0.98);
 }
 

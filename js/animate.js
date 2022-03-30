@@ -18,6 +18,15 @@ $('#profile').on('click', function(e){
     }, 600);
 });
 
+// Scroll to sponsor-card
+$('#this-months-sponsor').on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'this-months-sponsor' ? $('#link') : $('#this-months-sponsor');
+    $('html, body').stop().animate({
+       scrollTop: target.offset().top
+    }, 600);
+});
+
 // Scroll to searchbar
 $('#scroll-to-search').on('click', function(e){
     e.preventDefault();
