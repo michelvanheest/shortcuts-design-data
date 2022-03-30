@@ -4,9 +4,15 @@
         <link rel="stylesheet" href="/css/toast.css">
     </head>
     <body>
-        <div id="toast-wrapper">
-            <a href="https://paypal.me/michelvanheest?ref=shortcuts.design" id="toast" target="_blank" rel="noopener">Buy me a coffee ☕❤️</a>
-        </div>
+        {% set sponsorlist = collections.sponsors %}
+        {% for sponsor in sponsorlist %}
+            {% if sponsor.data.active == "yes" %}
+                <div id="toast-wrapper">
+                    {# <a href="https://paypal.me/michelvanheest?ref=shortcuts.design" id="toast" target="_blank" rel="noopener">Buy me a coffee ☕❤️</a> #}
+                    <a href="#link" id="this-months-sponsor-toast">Proudly sponsored by {{ sponsor.data.sponsorName }} ✨</a>
+                </div>
+            {% endif %}
+        {% endfor %}
         <script type="text/javascript" src="/js/animate.js"></script>
     </body>
 </html>

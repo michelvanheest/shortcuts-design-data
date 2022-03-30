@@ -18,10 +18,19 @@ $('#profile').on('click', function(e){
     }, 600);
 });
 
-// Scroll to sponsor-card
+// Scroll to sponsor-card from hero
 $('#this-months-sponsor').on('click', function(e){
     e.preventDefault();
     var target= $(this).get(0).id == 'this-months-sponsor' ? $('#link') : $('#this-months-sponsor');
+    $('html, body').stop().animate({
+       scrollTop: target.offset().top
+    }, 600);
+});
+
+// Scroll to sponsor-card from toast
+$('#this-months-sponsor-toast').on('click', function(e){
+    e.preventDefault();
+    var target= $(this).get(0).id == 'this-months-sponsor-toast' ? $('#link') : $('#this-months-sponsor-toast');
     $('html, body').stop().animate({
        scrollTop: target.offset().top
     }, 600);
