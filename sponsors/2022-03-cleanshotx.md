@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: CleanShot
 title: 📸 A smarter way to take screenshots on Mac
 subtitle: 
