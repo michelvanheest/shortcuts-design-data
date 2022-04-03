@@ -10,8 +10,8 @@
         <!-- DYNAMIC META TITLE + DESCRIPTION -->
         
             
-                <title>Framer shortcuts | All Mac & Windows shortcuts for Framer</title>
-                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for Framer in one place, with the ultimate keyboard shortcut reference / overview">
+                <title>Around shortcuts | All Mac & Windows shortcuts for Around</title>
+                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for Around in one place, with the ultimate keyboard shortcut reference / overview">
             
         
 
@@ -169,7 +169,7 @@
     }
 
     function addIdToThMac() {
-        jQuery("#data-framer-Mac #myTable tr").each(function(){
+        jQuery("#data-around-Mac #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Mac');
             $(this).attr('id', thValue);
@@ -177,7 +177,7 @@
     }
     
     function addIdToThWindows() {
-        jQuery("#data-framer-Windows #myTable tr").each(function(){
+        jQuery("#data-around-Windows #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Windows');
             $(this).attr('id', thValue);
@@ -186,7 +186,7 @@
 </script>
 
 
-<object type="image/svg+xml" data="/assets/img/gradient-brand-Design.svg" class="blob"></object>
+<object type="image/svg+xml" data="/assets/img/gradient-brand-Productivity.svg" class="blob"></object>
 
 
 <a href="#myInput" class="button button-primary" id="scroll-to-search">
@@ -197,8 +197,8 @@
 <div class="row">
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
-        <h1>Framer Shortcuts</h1>
-        <p>You’ve never made a website this fast before. Really. No more complicated workflows. Just design and publish, that’s it, everything you put on the canvas is ready to be published to the web <a href="https://www.framer.com/sites/?ref=shortcuts.design" target="_blank" rel="noopener" class="a-Design">Framer.com</a>.</p>
+        <h1>Around Shortcuts</h1>
+        <p>Video calls loved by extraordinary teams. Meetings don&#39;t have to crush your soul. Discover radically unique video calls designed to help hybrid-remote teams create, collaborate and celebrate together. <a href="https://www.around.co?ref=shortcuts.design" target="_blank" rel="noopener" class="a-Productivity">Around.co</a>.</p>
     </div>
 </div>
 
@@ -215,13 +215,13 @@
 <div class="row">
     <div class="col-12 edit-switch">
         <div>
-            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-Design"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
+            <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-Productivity"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
         
             <div id="switch">
                 <ul class="tabs">
-                    <li class="tab-link Mac button a-Design" data-tab="tab-1">Mac</li>
-                    <li class="tab-link Windows button a-Design" data-tab="tab-2">Windows</li>
+                    <li class="tab-link Mac button a-Productivity" data-tab="tab-1">Mac</li>
+                    <li class="tab-link Windows button a-Productivity" data-tab="tab-2">Windows</li>
                 </ul>
             </div>
         
@@ -235,15 +235,15 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-framer-Mac").load("/data/Design/toolspage-framer-Mac.html", function() {
+                        $("#data-around-Mac").load("/data/Productivity/toolspage-around-Mac.html", function() {
                             addIdToThMac();
                         });
-                        $("#data-toc-Mac").load("/data/Design/toolspage-framer-Mac.html", function() {
+                        $("#data-toc-Mac").load("/data/Productivity/toolspage-around-Mac.html", function() {
                             createDataTocMac();
                         });
                     });
                 </script>
-                <div id="data-framer-Mac" class="data-table"></div>
+                <div id="data-around-Mac" class="data-table"></div>
                 <div class="data-toc-scrollspy">
                     <div id="data-toc-Mac" class="data-toc nav-pils"></div>
                 </div>
@@ -254,15 +254,15 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-framer-Windows").load("/data/Design/toolspage-framer-Windows.html", function() {
+                        $("#data-around-Windows").load("/data/Productivity/toolspage-around-Windows.html", function() {
                             addIdToThWindows();
                         });
-                        $("#data-toc-Windows").load("/data/Design/toolspage-framer-Windows.html", function() {
+                        $("#data-toc-Windows").load("/data/Productivity/toolspage-around-Windows.html", function() {
                             createDataTocWindows();
                         });
                     });
                 </script>
-                <div id="data-framer-Windows" class="data-table"></div>
+                <div id="data-around-Windows" class="data-table"></div>
                 <div class="data-toc-scrollspy">
                     <div id="data-toc-Windows" class="data-toc nav-pils"></div>
                 </div>
