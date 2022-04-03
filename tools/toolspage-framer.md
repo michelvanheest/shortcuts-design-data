@@ -1,11 +1,11 @@
 ---
 layout: layouts/tool.njk
-tool: Framer Classic
-os1: 
-os2: 
+tool: Framer
+os1: Mac
+os2: Windows
 toolSlug: framer
 toolGroup: Design
-toolDescription: Framer is the all in one screen design and interactive prototyping tool for Mac. Create your designs and then easily turn them into high-fidelity prototypes with code. View or download Framer via
-toolLink: https://www.classic.framer.com
-toolLinkDescription: Classic.framer.com
+toolDescription: You’ve never made a website this fast before. Really. No more complicated workflows. Just design and publish, that’s it, everything you put on the canvas is ready to be published to the web
+toolLink: https://www.framer.com/sites/
+toolLinkDescription: Framer.com
 ---
