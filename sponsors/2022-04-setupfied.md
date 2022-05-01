@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: Setupfied
 title: 🖥 Curated desk setup inspiration for designers
 subtitle: 
