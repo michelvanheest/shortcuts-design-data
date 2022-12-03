@@ -354,7 +354,7 @@ a, .tool-card.tool-card:after, .newsletter-wrapper, .data-toc, .data-toc th {
     -o-transition:all .16s ease-out 0s;
 }
 
-.button, nav img, #profile-avatar, #this-months-sponsor-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter, .data-toc th:before {
+.button, nav img, #profile-avatar, #this-months-sponsor-avatar, #footer-right a, .tool-card .logo-app, .add-new-tool img, .newsletter, .data-toc th:before, .sponsors a img {
     transition: transform .3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
@@ -399,7 +399,7 @@ a:hover {
     -webkit-transform: scale(1.2, 1.2);
 }
 
-nav img:hover {
+nav img:hover, .sponsors a img:hover {
     transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
 }
