@@ -30,7 +30,7 @@
 }
 
 #card-sponsor {
-    display: none;
+    margin-bottom: 80px;
 }
 
 #example-this-month {
@@ -40,5 +40,6 @@
 @media only screen and (min-width: 992px) {
     #card-sponsor {
         display: block;
+        margin-bottom: 0px;
     }
 }

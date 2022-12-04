@@ -1,9 +1,9 @@
-.update-list h5 {
-    margin-bottom: 24px;
-}
-
 .update-row {
     margin-bottom: 80px;
+}
+
+.update-row h5 {
+    margin-bottom: 24px;
 }
 
 .update-row:last-of-type {

@@ -263,17 +263,16 @@ footer, #toast-wrapper, .button-primary, .missing-something-card {
 /* ============FONTS============ */
 h1 {
     font-weight: 700;
-    font-size: 50px;
-    line-height: 72px;
+    font-size: 40px;
+    line-height: 56px;
     margin-top: 8px;
     margin-bottom: 16px;
 }
 
 h2, th {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 12px;
-    /* line-height: 72px; */
 }
 
 .label {
@@ -283,14 +282,12 @@ h2, th {
     width: fit-content;
     padding: 8px 12px;
     border-radius: 8px;
-    /* background-color: var(--neutral-800); */
     margin-bottom: 16px;
-    margin-left: -12px;
 }
 
 h3, input {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: auto;
     margin-bottom: 8px;
 }
@@ -301,8 +298,8 @@ h4 {
 
 h4, #this-months-sponsor-toast, .data-toc th {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 h5 {
@@ -313,8 +310,8 @@ h5 {
 
 p, li {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 li {
@@ -338,8 +335,41 @@ li.tab-link {
 
 .button, .tab-link, li.tab-link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: initial;
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 50px;
+        line-height: 72px;
+    }
+
+    h2, th {
+        font-size: 32px;
+    }
+
+    .label {
+        margin-left: -12px;
+    }
+
+    h3, input {
+        font-size: 24px;
+    }
+
+    h4, #this-months-sponsor-toast, .data-toc th {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    p, li {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .button, .tab-link, li.tab-link {
+        font-size: 18px;
+    }
 }
 
 /* ============LINKS============ */
@@ -378,7 +408,7 @@ a:hover {
 }
 
 .button {
-    padding: 16px 40px;
+    padding: 16px 32px;
     border-radius: 100px;
 }
 

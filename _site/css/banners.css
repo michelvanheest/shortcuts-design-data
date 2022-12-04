@@ -14,13 +14,16 @@
     width: 56px;
     height: 56px;
     margin-right: 16px;
-    margin-top: -16px;
 }
 
 @media only screen and (min-width: 768px) {
     .profile-card #profile-card-name {
         display: flex;
         align-items: center;
+    }
+
+    #profile-avatar-large {
+        margin-top: -16px;
     }
 }
 
