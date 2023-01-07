@@ -190,6 +190,18 @@ a:hover {
     background: var(--brand-3-gradient);
 }
 
+.a-3D:not(.tab-link), .a-3D:hover:not(.tab-link) {
+    color: var(--brand-4-color);
+}
+
+.a-3D:hover, .button-secondary.a-3D, .button-secondary.a-3D:hover, .tabs .tab-link.a-3D {
+    border-color: var(--brand-4-color);
+}
+
+.button-primary.a-3D, .tabs .tab-link.current.a-3D, .tool-card.tool-card-3D:after {
+    background: var(--brand-4-gradient);
+}
+
 footer, #toast-wrapper, .button-primary, .missing-something-card {
     background: var(--brand-default-gradient);
 }

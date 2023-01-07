@@ -42,7 +42,7 @@ Edit the data of a specific tool in `data/{category}/toolpages-{toolname}.html`.
 	os1: Mac (🚨note: leave empty if you only add one OS)
 	os2: Windows (🚨note: leave empty if you only add one OS)
 	toolSlug: {toolnamewithoutdashes}
-	toolGroup: (pick from *Design*, *Development* or *Productivity*)
+	toolGroup: (pick from *Design*, *Development*, *Productivity* or *3D*)
 	toolDescription: {write a description about the tool here}
 	toolLink: {link to the tool here}
 	toolLinkDescription: {how the link should be displayed}
