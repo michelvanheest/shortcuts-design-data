@@ -280,7 +280,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div id="footer-left">
-                            <h5>© 2021 - Created by <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" rel="noopener">Michel van Heest</a> using <a href="http://11ty.dev?ref=shortcuts.design" target="_blank" rel="noopener">11ty</a></h5>
+                            <h5>© <span id="year"></span> - Created by <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" rel="noopener">Michel van Heest</a> using <a href="http://11ty.dev?ref=shortcuts.design" target="_blank" rel="noopener">11ty</a></h5>
                             <h5><a href="/status" target="_blank" rel="noopener">Status</a></h5>
                             <h5><a href="/sponsor">Sponsor</a></h5>
                             <h5><a href="/updates">Updates</a></h5>
@@ -299,6 +299,8 @@
 
         <script defer src="/js/fontawesome-all.js"></script>
         </footer>
+
+        <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
     </body>
 </html>
         <!DOCTYPE html>
