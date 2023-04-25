@@ -2,6 +2,9 @@
 
 <a href="{{ tool.url | url }}">
     <div class="tool-card tool-card-{{ tool.data.toolGroup }}">
+        {% if tool.data.featured == "yes" %}
+            <div class="label featured-label">featured</div>
+        {% endif %}
         <div class="logos-os">
             {% if tool.data.os1 == "Windows" %}
                 <img src="/assets/img/platform-logo-windows.png" alt="Logo Windows">

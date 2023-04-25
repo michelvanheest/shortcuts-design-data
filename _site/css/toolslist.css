@@ -27,6 +27,15 @@
     top: 0px;
 }
 
+.label.featured-label {
+    position: absolute;
+    left: 24px;
+    top: 12px;
+    font-size: 12px;
+    border-radius: 80px;
+    padding: 4px 8px;
+}
+
 .logos-os {
     padding: 16px 16px 0px 0px;
     display: flex;
