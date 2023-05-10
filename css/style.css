@@ -108,7 +108,7 @@ body, #footer-curve, .newsletter {
     background-color: var(--neutral-200);
 }
 
-#toast-wrapper a, footer a, footer a:hover, .button-primary, .button-primary:hover, .tab-link.current, .missing-something-card h2, .missing-something-card a, .missing-something-card a:hover {
+#toast-wrapper a, footer a, footer a:hover, .button-primary, .button-primary:hover, .tab-link.current, .missing-something-card h2, .missing-something-card a, .missing-something-card a:hover, .tool-card .label {
     color: var(--neutral-100);
 }
 
@@ -162,7 +162,7 @@ a:hover {
     border-color: var(--brand-1-color);
 }
 
-.button-primary.a-Design, .tabs .tab-link.current.a-Design, .tool-card.tool-card-Design:after {
+.button-primary.a-Design, .tabs .tab-link.current.a-Design, .tool-card.tool-card-Design:after, .tool-card.tool-card-Design .label {
     background: var(--brand-1-gradient);
 }
 
@@ -174,7 +174,7 @@ a:hover {
     border-color: var(--brand-2-color);
 }
 
-.button-primary.a-Development, .tabs .tab-link.current.a-Development, .tool-card.tool-card-Development:after {
+.button-primary.a-Development, .tabs .tab-link.current.a-Development, .tool-card.tool-card-Development:after, .tool-card.tool-card-Development .label {
     background: var(--brand-2-gradient);
 }
 
@@ -186,7 +186,7 @@ a:hover {
     border-color: var(--brand-3-color);
 }
 
-.button-primary.a-Productivity, .tabs .tab-link.current.a-Productivity, .tool-card.tool-card-Productivity:after {
+.button-primary.a-Productivity, .tabs .tab-link.current.a-Productivity, .tool-card.tool-card-Productivity:after, .tool-card.tool-card-Productivity .label {
     background: var(--brand-3-gradient);
 }
 
