@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/michelvanheest/shortcuts-design#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^1.0.2"
   },
   "dependencies": {
     "imagemin": "^7.0.1",
