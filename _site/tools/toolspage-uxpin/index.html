@@ -10,8 +10,8 @@
         <!-- DYNAMIC META TITLE + DESCRIPTION -->
         
             
-                <title>VEED shortcuts | All Mac & Windows shortcuts for VEED</title>
-                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for VEED in one place, with the ultimate keyboard shortcut reference / overview">
+                <title>UXPin shortcuts | All Mac & Windows shortcuts for UXPin</title>
+                <meta name="description" content="Learn or search all Mac & Windows keyboard shortcuts for UXPin in one place, with the ultimate keyboard shortcut reference / overview">
             
         
 
@@ -169,7 +169,7 @@
     }
 
     function addIdToThMac() {
-        jQuery("#data-veed-Mac #myTable tr").each(function(){
+        jQuery("#data-uxpin-Mac #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Mac');
             $(this).attr('id', thValue);
@@ -177,7 +177,7 @@
     }
     
     function addIdToThWindows() {
-        jQuery("#data-veed-Windows #myTable tr").each(function(){
+        jQuery("#data-uxpin-Windows #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Windows');
             $(this).attr('id', thValue);
@@ -197,8 +197,8 @@
 <div class="row">
     <div class="col-12 col-lg-6">
         <h3>Shortcuts.design</h3>
-        <h1>VEED Shortcuts</h1>
-        <p>VEED makes video creation simple. With VEED’s video editor, you can trim, crop, and rotate videos all on their super easy-to-use timeline. It allows you to add subtitles, transcribe audio and do much more! Start for free at <a href="https://veed.io?ref=shortcuts.design" target="_blank" rel="noopener" class="a-Design">VEED.io</a>.</p>
+        <h1>UXPin Shortcuts</h1>
+        <p>UXPin is a code-driven prototyping tool that allows you to bring UI components from code repository to design, and create prototypes with those components. <a href="https://www.uxpin.com?ref=shortcuts.design" target="_blank" rel="noopener" class="a-Design">uxpin.com</a>.</p>
     </div>
 </div>
 
@@ -235,15 +235,15 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-veed-Mac").load("/data/Design/toolspage-veed-Mac.html", function() {
+                        $("#data-uxpin-Mac").load("/data/Design/toolspage-uxpin-Mac.html", function() {
                             addIdToThMac();
                         });
-                        $("#data-toc-Mac").load("/data/Design/toolspage-veed-Mac.html", function() {
+                        $("#data-toc-Mac").load("/data/Design/toolspage-uxpin-Mac.html", function() {
                             createDataTocMac();
                         });
                     });
                 </script>
-                <div id="data-veed-Mac" class="data-table"></div>
+                <div id="data-uxpin-Mac" class="data-table"></div>
                 <div class="data-toc-scrollspy">
                     <div id="data-toc-Mac" class="data-toc nav-pils"></div>
                 </div>
@@ -254,15 +254,15 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-veed-Windows").load("/data/Design/toolspage-veed-Windows.html", function() {
+                        $("#data-uxpin-Windows").load("/data/Design/toolspage-uxpin-Windows.html", function() {
                             addIdToThWindows();
                         });
-                        $("#data-toc-Windows").load("/data/Design/toolspage-veed-Windows.html", function() {
+                        $("#data-toc-Windows").load("/data/Design/toolspage-uxpin-Windows.html", function() {
                             createDataTocWindows();
                         });
                     });
                 </script>
-                <div id="data-veed-Windows" class="data-table"></div>
+                <div id="data-uxpin-Windows" class="data-table"></div>
                 <div class="data-toc-scrollspy">
                     <div id="data-toc-Windows" class="data-toc nav-pils"></div>
                 </div>
