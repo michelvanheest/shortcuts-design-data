@@ -48,7 +48,7 @@ body {
     --brand-2-color: #09DC72;
     --brand-3-gradient: linear-gradient(135deg, #70F7F1 0%, #47BDFF 100%);
     --brand-3-color: #47BDFF;
-    --brand-4-gradient: linear-gradient(135deg, #8EC5FC 0%, #C047FF 100%);
+    --brand-4-gradient: linear-gradient(135deg, #F09AF2 0%, #C047FF 100%);
     --brand-4-color: #C047FF;
     --shadow-primary: inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-primary-elevated: 0px 4px 16px 8px rgba(0, 0, 0, 0.08), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
@@ -188,6 +188,18 @@ a:hover {
 
 .button-primary.a-Productivity, .tabs .tab-link.current.a-Productivity, .tool-card.tool-card-Productivity:after, .tool-card.tool-card-Productivity .label {
     background: var(--brand-3-gradient);
+}
+
+.a-3D:not(.tab-link), .a-3D:hover:not(.tab-link) {
+    color: var(--brand-4-color);
+}
+
+.a-3D:hover, .button-secondary.a-3D, .button-secondary.a-3D:hover, .tabs .tab-link.a-3D {
+    border-color: var(--brand-4-color);
+}
+
+.button-primary.a-3D, .tabs .tab-link.current.a-3D, .tool-card.tool-card-3D:after {
+    background: var(--brand-4-gradient);
 }
 
 footer, #toast-wrapper, .button-primary, .missing-something-card {
