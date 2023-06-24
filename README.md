@@ -26,8 +26,9 @@ Please use [GitHub issues](https://github.com/michelvanheest/shortcuts-design-da
 
 ### Running the project
 - Install: `npm install`
-- Build: `npx @11ty/eleventy`
-- Run: `npx @11ty/eleventy --serve`
+- Build: `npm run build`
+- Run: `npm run start`
+- Open http://localhost:8080/ in browser
 
 ### Changing data
 Edit the data of a specific tool in `data/{category}/toolpages-{toolname}.html`.
