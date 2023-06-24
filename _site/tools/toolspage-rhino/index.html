@@ -22,14 +22,14 @@
         <link rel="stylesheet" href="/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99827935-2"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0Z1YVJEFD"></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'UA-99827935-2', { 'anonymize_ip': true });
+        gtag('config', 'G-K0Z1YVJEFD');
         </script>
 
         <!-- Google Tag Manager -->
@@ -313,15 +313,17 @@
     
 
     
+
+    
         <div class="card link" id="link">
-            <h4>Sponsored by Framer</h4>
+            <h4>Sponsored by CommandBar</h4>
             <div class="card-title-flex">
-                <h3>You’ve never made a website this fast before. Really. Try for free</h3>
+                <h3>Make your product addictively easy to use</h3>
                 <h4></h4>
             </div>
-            <p>No more complicated workflows. Just design and publish. That’s it.</p>
+            <p>Add blazing-fast universal search, smart nudges, and timely help content to eliminate UX friction and delight your users.</p>
 
-            <a href="http://framer.com?utm_source=shortcuts.design" target="_blank" rel="sponsored" class="button button-secondary">Get it from Framer</a>
+            <a href="https://commandbar.com/?utm_source=shortcuts.design&amp;utm_medium=website&amp;utm_campaign=02-2023" target="_blank" rel="sponsored" class="button button-secondary">Get it from CommandBar</a>
         </div>
     
 
@@ -367,7 +369,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div id="footer-left">
-                            <h5>© 2021 - Created by <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" rel="noopener">Michel van Heest</a> using <a href="http://11ty.dev?ref=shortcuts.design" target="_blank" rel="noopener">11ty</a></h5>
+                            <h5>© <span id="year"></span> - Created by <a href="https://www.michelvanheest.com?ref=shortcuts.design" target="_blank" rel="noopener">Michel van Heest</a> using <a href="http://11ty.dev?ref=shortcuts.design" target="_blank" rel="noopener">11ty</a></h5>
                             <h5><a href="/status" target="_blank" rel="noopener">Status</a></h5>
                             <h5><a href="/sponsor">Sponsor</a></h5>
                             <h5><a href="/updates">Updates</a></h5>
@@ -386,6 +388,8 @@
 
         <script defer src="/js/fontawesome-all.js"></script>
         </footer>
+
+        <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
     </body>
 </html>
         <!DOCTYPE html>
@@ -421,9 +425,11 @@
             
         
             
+        
+            
                 <div id="toast-wrapper">
                     
-                    <a href="#link" id="this-months-sponsor-toast">Proudly sponsored by Framer ✨</a>
+                    <a href="#link" id="this-months-sponsor-toast">Proudly sponsored by CommandBar ✨</a>
                 </div>
             
         
