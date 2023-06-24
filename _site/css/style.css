@@ -48,7 +48,7 @@ body {
     --brand-2-color: #09DC72;
     --brand-3-gradient: linear-gradient(135deg, #70F7F1 0%, #47BDFF 100%);
     --brand-3-color: #47BDFF;
-    --brand-4-gradient: linear-gradient(135deg, #8EC5FC 0%, #C047FF 100%);
+    --brand-4-gradient: linear-gradient(135deg, #F09AF2 0%, #C047FF 100%);
     --brand-4-color: #C047FF;
     --shadow-primary: inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
     --shadow-primary-elevated: 0px 4px 16px 8px rgba(0, 0, 0, 0.08), inset 0px 2px 4px rgba(255, 255, 255, 0.24), inset 0px -2px 4px rgba(0, 0, 0, 0.24);
