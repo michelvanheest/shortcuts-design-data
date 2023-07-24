@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: CommandBar
 title: Make your product addictively easy to use
 url: https://commandbar.com/?utm_source=shortcuts.design&utm_medium=website&utm_campaign=02-2023
