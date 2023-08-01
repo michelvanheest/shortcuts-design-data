@@ -10,7 +10,11 @@
                 <h4>{{ sponsor.data.subtitle }}</h4>
             </div>
             {{ sponsor.templateContent | safe }}
-            <a href="{{ sponsor.data.url }}" target="_blank" rel="sponsored" class="button button-secondary">Get it from {{ sponsor.data.sponsorName }}</a>
+            {% if sponsor.data.sponsorButton == null %}
+                <a href="{{ sponsor.data.url }}" target="_blank" rel="sponsored" class="button button-secondary">Get it from {{ sponsor.data.sponsorName }}</a>
+            {% else %}
+                <a href="{{ sponsor.data.url }}" target="_blank" rel="sponsored" class="button button-secondary">{{ sponsor.data.sponsorButton }}</a>
+            {% endif %}
         </div>
     {% endif %}
 {% endfor %}
