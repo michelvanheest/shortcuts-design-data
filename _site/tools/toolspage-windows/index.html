@@ -177,7 +177,7 @@
     }
     
     function addIdToThWindows() {
-        jQuery("#data-windows- #myTable tr").each(function(){
+        jQuery("#data-windows-Windows #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Windows');
             $(this).attr('id', thValue);
@@ -247,17 +247,17 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-windows-2").load("/data/Productivity/toolspage-windows.html", function() {
-                            addIdToTh();
+                        $("#data-windows-Windows").load("/data/Productivity/toolspage-windows-Windows.html", function() {
+                            addIdToThWindows();
                         });
-                        $("#data-toc").load("/data/Productivity/toolspage-windows.html", function() {
-                            createDataToc();
+                        $("#data-toc-Windows").load("/data/Productivity/toolspage-windows-Windows.html", function() {
+                            createDataTocWindows();
                         });
                     });
                 </script>
-                <div id="data-windows-2" class="data-table"></div>
+                <div id="data-windows-Windows" class="data-table"></div>
                 <div class="data-toc-scrollspy">
-                    <div id="data-toc" class="data-toc nav-pils"></div>
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
                 </div>
             
         </div>
