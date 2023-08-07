@@ -43,7 +43,7 @@ layout: layouts/base.njk
         <div>
             <p><a href="https://github.com/michelvanheest/shortcuts-design-data" target="_blank" rel="noopener" class="a-{{ toolGroup }}"><i class="fab fa-github fa-lg"></i> Edit or add shortcuts on Github</a></p>
         </div>
-        {% if os2 is not null %}
+        {% if os1 == "Mac" and os2 == "Windows" %}
             <div id="switch">
                 <ul class="tabs">
                     <li class="tab-link Mac button a-{{ toolGroup }}" data-tab="tab-1">{{ os1 }}</li>
