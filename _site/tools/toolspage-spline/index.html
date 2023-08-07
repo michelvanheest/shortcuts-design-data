@@ -169,7 +169,7 @@
     }
 
     function addIdToThMac() {
-        jQuery("#data-spline-Windows #myTable tr").each(function(){
+        jQuery("#data-spline-Mac #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Mac');
             $(this).attr('id', thValue);
@@ -177,7 +177,7 @@
     }
     
     function addIdToThWindows() {
-        jQuery("#data-spline-Mac #myTable tr").each(function(){
+        jQuery("#data-spline-Windows #myTable tr").each(function(){
             var thContent = $(this).children("th:nth-child(n)").text().split(" ").join("-").replace("/" ,"-").replace("&" ,"-").replace("(" ,"-").replace(")" ,"-").replace("," ,"-").replace(")" ,"-").toLowerCase();
             var thValue = (thContent + '-Windows');
             $(this).attr('id', thValue);
@@ -220,8 +220,8 @@
         
             <div id="switch">
                 <ul class="tabs">
-                    <li class="tab-link Mac button a-3D" data-tab="tab-1">Windows</li>
-                    <li class="tab-link Windows button a-3D" data-tab="tab-2">Mac</li>
+                    <li class="tab-link Mac button a-3D" data-tab="tab-1">Mac</li>
+                    <li class="tab-link Windows button a-3D" data-tab="tab-2">Windows</li>
                 </ul>
             </div>
         
@@ -235,15 +235,15 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-spline-Windows").load("/data/3D/toolspage-spline-Windows.html", function() {
+                        $("#data-spline-Mac").load("/data/3D/toolspage-spline-Mac.html", function() {
                             addIdToThMac();
                         });
-                        $("#data-toc-Mac").load("/data/3D/toolspage-spline-Windows.html", function() {
+                        $("#data-toc-Mac").load("/data/3D/toolspage-spline-Mac.html", function() {
                             createDataTocMac();
                         });
                     });
                 </script>
-                <div id="data-spline-Windows" class="data-table"></div>
+                <div id="data-spline-Mac" class="data-table"></div>
                 <div class="data-toc-scrollspy">
                     <div id="data-toc-Mac" class="data-toc nav-pils"></div>
                 </div>
@@ -254,17 +254,17 @@
             
                 <script>
                     $( document ).ready(function(){
-                        $("#data-spline-2").load("/data/3D/toolspage-spline.html", function() {
-                            addIdToTh();
+                        $("#data-spline-Windows").load("/data/3D/toolspage-spline-Windows.html", function() {
+                            addIdToThWindows();
                         });
-                        $("#data-toc").load("/data/3D/toolspage-spline.html", function() {
-                            createDataToc();
+                        $("#data-toc-Windows").load("/data/3D/toolspage-spline-Windows.html", function() {
+                            createDataTocWindows();
                         });
                     });
                 </script>
-                <div id="data-spline-2" class="data-table"></div>
+                <div id="data-spline-Windows" class="data-table"></div>
                 <div class="data-toc-scrollspy">
-                    <div id="data-toc" class="data-toc nav-pils"></div>
+                    <div id="data-toc-Windows" class="data-toc nav-pils"></div>
                 </div>
             
         </div>
