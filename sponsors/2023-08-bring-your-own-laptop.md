@@ -3,7 +3,7 @@ active: yes
 sponsorName: Bring Your Own Laptop
 sponsorNameConcatenated: bring-your-own-laptop
 sponsorEmoji: 🙌
-title: Get unlimited access to 30+ of the best design classes online
+title: Unlimited access to our Figma courses & 30+ design classes online!
 sponsorButton: Get started and save 10%
 url: https://www.byol.com/shortcuts
 ---
