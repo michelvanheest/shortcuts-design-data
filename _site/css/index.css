@@ -2,14 +2,21 @@
     margin-top: 88px;
 }
 
+.tools-overview .position-sticky {
+    top: 32px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 1280px) {    
+    .tools-overview .position-sticky {
+        min-height: 178px;
+    }
+}
+
 .tools-overview img:first-of-type {
     width: 56px;
     height: 56px;
     margin-bottom: 16px;
-}
-
-.tools-overview h2 {
-    margin-bottom: 40px;
 }
 
 .add-new-tool {

@@ -24,6 +24,6 @@ nav .col-10 {
     justify-content: flex-end;
 }
 
-.nav-links a {
+.nav-links a:not(:last-child) {
     margin-right: 40px;
 }
