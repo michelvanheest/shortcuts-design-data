@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: Bring Your Own Laptop
 sponsorNameConcatenated: bring-your-own-laptop
 sponsorEmoji: 🙌
