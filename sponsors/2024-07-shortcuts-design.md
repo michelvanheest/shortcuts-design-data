@@ -1,5 +1,5 @@
 ---
-active: yes
+active: no
 sponsorName: your company?
 sponsorNameConcatenated: 
 sponsorEmoji: 
